@@ -1,6 +1,6 @@
 
 <?php
-$conn=mysqli_connect("192.168.56.101","somnath","somnath1","Create_Question_Bank");
+$conn=mysqli_connect("192.168.56.101","somnath","somnath1","Croe_Question_Bank");
 
 //connection checking
 if($conn === false)
