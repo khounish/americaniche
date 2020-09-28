@@ -1,11 +1,11 @@
 <?php
 session_start();
-include('database_exam.php')
+include('database_exam.php');
 $qtype = $_POST['question_type'];
 $ques = $_POST['question'];
 $format = $_POST['format'];
-$format = $_POST['level']
-if($qtype === "objective")
+$format = $_POST['level'];
+if ($qtype === "objective")
 {
   $op1 = $_POST['option1'];
   $op2 = $_POST['option2'];

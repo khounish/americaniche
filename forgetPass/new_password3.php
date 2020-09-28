@@ -36,12 +36,12 @@
     {
      header("location: new_pass.html");
    }
-   // else
-   // {
-   // echo '<h2>Link Expired</h2>
-    <p>The link is expired. You are trying to use the expired link which as valid only 24 hours (1 days after request).<br /><br /></p><p><a href="https://www.americaniche.com/index.php">Click here</a> to reset password.</p>';
+   else
+   {
+   echo '<h2>Link Expired</h2>';
+   echo '<p> The link is expired. You are trying to use the expired link which as valid only 24 hours (1 days after request).<br><br> </p> <p> <a href="https://www.americaniche.com/index.php">Click here</a> to reset password.</p>';
 
-//  }
+ }
   }
 }?>
   </body>
