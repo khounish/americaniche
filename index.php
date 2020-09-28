@@ -3,7 +3,7 @@ session_start();
 ?>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css"href='config/style.css'
+	<link rel="stylesheet" type="text/css"href='config/style.css'>
 </head>
 
 <body>
