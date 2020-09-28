@@ -1,0 +1,11 @@
+.page{
+  height: 70%;
+  width: 50%;
+  right: 25%;
+  bottom: 20%;
+  background: #aef359;
+  font-style: normal;
+  text-align: center;
+  background-size: contain;
+  position: absolute;
+}
