@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<style>
+  .display{
+    display:none;
+          }           
+</style>
+<script>
+function show_hide(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+  <head>
+    <meta charset="utf-8">
+    <title>Alert</title>
+    <link rel="stylesheet" type="text/css"href='style.css'>
+  </head>
+  <body>
+    <div class="page">
+      <h3>Thank you  for Validating domain  {{ vendordomain }}  on  {{ now }}</h3>
+      <br>
+      <h1 style ="color:red"><strong><u>STOP!</u></strong></h1>
+      <br>
+      <h2 color=black>{{ vendordomain }} is illegitimate Domain</u></h2>
+      <br> Need More Details
+        <label class="switch" onchange="show_hide('hidden_div')">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+    
+      
+</script>
+      </p>
+      <h3 color=black>Please forward the origional requested email to our corporate investigation at</h3>
+      <h3 color=black><u>USZCORP.INVESTIGATIONS.USERS@ZURICHNA.COM</u></h2>
+      <h3 color=black >Thank you for keeping Zurich fraud free/safe !</h3>
+
+
+    </div>
+    
+
+
+
+
+<div id="hidden_div" class="display" >
+        <div class="outbox">
+         <img src="zdetective.png" width="100" height="100" class="center" >
+        <h2> 
+        <font color=red> Domain Does not  exist Whois Database Score: {{whois_score}} <font><br>
+           
+           <font color=green> Domain  Exists in Whois Database & Score: {{whois_score}} </font><br>
+           </h2>
+           <h2> 
+        <font color=red> Domain NOT Present in SPF & Score: {{spf_score}} <font><br>
+           
+           "<font color=green> Domain  Present in SPF & Score: {{spf_score}} </font>"<br>
+           </h2>
+            <h2> 
+        <font color=red> Domain whois_days created below 90 days ({{whois_days}}) -> Score: {{whois_days_score}} <font><br>
+          
+           "<font color=green> Domain is created more than 90 days  ago ({{whois_days}}) -> Score: {{whois_days_score}} </font>"<br>
+          </h2>
+           </div>
+           </head>
+           
+</html>

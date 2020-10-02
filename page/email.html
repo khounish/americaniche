@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href='css/style.css'>
+        <style>
+        .display{
+          display:none;
+          }</style>
+</head>
+
+<body><script>
+function validateEmail(hackemail){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(hackemail.value) == false)
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+function showDiv(divId, element)
+{
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+}
+</script>
+        <div class="box">
+         <h2>  FrInvestigator </h2>
+         '
+                <form action="" name="hackahton">
+                        <p>Vendorname</p><br <input type="text" placeholder="Enter VendorId" required>
+                        <p>EmailId:<input name="hackemail" type="text" placeholder="Enter EmailId" required onblur="validateEmail(this);"></p></pre>
+                        <p>Do you have a Vendorclaimnumber</p>
+                        <select id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                        </select><br>
+                         <div id="hidden_div" class="display"><p>Vendorclaimnumber</p>
+                        <input type="Text" placeholder="Enter Claim Number" required maxlength="10" pattern="\d{10}" ></div>
+                        <p> Do you have a Vendornumber </p>
+                        <select id="test1" name="form_select2" onchange="showDiv('hidden_div1', this)">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                        </select><br>
+                         <div id="hidden_div1" class="display"><p>Vendornumber</p>
+                        <input type="text" placeholder="Enteri Vendor Number" required></div><br>
+                        <input type="submit" value="Validate">
+
+                </form>
+
+
+
+        </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("Q4");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+
+
+</body>
