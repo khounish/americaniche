@@ -1,4 +1,6 @@
-
+<?php
+require_once "veri.php";
+ ?>
 <html>
  <head>
    <style>
@@ -40,7 +42,7 @@ cursor: pointer;
  <body>
    <div class="box">
  <h1>Americaniche Academy</h1>
-   <form  action="Question.php" method="post">
+   <form  action="/php/Question.php" method="post">
 
 
     <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
@@ -63,6 +65,7 @@ cursor: pointer;
 
     </form>
   </div>
+<br><br><a href="/php/exam_logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a><br>
 </body>
 <script>
 function addFields(element){

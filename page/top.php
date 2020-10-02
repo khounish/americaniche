@@ -7,6 +7,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
+;
 ?>
 <html>
 <style>
@@ -68,7 +69,7 @@ a:active {
 </style>
 </head>
 <body>
-<img  class="logo" src="/photos/logo.png" alt="logo">
+<img  class="logo" src="http://videos.americaniche.com/logo2.png" alt="logo">
 <h1 style="text-align:center;">Americaniche Academy</h1>
 <marquee behavior="scroll" direction="right" style="position:absolute;top:55px;color:white;" scrollamount="7"><br><i>STAY NICHE STAY AHADE<i></marquee>
 
@@ -80,19 +81,8 @@ a:active {
 		<a class="button" href = "usefullinks.php" target = "menu_page" title='Links'>USEFUL LINKS</a>
 		<a class="button" href = "source.php" target = "menu_page" title='source'>IMPORTTANT SOURCE</a>
 		<a class="button" href = "software.php" target = "menu_page" title='Downloads'>SOFTWARES</a>
-    <div id="A">
-    <a class="button" href = "/php/admin.php" target = "main_page">ADMIN</a>
-    </div>
+  		<a class="button" href = "/exam/index.php" target = "_blank">EXAM</a>
+
 </div>
 </body>
-<script>
-function myFunction() {
-  var x = document.getElementById("A");
-  if ($_SESSION["privileges"] == "admin") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
 </html>

@@ -22,7 +22,7 @@ $curDate = date("Y-m-d H:i:s");
 if ($pass1!=$pass2)
     {
 		$_SESSION['error'] = "<p>Password do not match, both password should be same.<br /><br /></p>";
-    header("location: new_pass.html");
+    header("location: new_pass.html")
 		}
 	else
 	{
