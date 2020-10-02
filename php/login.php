@@ -11,7 +11,7 @@ require_once "data_base.php";
 
 //Find the userId for the given username
 $sql1 = "SELECT user_id FROM userdetails WHERE username = '$username'";
-$userid = (($conn->query($sql1))->fetch_assoc())["userid"];
+$userid = (($conn->query($sql1))->fetch_assoc())["user_id"];
 //Find the privileges of userID
 $sql2 = "SELECT privilege FROM userdetails WHERE user_id = '$userid'";
 $privileges = (($conn->query($sql2))->fetch_assoc())["privilege"];
