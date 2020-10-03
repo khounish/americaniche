@@ -10,13 +10,13 @@ require_once "data_base.php";
 //Construct a sql query
 
 //Find the userId for the given username
-$sql1 = "SELECT userid FROM userdetails WHERE username = '$username'";
-$userid = (($conn->query($sql1))->fetch_assoc())["userid"];
+$sql1 = "SELECT user_id FROM userdetails WHERE username = '$username'";
+$userid = (($conn->query($sql1))->fetch_assoc())["user_id"];
 //Find the privileges of userID
-$sql2 = "SELECT privilege FROM userdetails WHERE userid = '$userid'";
+$sql2 = "SELECT privilege FROM userdetails WHERE user_id = '$userid'";
 $privileges = (($conn->query($sql2))->fetch_assoc())["privilege"];
 //Find the original password for the correspoding userid
-$sql3 = "SELECT password FROM user_pswd WHERE userid = '$userid'";
+$sql3 = "SELECT password FROM user_pswd WHERE user_id = '$userid'";
 $password_ori = (($conn->query($sql3))->fetch_assoc())["password"];
 
 //validate the results from db and respond back
