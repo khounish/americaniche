@@ -1,5 +1,5 @@
 <?php
-include_once ("veri.php");
+include_once ("veri_student.php");
 $username = $_POST["username"];
 $
 
