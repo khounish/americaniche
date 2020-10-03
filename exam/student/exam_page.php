@@ -2,7 +2,7 @@
  <head>
   <title>Online test</title>
   <?php
-  require_once "veri_admin.php";
+  require_once "veri.php";
   ?>
 
   <style>
