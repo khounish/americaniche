@@ -100,9 +100,13 @@ function addFields(element){
 
 
 
-          else {
-            document.getElementById('container').style.display = "none";
-            document.getElementById('container').style.display = "none";
+          else if(number == "0"){
+            var element = document.getElementById("container");
+            while (element.hasChildNodes()) {
+            element.removeChild(element.firstChild);
+          }
+            //document.getElementById('container').style.display = "none";
+            //document.getElementById('container').style.display = "none";
           }
         }
 
