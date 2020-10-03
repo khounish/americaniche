@@ -22,11 +22,11 @@ include_once ("veri_admin.php");
       <a class="links" href="#">Modification</a>
       <a class="links" href="#">Reports</a>
       <a class="links" href="#">OneView</a>
-      <a class="links" href="/php/logut.php">Logout</a>
+      <a class="links" href="/php/exam_logout.php">Logout</a>
 </div>
 
 </div>
-<div class="image" <source src="image/logo.png">
+<div class="image" src="image/logo.png">
 
 
   </div>
