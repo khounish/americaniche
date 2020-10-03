@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+
+ <style>
+
+        .display{
+                display:none;
+                }
+        body
+           {
+		text-align:center;
+                font-size: 20px;
+ 	   }
+ </style>
+</head>
+
+<body>
+ <script>
+function validateEmail(hackemail){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(hackemail.value) == false)
+        {
+            alert('Invalid Email Address');
+            return false;
+        }
+
+        return true;
+
+}
+function showDiv(divId, element)
+{
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+}
+</script>
+        
+         <h1>  FrInvestigator </h1>
+         
+                <form action="" name="hackahton">
+                        <p>Vendorname <input type="text" placeholder="Enter VendorId" required></p>
+                        <p>EmailId:
+			<input name="hackemail" type="text" placeholder="Enter EmailId" required onblur="validateEmail(this);"></p>
+                        <p>Do you have a Claim Number ?
+                        <select id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                        </select></p>
+                         <div id="hidden_div" class="display"><p>Vendorclaimnumber
+                        <input type="Text" placeholder="Enter Claim Number" required maxlength="10" pattern="\d{10}" ></div></p>
+                        <p> Is this an  Existing Zurich's  Business Partner?
+                        <select id="test1" name="form_select2" onchange="showDiv('hidden_div1', this)">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                        </select></p>
+                         <div id="hidden_div1" class="display"><p>Vendornumber
+                        <input type="text" placeholder="Enteri Vendor Number" required></div></p>
+                        <input type="submit" value="Validate">
+
+                </form>
+
+
+
+</body>
+</html>
