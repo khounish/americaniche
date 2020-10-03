@@ -26,7 +26,11 @@ include_once ("veri_admin.php");
 </div>
 
 </div>
+<<<<<<< HEAD
 <div class="image" src="image/logo.png">
+=======
+<div class="image" source src="image/logo.png">
+>>>>>>> 1b7c5c59bbfd1e7fea5b73eaf9913c5a4c013b6b
 
 
   </div>
