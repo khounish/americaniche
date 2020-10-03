@@ -8,24 +8,10 @@
 .abc{
 	height: 100%;
 	width: 100%;
-	background-image:url(../image/login6.jpg);
-	
- bottom: 0;
- position: absolute;
-  color:white;
-  margin: 0 auto;
-  
-  
-  
-	
-}
-.abc .form-box{
- bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  
-  
-
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../image/image_127544.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
 }
 
 .form-box{
@@ -38,10 +24,6 @@
 	transform: translate(-50%  -50%);
 	overflow: hidden;
 	border-radius: 40px;
-         bottom: 0;
-
-  
-  
 }
 
 .button-box{
@@ -79,7 +61,6 @@
 	position: absolute;
 	width: 280px;
 	transition: .5s;
-        
 	}
 
 	.input-field{
