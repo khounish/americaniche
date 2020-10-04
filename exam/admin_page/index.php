@@ -7,7 +7,7 @@ include_once ("veri_admin.php");
     <meta charset="utf-8">
     <title>Americaniche Exam Portal</title>
     </head>
-    <frameset cols = "12.3%,*" border="0">
+    <frameset cols = "12.8%,*" border="0">
       <frame src = "page.php" name = "menu_page" />
       <frame src = "blank.php" name = "main_page" />
 
