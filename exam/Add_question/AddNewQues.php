@@ -21,6 +21,7 @@ require_once "veri.php";
      h1{
        background-image: linear-gradient(red,black);
        text-align: center;
+	     margin-top:-8px;
        }
 	   h2{
 	   text-align:center;
