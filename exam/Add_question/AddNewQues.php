@@ -19,6 +19,7 @@ require_once "veri.php";
          }
 
      h1{
+       background-image: linear-gradient(red,black);
        text-align: center;
        }
 

@@ -16,7 +16,7 @@ include_once ("veri_admin.php");
 
     <div class="left">
       <div class="dropdown-menu">
-      <button class="menu-btn">Admin's Section</button>
+        <button class="menu-btn">Admin's Section</button>
       <div class="menu-content">
       <a class="links" href="../Add_question/AddNewQues.php">Add Question</a>
       <a class="links" href="#">Modification</a>
@@ -28,8 +28,6 @@ include_once ("veri_admin.php");
 </div>
 <div class="image" >
   <img src="image/logo.png">
-</div>
-
 </div>
 
 
