@@ -21,7 +21,7 @@ include_once ("veri_admin.php");
       <a class="links" href="#" target="main_page">Reports</a>
       <a class="links" href="#" target="main_page">OneView</a>
       <a class="links" href="set_exam/set_exam.php" target="main_page">Set exam</a>
-      <a class="links" href="/php/exam_logout.php">Logout</a>
+      <a class="links" href="/php/exam_logout.php" target="_top">Logout</a>
 </div>
 
 </div>
