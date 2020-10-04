@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+ //alert funtion:
+ function function_alert($message) { 
+  echo "<script>alert('$message');</script>"; 
+} 
+
 include('data_base_exam.php');
 $qtype = $_POST['question_type'];
 $ques = $_POST['question'];
@@ -18,13 +24,15 @@ $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
 //$sql2 = "INSERT INTO option VALUES ( , ,)";
+header("location: /exam/Add_question/AddNewQues.php");
 if (mysqli_query($conn, $sql1))
 {
-  echo "New record created successfully";
+  $alert = "Submitted to database.";
+  function_alert($alert);
 }
 else
 {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  $alert = mysqli_error($conn);
+  function_alert($alert);
 }
-session_destroy();
 ?>

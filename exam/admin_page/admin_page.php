@@ -18,24 +18,18 @@ include_once ("veri_admin.php");
       <div class="dropdown-menu">
         <button class="menu-btn">Admin's Section</button>
       <div class="menu-content">
-        <a class="links" href="../Add_question/AddNewQues.php">Add Question</a>
-        <a class="links" href="#">Modification</a>
-        <a class="links" href="#">Reports</a>
-        <a class="links" href="#">OneView</a>
-        <a class="links" href="/php/logut.php">Logout</a>
-     </div>
-     </div>
-    </div>
+      <a class="links" href="../Add_question/AddNewQues.php">Add Question</a>
+      <a class="links" href="#">Modification</a>
+      <a class="links" href="#">Reports</a>
+      <a class="links" href="#">OneView</a>
+      <a class="links" href="set_exam/set_exam.php">Set exam</a>
+      <a class="links" href="/php/exam_logout.php">Logout</a>
+</div>
 
-    <div class="right">
-      <div id="main" class="toggle" style="display:none">show the stuff1 </div>
-      <div class="image"><img src="image/logo.png"> </div>
-    </div>
-
-
-
-
-
+</div>
+<div class="image" >
+  <img src="image/logo.png">
+</div>
 
 
   </body>

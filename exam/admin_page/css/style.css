@@ -2,7 +2,7 @@ body{
     background-image: white;
       }
 
-.header{
+/*.header{
   height: 40px  ;
   width: 1340px;
   background: rgb(2,0,36);
@@ -10,7 +10,7 @@ body{
   rgba(227,88,12,1) 100%, rgba(8,77,141,1) 100%, rgba(8,77,141,1) 100%);
   background-position: center;
   text-align: center;
-  text-decoration-color: white;
+  text-decoration-color: white;*/
 
 }
 
@@ -20,7 +20,7 @@ h1{
   }
 
 .left{
-  height: 550px;
+  height:1000px;
   width: 185px;
   background-image: linear-gradient(#c94b4b,#4b134f);
   backface-visibility: hidden;
@@ -33,7 +33,6 @@ h1{
   left: 550px;
   bottom:150px;
   background-position: center;
-  background-image: url(logo.png);
   background-repeat: no-repeat;
   background-size: cover;
 

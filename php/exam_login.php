@@ -26,7 +26,7 @@ if ($userid != "")
     {
                   if ($password_ori == $password)
                     {
-                    header("location: /exam/Add_question/AddNewQues.html");
+                    header("location: /exam/Add_question/AddNewQues.php");
                     // Store data in session variables
                     $_SESSION["loggedin"] = true;
                     $_SESSION["id"] = $userid;
