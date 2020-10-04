@@ -24,6 +24,7 @@ $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
 //$sql2 = "INSERT INTO option VALUES ( , ,)";
+header("location: /exam/Add_question/AddNewQues.php");
 if (mysqli_query($conn, $sql1))
 {
   $alert = "Submitted to database.";
