@@ -11,7 +11,7 @@ require_once "veri.php";
      body{
        background-image: url('logo.png'),linear-gradient(to right,#030D93 , white);
        background-repeat: no-repeat,no-repeat;
-       background-position: right;
+       background-position: right bottom;
 
 	     color:white;
        font-size: 30px;
@@ -22,6 +22,9 @@ require_once "veri.php";
        background-image: linear-gradient(red,black);
        text-align: center;
        }
+	   h2{
+	   text-align:center;
+	   }
 
     .button{
 
@@ -43,6 +46,7 @@ cursor: pointer;
  <body>
    <div class="box">
  <h1>Americaniche Academy</h1>
+	   <h2>ADD NEW QUESTION</h2><hr><br><br>
    <form  action="/php/Question.php" method="post">
 
 
