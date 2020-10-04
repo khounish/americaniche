@@ -9,7 +9,7 @@ require_once "veri_admin.php";
            }
 
      body{
-       background-image: url('logo.png'),linear-gradient(to right,#030D93,white);
+       background-image: url('../image/logo.png'),linear-gradient(to right,#030D93,white);
        background-repeat: no-repeat,no-repeat;
        background-position: right;
        font-size: 30px;
