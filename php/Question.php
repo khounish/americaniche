@@ -35,5 +35,4 @@ else
   $alert = mysqli_error($conn);
   function_alert($alert);
 }
-session_destroy();
 ?>
