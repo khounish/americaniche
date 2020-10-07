@@ -11,7 +11,7 @@
  $level = $_POST["level"];
  $examinator = $_SESSION['username'];
 
- //alert funtion:
+//alert funtion:
  function function_alert($message) { 
     echo "<script>alert('$message');</script>"; 
 } 
@@ -24,13 +24,17 @@
 
 if(mysqli_query($conn,$sql1))
 {
-    $alert = "Submitted to database.";
-    function_alert($alert);
+    $_SESSION["messeage"] = "Databast updated";
+    echo '<script>location.reload();</script>';
+    header ("Location: / ");
 }
 else
 {
     $alert = mysqli_error($conn);
-    function_alert($alert);
+    $_SESSION["messeage"] = $alert;
+    echo '<script>javascript:history.go(-1)</script>';
 }
-
+/* try it 
+header('Location: ' . $_SESSION['PHP_SELF']);
+       	die();*/
 ?>
