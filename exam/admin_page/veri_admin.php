@@ -3,9 +3,9 @@
 session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
-if($_SESSION["privileges"] != "admin")
+if (!isset($_SESSION["privileges"] !== "admin"))
 {
-    header("location: http://www.americaniche.com/exam/index.php");
+    header("location: /exam/");
     exit;
 }
 ?>
