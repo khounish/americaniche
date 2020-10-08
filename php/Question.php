@@ -27,7 +27,6 @@ $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,Cr
 
 if (mysqli_query($conn_1, $sql1))
 {
-<<<<<<< HEAD
   <html>
    <head>
      <style>
@@ -195,11 +194,6 @@ if (mysqli_query($conn_1, $sql1))
 
   </script>
   </html>
-=======
-  $alert = "Submitted to database.";
-  function_alert($alert);
-  header("location: /exam/Add_question/AddNewQues.php");
->>>>>>> bc37a8a268b9c0be9f3f85c9d9673abca19f383b
 }
 else
 {
