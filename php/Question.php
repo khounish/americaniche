@@ -109,7 +109,7 @@ if (mysqli_query($conn_1, $sql1))
       </div>
   	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
-       <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+       <div id="Quest">
        <div id="q"></div>
        <p id="01"></p>
        <p id="02"></p>
