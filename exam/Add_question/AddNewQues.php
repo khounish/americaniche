@@ -9,79 +9,127 @@ require_once "veri.php";
            }
 
      body{
-       background-image: url('logo.png'),linear-gradient(to right,#030D93 , white);
-       background-repeat: no-repeat,no-repeat;
-       background-position: right ;
-       margin-left:-5px;
-	     color:white;
+       background-color: rgb(242, 242, 242);
        font-size: 30px;
 
          }
 
-     h1{
-       background-image: linear-gradient(red,black);
-       text-align: center;
-	     height:12%
-	     margin-top:-12px;
-       }
-	   h2{
-	    margin-top:-10px;	   
-	   text-align:center;
-		   height:4%
-	   }
+    h3{
+      position: relative;
+      left :45px;
+      top: 20px;
+      font-size: 50px;
+    }
+
+	   h4{
+	      margin-top:-5px;
+	      text-align:center;
+		    height:4%
+        font-size: 80px;
+        text-decoration: underline;
+        padding-top: 8px;
+	     }
 
     .button{
-
-background-color: grey;
-border: none;
-color: #030D93;
-padding: 15px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 16px;
-margin: 4px 2px;
-cursor: pointer;
-
+            background-color: grey;
+            border: none;
+            color: #030D93;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
            }
-   </style>
+
+        #logo{
+             float:left;
+             height: 85px;
+             width: 110px;
+             background-color: white;
+             position: relative;
+             left:10px;
+           }
+        #heading{
+          background-color: rgba(3, 13, 147, 0.6);
+          height:85px;
+          color: white;
+                }
+        #subheading{
+          margin-top: 0px;
+          background-color: rgb(186, 94, 94, 0.4);
+          height:52px;
+                   }
+        #Quest{
+                   float: right;
+                   height: 100%;
+                   width: 45%;
+                   background-color: white;
+                   font-size: 30px;
+                   text-align: center;
+
+                 }
+
+
+  </style>
   <title>ADD Question</title>
  </head>
  <body>
-   <div class="box">
- <h1>Americaniche Academy</h1>
-	   <h2>ADD NEW QUESTION</h2><hr><br><br>
-   <form  action="/php/Question.php" method="post">
+
+    <div id="heading">
+     <img id="logo" src="logo.png">
+     <h3>Americaniche Academy</h3>
+    </div>
+	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
+
+     <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+     <div id="q"></div>
+     <p id="01"></p>
+     <p id="02"></p>
+     <p id="03"></p>
+     <p id="04"></p></div>
+     <form name="addques" action="" method="post" >
+
+      <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
+      <option value="0" >subjective</option>
+      <option value="1" >objective</option></select></p>
+
+      <p>Enter your question</p><textarea name="question" rows="8" cols="70" required ></textarea><br><br>
+
+      <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
+      <div id="container"></div>
+
+      <p>Enter the format of the question:<input type="text" name="format"  required>
+
+      <p>Level of the question:<select name="level" required>
+      <option value="easy">easy</option>
+      <option value="medium">medium</option>
+      <option value="complex">complex</option></p></select><br>
 
 
-    <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
-    <option value="0" >subjective</option>
-    <option value="1" >multiple choice question</option>
-    <option value="2" >single choice question</option></select></p>
+      <button class="button" type="submit">Add Question</button>
+      <button class="button" onclick='Preview(); return false'>Preview</button>
 
+     </form>
 
-    <p>Enter your question</p><textarea name="question" rows="8" cols="70" required></textarea><br><br>
-    <div id="container"></div>
+    <script>
 
-    <p>Enter the format of the question:<input type="text" name="format" required>
+        function Preview() {
+          document.getElementById("q").innerHTML = document.addques.question.value;
 
-    <p>Level of the question:<select name="level" required>
-    <option value="easy">easy</option>
-    <option value="medium">medium</option>
-    <option value="complex">complex</option></p></select><br>
+          document.getElementById("01").innerHTML = "1. " + document.addques.option0.value;
 
-    <br><button class="button" type="submit"  onclick="AddNewQues.html">Add Question</button><input class="button" type="submit" value="Done">
+          document.getElementById("02").innerHTML = "2. " + document.addques.option1.value;
 
-    </form>
-  </div>
-<br><br><a href="/php/exam_logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a><br>
-</body>
-<script>
-function addFields(element){
+          document.getElementById("03").innerHTML = "3. " + document.addques.option2.value;
 
+          document.getElementById("04").innerHTML = "4. " + document.addques.option3.value;
+        }
 
-            var number = element.value;
-            if(number == "1"||number == "2")
+        function addFields(element){
+          var number = element.value;
+            if(number == "1")
             {
               var container = document.getElementById("container");
 
@@ -99,7 +147,7 @@ function addFields(element){
 
               }
               container.appendChild(document.createElement("br"));
-              container.appendChild(document.createTextNode("Enter the correct options:                    "));
+              container.appendChild(document.createTextNode("Enter the correct options:"));
               var input = document.createElement("input");
               input.type = "text";
               input.name = "answer";
@@ -114,8 +162,7 @@ function addFields(element){
             while (element.hasChildNodes()) {
             element.removeChild(element.firstChild);
           }
-            //document.getElementById('container').style.display = "none";
-            //document.getElementById('container').style.display = "none";
+
           }
         }
 

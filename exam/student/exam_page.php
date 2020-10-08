@@ -10,14 +10,12 @@
     background-color: rgba(3, 13, 147, 0.6);
     height:100px;
     color: white;
-
     margin-bottom: 0px;
     }
   .subheading{
     margin-top: -38px;
     background-color: rgb(186, 94, 94, 0.4);
     height:60px;
-
     text-decoration: underline;
   }
   .Questions{
@@ -26,11 +24,10 @@
     height: 100%;
     width: 25%;
     background-color: white;
-
-  }
- .nested{
+    }
+  .nested{
    display: none;
- }
+   }
    .button{
      border-radius: 100%;
      background-color: rgb(3, 13, 147);
@@ -72,7 +69,6 @@
   h3{
     position: relative;
     left :45px;
-
     top: 30px;
     font-size: 40px;
     }
