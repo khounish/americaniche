@@ -20,8 +20,8 @@ h1{
   }
 
 .left{
-  height: 570px;
-  width: 185px;
+  height:700px;
+  
   background-image: linear-gradient(#c94b4b,#4b134f);
   backface-visibility: hidden;
 }

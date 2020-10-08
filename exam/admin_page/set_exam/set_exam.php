@@ -11,7 +11,7 @@ require_once "veri_admin.php";
      body{
        background-image: url('../image/logo.png'),linear-gradient(to right,#030D93,white);
        background-repeat: no-repeat,no-repeat;
-       background-position: right;
+       background-position: right bottom;
        font-size: 30px;
 	     color:white;
 
@@ -20,11 +20,16 @@ require_once "veri_admin.php";
 
 
      h1{
-       background-image:linear-gradient(red,black);
+       background-image:linear-gradient(to left,#030D93,#CB0A1F,#030D93);
        text-align: center;
        margin-top: -6px;
        height:12%;
        }
+      h2{
+          text-align: center;
+          height:4%;
+          margin-top: -10px;
+      }
 
     .submit{
 border-radius: 2px;
@@ -42,13 +47,14 @@ cursor: pointer;
            }
 
    </style>
-  <title>ADD Question</title>
+  <title>set exam</title>
  </head>
  <body>
    <div class="box">
      <h1>Americaniche Academy</h1>
-     <br><br>
-     <form  action="/php/exam_set.php" method="post">
+     <h2>SET NEW EXAM</h2><hr><br><br>
+
+     <form  action="/php/Question.php" method="post">
 
        <div>
      		<label>Enter the date of examination:</label>
