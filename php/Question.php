@@ -24,9 +24,10 @@ $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
 //$sql2 = "INSERT INTO option VALUES ( , ,)";
-header("location: /exam/Add_question/AddNewQues.php");
-if (mysqli_query($conn, $sql1))
+
+if (mysqli_query($conn_1, $sql1))
 {
+<<<<<<< HEAD
   <html>
    <head>
      <style>
@@ -194,10 +195,16 @@ if (mysqli_query($conn, $sql1))
 
   </script>
   </html>
+=======
+  $alert = "Submitted to database.";
+  function_alert($alert);
+  header("location: /exam/Add_question/AddNewQues.php");
+>>>>>>> bc37a8a268b9c0be9f3f85c9d9673abca19f383b
 }
 else
 {
   $alert = mysqli_error($conn);
   function_alert($alert);
+  header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
