@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== "admin"){
+    header("location: /exam/index.php");
+    exit;
+}
+?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
