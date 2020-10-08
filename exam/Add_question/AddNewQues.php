@@ -89,7 +89,7 @@ require_once "veri.php";
      <p id="02"></p>
      <p id="03"></p>
      <p id="04"></p></div>
-     <form name="addques" action="" method="post" >
+     <form name="addques" action="/php/Question.php" method="post" >
 
       <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
       <option value="0" >subjective</option>
