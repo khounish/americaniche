@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include_once ("veri_admin.php");
+#include_once ("veri_admin.php");
 ?>
 <html lang="en" dir="ltr">
   <head>
