@@ -3,7 +3,7 @@
 session_start();
 
 // Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["privileges"] !== "admin"))
+if ($_SESSION["privileges"] !== "admin")
 {
     header("location: /exam/");
     exit;
