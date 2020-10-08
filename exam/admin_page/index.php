@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <?php
-include_once ("veri_admin.php");
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if (!isset($_SESSION["privileges"] !== "admin"))
+{
+    header("location: /exam/");
+    exit;
+}
 ?>
 <html lang="en" dir="ltr">
   <head>
