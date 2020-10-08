@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 <?php
 require_once "veri.php";
  ?>
+=======
+<!DOCTYPE html>
+>>>>>>> 6c530246508c1c17b0c1527ee9532f2e40172a1a
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Americaniche Exam Portal</title>
     </head>
-    <frameset cols = "195,*" border="0">
+    <frameset cols = "13.2%,*" border="0">
       <frame src = "page.php" name = "menu_page" />
       <frame src = "blank.php" name = "main_page" />
 
