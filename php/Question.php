@@ -24,15 +24,17 @@ $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
 //$sql2 = "INSERT INTO option VALUES ( , ,)";
-header("location: /exam/Add_question/AddNewQues.php");
-if (mysqli_query($conn, $sql1))
+
+if (mysqli_query($conn_1, $sql1))
 {
   $alert = "Submitted to database.";
   function_alert($alert);
+  header("location: /exam/Add_question/AddNewQues.php");
 }
 else
 {
   $alert = mysqli_error($conn);
   function_alert($alert);
+  header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
