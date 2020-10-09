@@ -85,7 +85,7 @@ cursor: pointer;
 
      	<div>
          <input type="submit" class="submit" name="submit" value="submit" />
-         <?php echo htmlspecialchars($_SESSION["m"]); ?>
+         <br><?php echo htmlspecialchars($_SESSION["m"]); ?>
      	</div>
     </form>
   </div>
