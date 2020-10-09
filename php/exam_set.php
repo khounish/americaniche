@@ -9,10 +9,6 @@
  $duration =$_POST["duration"];
  $level = $_POST["level"];
  $examinator = $_SESSION['username'];
-//alert funtion:
- function function_alert($message) { 
-    echo "<script>alert('$message');</script>"; 
-} 
 //connection to db:
  require_once "data_base_exam.php";
 //save informition to database:
@@ -27,7 +23,4 @@ else
     $_SESSION["m"] = "not updated";
     header ("Location: /exam/admin_page/set_exam/set_exam.php");
 }
-/* try it 
-header('Location: ' . $_SESSION['PHP_SELF']);
-       	die();*/
 ?>
