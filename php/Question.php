@@ -1,8 +1,5 @@
-
 <?php
-session_start();
-
- //alert funtion:
+//alert funtion:
  function function_alert($message) {
   echo "<script>alert('$message');</script>";
 }
@@ -38,4 +35,4 @@ else
   header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
-</html>
+
