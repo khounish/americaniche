@@ -27,7 +27,7 @@ $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,Cr
 
 if (mysqli_query($conn_1, $sql1))
 {
-  echo "hello";
+  header("location: /exam/Add_question/AddNewQues.php");
 
 }
 else
