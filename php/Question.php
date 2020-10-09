@@ -2,9 +2,6 @@
 session_start();
 
  //alert funtion:
- function function_alert($message) {
-  echo "<script>alert('$message');</script>";
-}
 
 include('data_base_exam.php');
 $qtype = $_POST['question_type'];
@@ -32,8 +29,7 @@ if (mysqli_query($conn_1, $sql1))
 }
 else
 {
-  //$alert = mysqli_error($conn);
-  //function_alert($alert);
-  //header("location: /exam/Add_question/AddNewQues.php");
+  
+  header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
