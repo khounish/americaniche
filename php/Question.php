@@ -1,8 +1,5 @@
 <?php
 session_start();
-
- //alert funtion:
-
 include('data_base_exam.php');
 $qtype = $_POST['question_type'];
 $ques = $_POST['question'];
@@ -21,7 +18,6 @@ $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
 //$sql2 = "INSERT INTO option VALUES ( , ,)";
-
 if (mysqli_query($conn_1, $sql1))
 {
   header("location: /exam/Add_question/AddNewQues.php");
