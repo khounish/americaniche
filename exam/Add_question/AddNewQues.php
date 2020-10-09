@@ -84,6 +84,28 @@ require_once "veri.php";
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+      <?php
+       include('data_base_exam.php');
+       $sql1 = "SELECT * FROM Questions";
+       if($result = mysqli_query($conn_1,$sql1))
+       {
+         if(mysqli_num_rows($result)>0)
+         {
+           while($row = mysqli_fetch_assoc($result))
+           {
+             echo "<p>$row[Question_id] . " " . $row[Questiontext]<p>";
+           }
+         }
+         else
+         {
+           echo "hello";
+         }
+
+       }
+       else {
+         echo "error";
+       }
+      ?> 
      <div id="q"></div>
      <p id="01"></p>
      <p id="02"></p>

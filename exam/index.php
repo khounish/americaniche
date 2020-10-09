@@ -24,7 +24,7 @@ session_start();
 
           </form>
 
-          <form id="Student" class="input" action="/php/exam_student_login.php" method="post">
+          <form id="Student" class="input" action="" method="post">
             <input style="color:white" type="text" class="input-field" placeholder="Student ID" required>
             <input type="text" class="input-field" placeholder="Enter Password" required>
             <input type="checkbox" class="check-box"><span>Remember Me</span>
@@ -57,4 +57,4 @@ session_start();
 
         </body>
 </html>
-<?php session_destroy() ?>
+<?php session_destroy(); ?>
