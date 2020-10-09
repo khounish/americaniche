@@ -12,7 +12,7 @@
 //connection to db:
  require_once "data_base_exam.php";
 //save informition to database:
-$sql1 = "INSERT INTO Exam_scheduler (id,Date,Start_time,Duration,Subject,Level,Examinator) VALUES ('','$date','$time','$duration','$subject','$level','$examinator')";
+$sql1 = "INSERT INTO Exam_scheduler (id,Date,Start_time,Duration,Subject,Level,Examinator) VALUES (NULL,'$date','$time','$duration','$subject','$level','$examinator')";
 if(mysqli_query($conn_1,$sql1))
 {
   $_SESSION["m"] = "updated";
