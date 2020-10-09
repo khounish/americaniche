@@ -105,7 +105,7 @@ require_once "veri.php";
        else {
          echo "error";
        }
-      ?> 
+      ?>
      <div id="q"></div>
      <p id="01"></p>
      <p id="02"></p>
