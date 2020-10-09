@@ -54,7 +54,7 @@ cursor: pointer;
      <h1>Americaniche Academy</h1>
      <h2>SET NEW EXAM</h2><hr><br><br>
 
-     <form  action="/php/Question.php" method="post">
+     <form  action="/php/exam_set.php" method="post">
 
        <div>
      		<label>Enter the date of examination:</label>
