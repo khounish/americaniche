@@ -1,5 +1,7 @@
 <?php
-//alert funtion:
+session_start();
+
+ //alert funtion:
  function function_alert($message) {
   echo "<script>alert('$message');</script>";
 }
@@ -25,8 +27,8 @@ $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,Cr
 
 if (mysqli_query($conn_1, $sql1))
 {
-  echo "hello";
-  
+
+
 }
 else
 {
@@ -35,4 +37,3 @@ else
   header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
-
