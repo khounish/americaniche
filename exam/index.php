@@ -10,6 +10,7 @@ session_start();
   <body>
     <div class="abc">
       <div class="form-box">
+	      <h3 style="text-align:center">Americaniche Academy</h3>
           <div class="button-box">
             <div id="btn"></div>
             <button type="button" class="toggle-button" onclick="login()">Admin</button>
