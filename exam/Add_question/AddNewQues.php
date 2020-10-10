@@ -69,6 +69,7 @@ require_once "veri.php";
                    font-size: 30px;
                    text-align: center;
                    margin-top:-20px;
+		   right:15px;
                  }
 
 
