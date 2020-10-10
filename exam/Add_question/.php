@@ -1,5 +1,5 @@
 <?php
-require_once "veri_admin.php";
+require_once "veri.php";
  ?>
 <html>
  <head>
