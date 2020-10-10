@@ -14,12 +14,12 @@ require_once "veri.php";
 
          }
 
-    h3{
+     h3{
       position: relative;
       left :45px;
       top: 20px;
       font-size: 50px;
-    }
+       }
 
 	   h4{
 	      margin-top:-5px;
@@ -76,65 +76,73 @@ require_once "veri.php";
   <title>ADD Question</title>
  </head>
  <body>
-
+    <!--Heading division-->
     <div id="heading">
      <img id="logo" src="logo.png">
      <h3>Americaniche Academy</h3>
     </div>
-	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
-     <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
-      <?php
-       include('data_base_exam.php');
-       $sql1 = "SELECT * FROM Questions order by Question_id DESC";
-       if($result = mysqli_query($conn_1,$sql1))
-       {
-         if(mysqli_num_rows($result)>0)
-         {
-           while($row = mysqli_fetch_assoc($result))
-	   {
-             echo "<p> <a href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
-	     break;  
-	   }
-         }
-         else
-         {
-           echo "Please insert a question to view it here";
-         }
+
+	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
+    <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+
+     <div id="q"></div>
+     <p id="01"></p>
+     <p id="02"></p>
+     <p id="03"></p>
+     <p id="04"></p></div>
+
+    <!-- modify database content-->
+    <?php
+    include('data_base_exam.php');
+    $sql1 = "SELECT * FROM Questions order by Question_id DESC";
+    if($result = mysqli_query($conn_1,$sql1))
+    {
+     if(mysqli_num_rows($result)>0)
+     {
+      while($row = mysqli_fetch_assoc($result))
+      {
+    ?>
+        <form name="addques" action="/php/Question.php" method="post" >
+
+         <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
+         <option value="0" >subjective</option>
+         <option value="1" >objective</option></select></p>
+
+         <p>Enter your question</p><textarea name="question" rows="8" cols="70" required value="<?php echo $row ['Questiontext']; ?> " ><?php echo $row ['Questiontext']; ?></textarea><br><br>
+
+         <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
+         <div id="container"></div>
+
+         <p>Enter the format of the question:<input type="text" name="format" value="<?php echo $row ['Format']; ?> " required>
+
+         <p>Level of the question:<select name="level" required>
+         <option value="easy">easy</option>
+         <option value="medium">medium</option>
+         <option value="complex">complex</option></p></select><br><br>
+
+
+         <button class="button" type="submit">Add Question</button>
+         <button class="button" onclick='Preview(); return false'>Preview</button>
+
+        </form>
+        <?php  
+       break;
+      }
+     }
+     else
+     {
+      echo "Please insert a question to view it here";
+     }
 
        }
        else {
          echo "error";
        }
       ?>
-     <div id="q"></div>
-     <p id="01"></p>
-     <p id="02"></p>
-     <p id="03"></p>
-     <p id="04"></p></div>
-     <form name="addques" action="/php/Question.php" method="post" >
 
-      <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
-      <option value="0" >subjective</option>
-      <option value="1" >objective</option></select></p>
+     
 
-      <p>Enter your question</p><textarea name="question" rows="8" cols="70" required ></textarea><br><br>
-
-      <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
-      <div id="container"></div>
-
-      <p>Enter the format of the question:<input type="text" name="format"  required>
-
-      <p>Level of the question:<select name="level" required>
-      <option value="easy">easy</option>
-      <option value="medium">medium</option>
-      <option value="complex">complex</option></p></select><br><br>
-
-
-      <button class="button" type="submit">Add Question</button>
-      <button class="button" onclick='Preview(); return false'>Preview</button>
-
-     </form>
 
     <script>
 
