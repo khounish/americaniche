@@ -100,6 +100,43 @@ require_once "veri.php";
            while($row = mysqli_fetch_assoc($result))
 	   {
              echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
+              $sql2 = "SELECT * FROM Options where Question_id = '$row[Question_id]'";
+	      if($result1 = mysqli_query($conn_1,$sql1))
+                {
+                 if(mysqli_num_rows($result1)>0)
+                  {
+                     while($row1 = mysqli_fetch_assoc($result1))
+	                {
+	                  echo "<p>1. $row1[option1]</p>";
+			  echo "<p>2. $row1[option2]</p>";
+			  echo "<p>3. $row1[option3]</p>";
+			  echo "<p>4. $row1[option4]</p>";
+			 break;
+		        }
+		   }
+	         }
+		   break;
+	   }
+	   
+         }
+         else
+         {
+           echo "Please insert a question to view it here";
+         }
+
+       }
+       else {
+         echo "error";
+       }
+       
+       if($result = mysqli_query($conn_1,$sql1))
+       {
+         if(mysqli_num_rows($result)>0)
+         {
+           while($row = mysqli_fetch_assoc($result))
+	   {
+             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
+              
 	     break;
 	   }
          }
