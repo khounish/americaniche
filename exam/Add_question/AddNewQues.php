@@ -54,7 +54,6 @@ require_once "veri.php";
         #heading{
           background-color: #d8d9da;
           height:85px;
-          color: white;
                 }
         #subheading{
           margin-top: 0px;
