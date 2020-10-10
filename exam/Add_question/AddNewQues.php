@@ -65,8 +65,8 @@ require_once "veri.php";
                    height: 55%;
                    width: 45%;
                    background-color: #c1e1ec;
-                   font-size: 30px;
-                   text-align: center;
+                   font-size: 20px;
+              
                    margin-top:-20px;
 		   right:15px;
 		   border-style: outset;
@@ -129,26 +129,7 @@ require_once "veri.php";
          echo "error";
        }
        
-       if($result = mysqli_query($conn_1,$sql1))
-       {
-         if(mysqli_num_rows($result)>0)
-         {
-           while($row = mysqli_fetch_assoc($result))
-	   {
-             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
-              
-	     break;
-	   }
-         }
-         else
-         {
-           echo "Please insert a question to view it here";
-         }
-
-       }
-       else {
-         echo "error";
-       }
+       
       ?>
      <div id="q"></div>
      <p id="01"></p>
