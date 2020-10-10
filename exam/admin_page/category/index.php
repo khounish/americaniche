@@ -86,15 +86,17 @@ require_once "veri_admin.php";
 	  <h4 id="subheading"><i>ADD NEW CATEGORY ID<i></h4>
 
 
-        <form name="CATEGORY" action="" method="post" >
+        <form name="CATEGORY" action="php/category.php" method="post" >
 
          <p>Enter the topic of the question:<input type="text" name="topic" required>
          <p>Enter the subtopic of the question:<input type="text" name="subtopic" required>
          <p>Enter the keyword of the question:<input type="text" name="keyword" required><br><br>
          <button class="button" type="submit">Add Category</button>
+         <br><?php echo htmlspecialchars($_SESSION["m"]); ?>
 
         </form>
 
  </body>
 
 </html>
+<?php session_destroy(); ?>
