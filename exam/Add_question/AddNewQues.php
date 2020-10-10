@@ -65,7 +65,7 @@ require_once "veri.php";
                    float: right;
                    height: 100%;
                    width: 45%;
-                   background-color: white;
+                   background-color: #d8d9da;
                    font-size: 30px;
                    text-align: center;
 
@@ -93,7 +93,7 @@ require_once "veri.php";
          {
            while($row = mysqli_fetch_assoc($result))
 	   {
-             echo "<p> <a href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
+             echo "<p> <a style="text-decoration:none" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
 	     break;  
 	   }
          }
