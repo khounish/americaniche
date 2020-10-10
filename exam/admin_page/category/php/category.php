@@ -1,6 +1,4 @@
 <?php
-//verify authentification:
- require_once "veri_admin.php";
 //get input from form:
  $topic = $_POST["topic"];
  $subtopic = $_POST["subtopic"];
