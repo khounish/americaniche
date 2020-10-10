@@ -86,7 +86,7 @@ require_once "veri.php";
      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
       <?php
        include('data_base_exam.php');
-       $sql1 = "SELECT * FROM Questions ORDER BY ID DESC LIMIT 1";
+       $sql1 = "SELECT * FROM Questions where Id=(SELECT LAST_INSERT_ID())";
        if($result = mysqli_query($conn_1,$sql1))
        {
          if(mysqli_num_rows($result)>0)
@@ -98,7 +98,7 @@ require_once "veri.php";
          }
          else
          {
-           echo "hello";
+           echo "Please insert a question to view it here";
          }
 
        }
