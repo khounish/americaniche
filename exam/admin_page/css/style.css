@@ -24,7 +24,7 @@ body{
 .image{
   height: 150px;
   width: 180px;
-  background-image: url(image/logo.png);
+  background-image: url(../image/logo.png);
   background-size: cover;
   background-position: center;
 
