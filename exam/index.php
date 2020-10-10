@@ -26,7 +26,7 @@ session_start();
 
           <form id="Student" class="input" action="php/e_s_l.php" method="post">
             <input style="color:white" type="text" name="username" class="input-field" placeholder="Student ID" required>
-            <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
+            <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
             <input type="checkbox" class="check-box"><span>Remember Me</span>
 	    <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error_s"]); ?></p><br>
             <button type="submit" class="submit-btn">Login</button>

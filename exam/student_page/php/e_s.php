@@ -1,25 +1,5 @@
 <?php
 session_start();
-
-/*//Get the data exracted from input parameters
-$username=$_POST["username"];
-$password=$_POST["password"];
-
-// Create connection
-require_once "data_base.php";
-require_once "data_base_exam.php";
-//Construct a sql query
-
-//Find the userId for the given username
-$sql1 = "SELECT user_id FROM userdetails WHERE username = '$username'";
-$userid = (($conn->query($sql1))->fetch_assoc())["userid"];
-//Find the privileges of userID
-$sql2 = "SELECT privilege FROM userdetails WHERE user_id = '$userid'";
-$privileges = (($conn->query($sql2))->fetch_assoc())["privilege"];
-//Find the original password for the correspoding userid
-$sql3 = "SELECT password FROM user_pswd WHERE user_id = '$userid'";
-$password_ori = (($conn->query($sql3))->fetch_assoc())["password"];
-*/
 require_once "data_base_exam.php";
 $userid = $_SESSION["s_id"];
 //Exam information
@@ -41,12 +21,9 @@ $level = (($conn_1->query($sql8))->fetch_assoc())["Level"];
 //Start time
 $sql9 = "SELECT Start_time FROM Exam_scheduler WHERE id = '$exam_id'";
 $start_time = (($conn_1->query($sql9))->fetch_assoc())["Start_time"];
-
 $end_time = (int) $start_time + (int) $duration;
-
 //validate the results from db and respond back
-
-if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && (int) date(dmY) === (int) $date)
+if( (int) date("Hi") > (int) $start_time && (int) date("Hi") < (int) $end_time && (int) date("dmY") === (int) $date)
                               {
                                 header("location: http://www.americaniche.com/exam/exam_page/index.php");
                                 // Store data in session variables
