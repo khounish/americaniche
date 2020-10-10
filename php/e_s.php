@@ -21,7 +21,7 @@ $sql3 = "SELECT password FROM user_pswd WHERE user_id = '$userid'";
 $password_ori = (($conn->query($sql3))->fetch_assoc())["password"];
 */
 require_once "data_base_exam.php";
-$userid = [];
+$userid = $_SESSION["s_id"];
 //Exam information
 //Exam  id
 $sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$userid'";
@@ -46,9 +46,9 @@ $end_time = (int) $start_time + (int) $duration;
 
 //validate the results from db and respond back
 
-if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && date(dmY) === (int) $date)
+if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && (int) date(dmY) === (int) $date)
                               {
-                                header("location: http://www.americaniche.com/exam/");
+                                header("location: http://www.americaniche.com/exam/exam_page/index.php");
                                 // Store data in session variables
                                 $_SESSION["loggedin"] = true;
                                 $_SESSION["id"] = $userid;
@@ -65,7 +65,7 @@ if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && da
 
 else 
                               {
-                                header("location: /exam/index.php");
+                                header("location: /exam/student_page/index.php");
                                 $_SESSION["error"] = "Exam not stared yet";
                         
                               }
