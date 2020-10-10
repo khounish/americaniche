@@ -99,7 +99,3 @@ require_once "veri_admin.php";
  </body>
 
 </html>
-<<<<<<< HEAD
-
-=======
->>>>>>> 1e6a4b97799772737bd4636aa28fb805a326cab3

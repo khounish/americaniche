@@ -1,4 +1,5 @@
 <?php
+session_start();
 //get input from form:
  $topic = $_POST["topic"];
  $subtopic = $_POST["subtopic"];
