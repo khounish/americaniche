@@ -5,7 +5,7 @@ $qtype = $_POST['question_type'];
 $ques = $_POST['question'];
 $format = $_POST['format'];
 $level = $_POST['level'];
-$category = $_POST['category'];
+$category = $_POST['keyword'];
 
 if ($qtype == 1)
 {
@@ -18,7 +18,7 @@ if ($qtype == 1)
 $ans = 1;
 $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
-$sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level' )";
+$sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel,Category_id) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level','category')";
 
 if (mysqli_query($conn_1, $sql1))
 {
