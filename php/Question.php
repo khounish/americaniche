@@ -24,6 +24,8 @@ if (mysqli_query($conn_1, $sql1))
   if($qtype)
   {
     $sql2 = "INSERT INTO Options (Question_id,option1,option2,option3,option4)VALUES ('$last_id','$op1','$op2','$op3','$op4')";
+    mysqli_query($conn_1, $sql2)
+
   }
   header("location: /exam/Add_question/AddNewQues.php");
   exit;
