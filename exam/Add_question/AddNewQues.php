@@ -63,7 +63,7 @@ require_once "veri.php";
         #Quest{
                    float: right;
                    height: 55%;
-                   width: 45%;
+                   width: 35%;
               
                    font-size: 30px;
                    text-align: center;
