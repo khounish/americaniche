@@ -64,7 +64,7 @@ require_once "veri.php";
                    float: right;
                    height: 55%;
                    width: 45%;
-
+                    background-color: #c1e1ec;
                    font-size: 30px;
                    text-align: center;
                    margin-top:-20px;
