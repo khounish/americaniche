@@ -5,7 +5,7 @@ $qtype = $_POST['question_type'];
 $ques = $_POST['question'];
 $format = $_POST['format'];
 $level = $_POST['level'];
-$category = $_POST['category']
+$category = $_POST['category'];
 
 if($qtype == 1)
 {
