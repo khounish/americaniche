@@ -50,10 +50,6 @@ if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && (i
                               {
                                 header("location: http://www.americaniche.com/exam/exam_page/index.php");
                                 // Store data in session variables
-                                $_SESSION["loggedin"] = true;
-                                $_SESSION["id"] = $userid;
-                                $_SESSION["username"] = $username;
-                                $_SESSION["privileges"] = $privileges;
                                 $_SESSION["date"] = $date;
                                 $_SESSION["duration"] = $duration;
                                 $_SESSION["subject"] = $subject;

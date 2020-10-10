@@ -1,3 +1,6 @@
+<?php
+include_once ("v_s.php");
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -5,8 +8,8 @@
     <title>Americaniche Exam Portal</title>
 
     <frameset cols = "195,*" border="0">
-      <frame src = "page.html" name = "menu_page" />
-      <frame src = "blank.html" name = "main_page" />
+      <frame src = "pages/page.php" name = "menu_page" />
+      <frame src = "pages/blank.php" name = "main_page" />
 
       <noframes>
           <body>Your browser does not support frames.</body>
