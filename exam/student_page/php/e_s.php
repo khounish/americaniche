@@ -39,7 +39,7 @@ if( (int) date("Hi") > (int) $start_time && (int) date("Hi") < (int) $end_time &
 else 
                               {
                                 header("location: /exam/student_page/index.php");
-                                $_SESSION["error"] = "Exam not stared yet";
+                                $_SESSION["s_error"] = "Exam not stared yet";
                         
                               }
 $conn_1->close();
