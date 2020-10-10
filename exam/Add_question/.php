@@ -109,7 +109,7 @@ require_once "veri.php";
          <option value="0" >subjective</option>
          <option value="1" >objective</option></select></p>
 
-         <p>Enter your question</p><textarea name="question" rows="8" cols="70" required value="<?php echo $row ['Questiontext']; ?> " ></textarea><br><br>
+         <p>Enter your question</p><textarea name="question" rows="8" cols="70" required value="<?php echo $row ['Questiontext']; ?> " ><?php echo $row ['Questiontext']; ?></textarea><br><br>
 
          <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
          <div id="container"></div>
