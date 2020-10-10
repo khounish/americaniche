@@ -119,7 +119,7 @@ require_once "veri.php";
          <p>Level of the question:<select name="level" required>
          <option value="easy">easy</option>
          <option value="medium">medium</option>
-         <option value="complex">complex</option></p></select><br>
+         <option value="complex">complex</option></p></select><br><br>
 
 
          <button class="button" type="submit">Add Question</button>
