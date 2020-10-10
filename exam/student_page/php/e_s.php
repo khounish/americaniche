@@ -23,7 +23,7 @@ $sql9 = "SELECT Start_time FROM Exam_scheduler WHERE id = '$exam_id'";
 $start_time = (($conn_1->query($sql9))->fetch_assoc())["Start_time"];
 $end_time = (int) $start_time + (int) $duration;
 //validate the results from db and respond back
-if( (int) date("Hi") > (int) $start_time && (int) date("Hi") < (int) $end_time && (int) date("Ymd") === (int) $date)
+if( ((int) date("Ymd") === (int) $date)
                               {
                                 header("location: http://www.americaniche.com/exam/exam_page/index.php");
                                 // Store data in session variables
