@@ -25,7 +25,7 @@ $end_time = (int) $start_time + (int) $duration;
 //validate the results from db and respond back
 if(  date("Y-m-d") ===  $date )
   {
-    header("location: http://www.americaniche.com/exam/exam_page/index.php");
+    header("location: http://www.americaniche.com/exam/student_page/exam_page/index.php");
     // Store data in session variables
       $_SESSION["date"] = $date;
       $_SESSION["duration"] = $duration;
