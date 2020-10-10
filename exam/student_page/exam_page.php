@@ -1,10 +1,9 @@
+<?php
+  require_once "veri_student.php";
+  ?>
 <html>
  <head>
   <title>Online test</title>
-  <?php
-  require_once "veri.php";
-  ?>
-
   <style>
   .heading{
     background-color: rgba(3, 13, 147, 0.6);
