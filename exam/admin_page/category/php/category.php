@@ -9,11 +9,12 @@
 $sql1 = "INSERT INTO QuesCat (Category_id,Topic,Subtopic,Keywords) VALUES (NULL,'$topic','$subtopic','$keyword')";
 if(mysqli_query($conn_1,$sql1))
 {
-  $_SESSION["m"] = "updated";
-  header ("Location: /exam/admin_page/category/");
+  $_SESSION["m_c"] = "updated";
+  header ("Location: /exam/admin_page/category/index.php");
 }
 else
 {
- $_SESSION["m"] = "not updated";
- header ("Location: /exam/admin_page/category/");
-}?>
+ $_SESSION["m_c"] = "not updated";
+ header ("Location: /exam/admin_page/category/index.php");
+}
+?>
