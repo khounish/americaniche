@@ -101,7 +101,7 @@ require_once "veri.php";
 	   {
              echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
               $sql2 = "SELECT * FROM Options where Question_id = '$row[Question_id]'";
-	      if($result1 = mysqli_query($conn_1,$sql1))
+	      if($result1 = mysqli_query($conn_1,$sql2))
                 {
                  if(mysqli_num_rows($result1)>0)
                   {
