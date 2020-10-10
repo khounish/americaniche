@@ -57,7 +57,7 @@ require_once "veri.php";
                 }
         #subheading{
           margin-top: 0px;
-          background-color: rgb(186, 94, 94, 0.4);
+          background-color: #d8d9da;
           height:52px;
                    }
         #Quest{
