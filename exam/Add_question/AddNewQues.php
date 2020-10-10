@@ -72,6 +72,7 @@ require_once "veri.php";
 		   right:15px;
 		   border-style: outset;
 		   border-color: #7c89c0;
+		   border-width: 10px;
                  }
 
 
@@ -81,7 +82,7 @@ require_once "veri.php";
  <body>
 
     <div id="heading">
-     <img id="logo" src="logo.png">
+     
      <h3>Americaniche Academy</h3>
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>

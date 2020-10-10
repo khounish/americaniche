@@ -16,5 +16,4 @@ else
 {
  $_SESSION["m"] = "not updated";
  header ("Location: /exam/admin_page/category/");
-}
-?>
+}?>
