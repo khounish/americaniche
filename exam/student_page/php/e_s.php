@@ -1,14 +1,13 @@
 <?php
 session_start();
 require_once "data_base_exam.php";
-$userid = $_SESSION["s_id"];
 //Exam information
 //Exam  id
-$sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$userid'";
+$sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$_SESSION["s_id"]'";
 $exam_id = (($conn_1->query($sql4))->fetch_assoc())["id"];
 //Date
 $sql5 = "SELECT Date FROM Exam_scheduler WHERE id = '$exam_id'";
-$date = (($conn_1->query($sql4))->fetch_assoc())["Date"];
+$date = (($conn_1->query($sql5))->fetch_assoc())["Date"];
 //Duration
 $sql6= "SELECT Duration FROM Exam_scheduler WHERE id = '$exam_id'";
 $duration = (($conn_1->query($sql6))->fetch_assoc())["Duration"];
