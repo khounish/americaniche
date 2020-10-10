@@ -42,13 +42,13 @@ if ($userid != "")
       else
             {
             header("location: /exam/index.php");
-            $_SESSION["error"] = "Permission denied";
+            $_SESSION["error_a"] = "Permission denied";
             }
 }
 else
 {
   header("location: /exam/index.php");
- $_SESSION["error"] = "Invalid Username";
+ $_SESSION["error_a"] = "Invalid Username";
 }
 $conn->close();
 ?>

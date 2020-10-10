@@ -18,17 +18,17 @@ session_start();
           <form id="Admin" class="input" action="/php/exam_admin_login.php" method="post">
             <input type="text" class="input-field" name="username" placeholder="Admin ID" required>
             <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
-            <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error"]); ?></p><br>
+            <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error_a"]); ?></p><br>
             <input type="checkbox" class="check-box"><span>Remember Me</span>
             <button type="submit" class="submit-btn">Login</button>
 
           </form>
 
-          <form id="Student" class="input" action="" method="post">
-            <input style="color:white" type="text" class="input-field" placeholder="Student ID" required>
-            <input type="text" class="input-field" placeholder="Enter Password" required>
+          <form id="Student" class="input" action="php/e_s_l.php" method="post">
+            <input style="color:white" type="text" name="username" class="input-field" placeholder="Student ID" required>
+            <input type="text" class="input-field" name="password" placeholder="Enter Password" required>
             <input type="checkbox" class="check-box"><span>Remember Me</span>
-	    <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error"]); ?></p><br>
+	    <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error_s"]); ?></p><br>
             <button type="submit" class="submit-btn">Login</button>
 
             </form>
