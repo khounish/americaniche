@@ -12,9 +12,6 @@ $date = (($conn_1->query($sql5))->fetch_assoc())["Date"];
 //Duration
 $sql6= "SELECT Duration FROM Exam_scheduler WHERE id = '$exam_id'";
 $duration = (($conn_1->query($sql6))->fetch_assoc())["Duration"];
-//topic
-$sql7 = "SELECT Subject FROM Exam_scheduler WHERE id = '$exam_id'";
-$topic = (($conn_1->query($sql7))->fetch_assoc())["Topic"];
 //Universal level
 $sql8 = "SELECT Level FROM Exam_scheduler WHERE id = '$exam_id'";
 $level = (($conn_1->query($sql8))->fetch_assoc())["Level"];
@@ -32,7 +29,6 @@ if(  date("Y-m-d") ===  $date )
     // Store data in session variables
       $_SESSION["date"] = $date;
       $_SESSION["duration"] = $duration;
-      $_SESSION["topic"] = $topic;
       $_SESSION["level"] = $level;
       $_SESSION["category_id"] = $category_id;
       $_SESSION["exam_id"] = $exam_id;
