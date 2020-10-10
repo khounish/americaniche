@@ -20,6 +20,7 @@ include_once ("veri_admin.php");
       </div>
         <div class="linkbox">
           <a class="links" href="../Add_question/AddNewQues.php" target="main_page">Add Question</a>
+          <a class="links" href="category/category.php" target="main_page">Create category</a>
           <a class="links" href="#" target="main_page">Modification</a>
           <a class="links" href="#" target="main_page">Reports</a>
           <a class="links" href="#" target="main_page">OneView</a>
