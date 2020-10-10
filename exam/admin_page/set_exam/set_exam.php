@@ -109,7 +109,7 @@ require_once "veri_admin.php";
 
         </div>
         <div>
-      		<label>Enter the Usernames:</label>
+      		<label>Enter the Username:</label>
       		<input type="text" size="25" name="username_s"/><br><br>
       	</div>
         <div>
