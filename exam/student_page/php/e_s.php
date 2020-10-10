@@ -12,16 +12,19 @@ $date = (($conn_1->query($sql5))->fetch_assoc())["Date"];
 //Duration
 $sql6= "SELECT Duration FROM Exam_scheduler WHERE id = '$exam_id'";
 $duration = (($conn_1->query($sql6))->fetch_assoc())["Duration"];
-//Subject
+//topic
 $sql7 = "SELECT Subject FROM Exam_scheduler WHERE id = '$exam_id'";
-$subject = (($conn_1->query($sql7))->fetch_assoc())["Subject"];
+$topic = (($conn_1->query($sql7))->fetch_assoc())["Topic"];
 //Universal level
 $sql8 = "SELECT Level FROM Exam_scheduler WHERE id = '$exam_id'";
 $level = (($conn_1->query($sql8))->fetch_assoc())["Level"];
-//Start time
-$sql9 = "SELECT Start_time FROM Exam_scheduler WHERE id = '$exam_id'";
-$start_time = (($conn_1->query($sql9))->fetch_assoc())["Start_time"];
-$end_time = (int) $start_time + (int) $duration;
+//Category Id
+$sql9 = "SELECT Category_id FROM Exam_scheduler WHERE id = '$exam_id'";
+$cetegory_id = (($conn_1->query($sql9))->fetch_assoc())["Category_id"];
+//No. of question
+$sql10 = "SELECT NoQues FROM Exam_scheduler WHERE id = '$exam_id'";
+$noques = (($conn_1->query($sql10))->fetch_assoc())["NoQues"];
+
 //validate the results from db and respond back
 if(  date("Y-m-d") ===  $date )
   {
@@ -29,10 +32,11 @@ if(  date("Y-m-d") ===  $date )
     // Store data in session variables
       $_SESSION["date"] = $date;
       $_SESSION["duration"] = $duration;
-      $_SESSION["subject"] = $subject;
+      $_SESSION["topic"] = $topic;
       $_SESSION["level"] = $level;
-      $_SESSION["start_time"] = $start_time;
+      $_SESSION["category_id"] = $category_id;
       $_SESSION["exam_id"] = $exam_id;
+      $_SESSION["no_ques"] = $noques;
 
     }
 
