@@ -1,5 +1,5 @@
 <?php
-require_once "veri.php";
+require_once "veri_admin.php";
  ?>
 <html>
  <head>
@@ -9,17 +9,16 @@ require_once "veri.php";
            }
 
      body{
-       background-color: rgb(242, 242, 242);
+       background-color: white;
        font-size: 30px;
-
          }
 
-     h3{
+    h3{
       position: relative;
       left :45px;
       top: 20px;
       font-size: 50px;
-       }
+    }
 
 	   h4{
 	      margin-top:-5px;
@@ -52,150 +51,155 @@ require_once "veri.php";
              left:10px;
            }
         #heading{
-          background-color: rgba(3, 13, 147, 0.6);
+          background-color: #d8d9da;
           height:85px;
-          color: white;
                 }
         #subheading{
           margin-top: 0px;
-          background-color: rgb(186, 94, 94, 0.4);
+          background-color: #7c89c0;
           height:52px;
+          color:white;
                    }
         #Quest{
                    float: right;
-                   height: 100%;
+                   height: 55%;
                    width: 45%;
-                   background-color: white;
+
                    font-size: 30px;
                    text-align: center;
-
+                   margin-top:-20px;
+		   right:15px;
+		   border-style: outset;
+		   border-color: #7c89c0;
+		   border-width: 10px;
                  }
-
+      a{
+        color:orange;
+      }
 
   </style>
   <title>ADD Question</title>
  </head>
  <body>
-    <!--Heading division-->
+
     <div id="heading">
-     <img id="logo" src="logo.png">
+
      <h3>Americaniche Academy</h3>
     </div>
-
-
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
-    <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
 
-     <div id="q"></div>
-     <p id="01"></p>
-     <p id="02"></p>
-     <p id="03"></p>
-     <p id="04"></p></div>
+      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
 
-    <!-- modify database content-->
-    <?php
-    include('data_base_exam.php');
-    $sql1 = "SELECT * FROM Questions order by Question_id DESC";
-    if($result = mysqli_query($conn_1,$sql1))
-    {
-     if(mysqli_num_rows($result)>0)
-     {
-      while($row = mysqli_fetch_assoc($result))
+       <div id="q"></div>
+       <p id="01"></p>
+       <p id="02"></p>
+       <p id="03"></p>
+       <p id="04"></p></div>
+
+      <!-- modify database content-->
+      <?php
+      include('data_base_exam.php');
+      $sql1 = "SELECT * FROM Questions order by Question_id DESC";
+      if($result = mysqli_query($conn_1,$sql1))
       {
-    ?>
-        <form name="addques" action="/php/Question.php" method="post" >
-
-         <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
-         <option value="0" >subjective</option>
-         <option value="1" >objective</option></select></p>
-
-         <p>Enter your question</p><textarea name="question" rows="8" cols="70" required value="<?php echo $row ['Questiontext']; ?> " ><?php echo $row ['Questiontext']; ?></textarea><br><br>
-
-         <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
-         <div id="container"></div>
-
-         <p>Enter the format of the question:<input type="text" name="format" value="<?php echo $row ['Format']; ?> " required>
-
-         <p>Level of the question:<select name="level" required>
-         <option value="easy">easy</option>
-         <option value="medium">medium</option>
-         <option value="complex">complex</option></p></select><br><br>
-
-
-         <button class="button" type="submit">Add Question</button>
-         <button class="button" onclick='Preview(); return false'>Preview</button>
-
-        </form>
-        <?php  
-       break;
-      }
-     }
-     else
-     {
-      echo "Please insert a question to view it here";
-     }
-
-       }
-       else {
-         echo "error";
-       }
+       if(mysqli_num_rows($result)>0)
+       {
+        while($row = mysqli_fetch_assoc($result))
+        {
       ?>
+          <form name="addques" action="/php/Question.php" method="post" >
 
-     
+           <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
+           <option value="0" >subjective</option>
+           <option value="1" >objective</option></select></p>
+
+           <p>Enter your question</p><textarea name="question" rows="8" cols="70" required value="<?php echo $row ['Questiontext']; ?> " ><?php echo $row ['Questiontext']; ?></textarea><br><br>
+
+           <!-- DIVISION TO APPEND EXTRA FORM FIELDS WHEN OBJECTIVE TYPE OF QUESTION IS SELECTED -->
+           <div id="container"></div>
+
+           <p>Enter the format of the question:<input type="text" name="format" value="<?php echo $row ['Format']; ?> " required>
+
+           <p>Level of the question:<select name="level" required>
+           <option value="easy">easy</option>
+           <option value="medium">medium</option>
+           <option value="complex">complex</option></p></select><br><br>
 
 
-    <script>
+           <button class="button" type="submit">Add Question</button>
+           <button class="button" onclick='Preview(); return false'>Preview</button>
 
-        function Preview() {
-          document.getElementById("q").innerHTML = document.addques.question.value;
-
-          document.getElementById("01").innerHTML = "1. " + document.addques.option0.value;
-
-          document.getElementById("02").innerHTML = "2. " + document.addques.option1.value;
-
-          document.getElementById("03").innerHTML = "3. " + document.addques.option2.value;
-
-          document.getElementById("04").innerHTML = "4. " + document.addques.option3.value;
+          </form>
+          <?php
+         break;
         }
+       }
+       else
+       {
+        echo "Please insert a question to view it here";
+       }
 
-        function addFields(element){
-          var number = element.value;
-            if(number == "1")
-            {
-              var container = document.getElementById("container");
+         }
+         else {
+           echo "error";
+         }
+        ?>
 
-              container.appendChild(document.createTextNode("Enter the options:"));
-              container.appendChild(document.createElement("br"));
-              for (i=0;i<4;i++)
+
+
+
+      <script>
+
+          function Preview() {
+            document.getElementById("q").innerHTML = document.addques.question.value;
+
+            document.getElementById("01").innerHTML = "1. " + document.addques.option0.value;
+
+            document.getElementById("02").innerHTML = "2. " + document.addques.option1.value;
+
+            document.getElementById("03").innerHTML = "3. " + document.addques.option2.value;
+
+            document.getElementById("04").innerHTML = "4. " + document.addques.option3.value;
+          }
+
+          function addFields(element){
+            var number = element.value;
+              if(number == "1")
               {
+                var container = document.getElementById("container");
 
-                container.appendChild(document.createTextNode( i+1 + " "));
+                container.appendChild(document.createTextNode("Enter the options:"));
+                container.appendChild(document.createElement("br"));
+                for (i=0;i<4;i++)
+                {
+
+                  container.appendChild(document.createTextNode( i+1 + " "));
+                  var input = document.createElement("input");
+                  input.type = "text";
+                  input.name = "option"+i;
+                  container.appendChild(input);
+                  container.appendChild(document.createElement("br"));
+
+                }
+                container.appendChild(document.createElement("br"));
+                container.appendChild(document.createTextNode("Enter the correct options:"));
                 var input = document.createElement("input");
                 input.type = "text";
-                input.name = "option"+i;
+                input.name = "answer";
                 container.appendChild(input);
                 container.appendChild(document.createElement("br"));
-
               }
-              container.appendChild(document.createElement("br"));
-              container.appendChild(document.createTextNode("Enter the correct options:"));
-              var input = document.createElement("input");
-              input.type = "text";
-              input.name = "answer";
-              container.appendChild(input);
-              container.appendChild(document.createElement("br"));
+
+
+
+            else if(number == "0"){
+              var element = document.getElementById("container");
+              while (element.hasChildNodes()) {
+              element.removeChild(element.firstChild);
             }
 
-
-
-          else if(number == "0"){
-            var element = document.getElementById("container");
-            while (element.hasChildNodes()) {
-            element.removeChild(element.firstChild);
+            }
           }
 
-          }
-        }
-
-</script>
+  </script>
 </html>
