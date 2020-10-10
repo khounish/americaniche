@@ -93,7 +93,7 @@ require_once "veri.php";
          {
            while($row = mysqli_fetch_assoc($result))
 	   {
-             echo "<p> <a style="text-decoration:none" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
+             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
 	     break;  
 	   }
          }
