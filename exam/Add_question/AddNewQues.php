@@ -52,7 +52,7 @@ require_once "veri.php";
              left:10px;
            }
         #heading{
-          background-color: rgba(3, 13, 147, 0.6);
+          background-color: #d8d9da;
           height:85px;
           color: white;
                 }
