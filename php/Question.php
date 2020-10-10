@@ -18,7 +18,7 @@ if ($qtype == 1)
 $ans = 1;
 $creationdate = date("jS \of F Y");
 $createdby = $_SESSION['username'];
-$sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel,Category_id) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level','category')";
+$sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel,Category_id) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level','$category')";
 
 if (mysqli_query($conn_1, $sql1))
 {
