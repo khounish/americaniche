@@ -26,7 +26,7 @@ if ($userid != "")
     {
                   if ($password_ori == $password)
                     {
-                    header("location: ../student_page/index.php");
+                    header("location: /exam/student_page/index.php");
                     // Store data in session variables
                     $_SESSION["s_loggedin"] = true;
                     $_SESSION["s_id"] = $userid;
@@ -41,13 +41,13 @@ if ($userid != "")
       }
       else
             {
-            header("location: ../index.php");
+            header("location: /exam/index.php");
             $_SESSION["error_s"] = "You are not student";
             }
 }
 else
 {
-  header("location: ../index.php");
+  header("location: /exam/index.php");
  $_SESSION["error_s"] = "Invalid Username";
 }
 $conn->close();

@@ -19,7 +19,7 @@ include_once ("v_s.php");
 
       </div>
         <div class="linkbox">
-          <a class="links" href="../php/e_s.php">Join Exam</a>
+          <a class="links" href="../php/e_s.php" target="_blank">Join Exam</a>
            <a class="links" href="#">Results</a>
            <a class="links" href="/php/exam_logout.php">Logout</a>
            <div class="box">  </div>
