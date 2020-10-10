@@ -99,4 +99,3 @@ require_once "veri_admin.php";
  </body>
 
 </html>
-<?php session_destroy(); ?>
