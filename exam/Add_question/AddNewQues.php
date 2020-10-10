@@ -136,19 +136,9 @@ require_once "veri.php";
       <option value="medium">medium</option>
       <option value="complex">complex</option></p></select>
 
-      <p> Select Topic:<select name="topic" required>
-      <option value="Linux">Linuv</option>
-      <option value="Networkin">Networking</option>
-      <option value="Database">Database</option></p></select>
-
-      <p>Select Subtopic:<select name="subtopic" required>
-      <option value="wallet commands">Linux Commands</option>
-      <option value="vi">vi</option>
-      <option value="shell script">Shell script</option></p></select>
-
-      <p>Keyword:<select name="level" required>
-      <option value="">wallet commands</option>
-      <option value="">filter</option></p></select><br><br>
+      <p>Category:<select name="keyword" required>
+      <option value="1">Linux_LinuxCommands_WalletCommands</option>
+      <option value="2">Linux_vi_viCommands</option></p></select><br><br>
 
 
 
