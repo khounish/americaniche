@@ -65,11 +65,13 @@ require_once "veri.php";
                    float: right;
                    height: 55%;
                    width: 45%;
-                   background-color: #d8d9da;
+              
                    font-size: 30px;
                    text-align: center;
                    margin-top:-20px;
 		   right:15px;
+		   border-style: outset;
+		   border-color: #7c89c0;
                  }
 
 
