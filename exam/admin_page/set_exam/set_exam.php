@@ -54,28 +54,38 @@ cursor: pointer;
      <h1>Americaniche Academy</h1>
      <h2>SET NEW EXAM</h2><hr><br><br>
 
-     <form  action="/php/Question.php" method="post">
+     <form  action="/php/exam_set.php" method="post">
 
-       <div>
+      <div>
      		<label>Enter the date of examination:</label>
-     		<input type="text" size="25" /><br><br>
+     		<input type="text" size="25" name="date"/><br><br>
      	</div>
      	<div>
      		<label>Enter the time of examination:</label>
-     		<input type="text" size="25" /><br><br>
+     		<input type="text" size="25" name="start_time"/><br><br>
      	</div>
      	<div>
      		<label>Enter duration of examination:</label>
-     		<input type="text" size="25" /><br><br>
+     		<input type="text" size="25" name="duration"/><br><br>
      	</div>
       <div>
      		<label>Enter the topic of examination:</label>
-     		<input type="text" size="25" /><br><br>
+     		<input type="text" size="25" name="subject" /><br><br>
+       </div>
+       <div>
+     		<label>Enter the User Id:</label>
+     		<input type="text" size="25" name="userid"/><br><br>
+     	</div>
+       <div>
+     		<label>Enter the level:</label>
+     		<input type="text" size="25" name="level"/><br><br>
      	</div>
 
 
+
      	<div>
-     		<input type="submit" class="submit" name="submit" value="submit" />
+         <input type="submit" class="submit" name="submit" value="submit" />
+         <br><?php echo htmlspecialchars($_SESSION["m"]); ?>
      	</div>
     </form>
   </div>

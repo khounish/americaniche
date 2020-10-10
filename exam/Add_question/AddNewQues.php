@@ -86,19 +86,20 @@ require_once "veri.php";
      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
       <?php
        include('data_base_exam.php');
-       $sql1 = "SELECT * FROM Questions";
+       $sql1 = "SELECT * FROM Questions order by Question_id DESC";
        if($result = mysqli_query($conn_1,$sql1))
        {
          if(mysqli_num_rows($result)>0)
          {
            while($row = mysqli_fetch_assoc($result))
-           {
-             echo "<p>$row[Question_id]<p>";
-           }
+	   {
+             echo "<p> Q$row[Question_id]) $row[Questiontext]<p>";
+	     break;  
+	   }
          }
          else
          {
-           echo "hello";
+           echo "Please insert a question to view it here";
          }
 
        }
