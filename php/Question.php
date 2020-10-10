@@ -7,7 +7,7 @@ $format = $_POST['format'];
 $level = $_POST['level'];
 $category = $_POST['category'];
 
-if($qtype == 1)
+if($qtype)
 {
   $op1 = $_POST['option1'];
   $op2 = $_POST['option2'];
