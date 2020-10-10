@@ -54,12 +54,12 @@ require_once "veri.php";
         #heading{
           background-color: #d8d9da;
           height:85px;
-          color: white;
                 }
         #subheading{
           margin-top: 0px;
-          background-color: rgb(186, 94, 94, 0.4);
+          background-color: #7c89c0;
           height:52px;
+          color:white;
                    }
         #Quest{
                    float: right;
