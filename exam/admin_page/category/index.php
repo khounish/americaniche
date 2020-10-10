@@ -92,7 +92,7 @@ require_once "veri_admin.php";
          <p>Enter the subtopic of the question:<input type="text" name="subtopic" required>
          <p>Enter the keyword of the question:<input type="text" name="keyword" required><br><br>
          <button class="button" type="submit">Add Category</button>
-         <br><?php echo htmlspecialchars($_SESSION["m"]); ?>
+         <br><?php echo htmlspecialchars($_SESSION["m_c"]); ?>
 
         </form>
 
