@@ -57,7 +57,7 @@ require_once "veri.php";
                 }
         #subheading{
           margin-top: 0px;
-          background-color: #d8d9da;
+          background-color: #7c89c0;
           height:52px;
           color:white;
                    }
