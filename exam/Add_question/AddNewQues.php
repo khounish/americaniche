@@ -138,7 +138,7 @@ require_once "veri.php";
       
       <p>Category:<select name="keyword" required>
       <option value="1">Linux_LinuxCommands_WalletCommands</option>
-      <option value="2">Linux_vi_viCommands</option></p></select><br><br>
+      <option value="15">Linux_vi_viCommands</option></p></select><br><br>
 
       <button class="button" type="submit">Add Question</button>
 
