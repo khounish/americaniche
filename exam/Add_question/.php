@@ -84,6 +84,13 @@ require_once "veri.php";
 
 
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
+    <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+
+     <div id="q"></div>
+     <p id="01"></p>
+     <p id="02"></p>
+     <p id="03"></p>
+     <p id="04"></p></div>
 
     <!-- modify database content-->
     <?php
@@ -134,13 +141,7 @@ require_once "veri.php";
        }
       ?>
 
-     <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
-
-     <div id="q"></div>
-     <p id="01"></p>
-     <p id="02"></p>
-     <p id="03"></p>
-     <p id="04"></p></div>
+     
 
 
     <script>
