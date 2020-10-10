@@ -1,53 +1,35 @@
 body{
-    background-image: white;
-      }
-
-/*.header{
-  height: 40px  ;
-  width: 1340px;
-  background: rgb(2,0,36);
-  background-image: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,53,121,0.12648809523809523) 46%,
-  rgba(227,88,12,1) 100%, rgba(8,77,141,1) 100%, rgba(8,77,141,1) 100%);
-  background-position: center;
-  text-align: center;
-  text-decoration-color: white;*/
-
-}
-
-h1{
-  text-align: center;
-  color: white;
-  }
-
-.left{
-  height:700px;
-  
-  background-image: linear-gradient(#c94b4b,#4b134f);
+  height: 600px;
+  width: 185px;
+  /*background-image: linear-gradient(#c94b4b,#4b134f);*/
   backface-visibility: hidden;
+  text-align: center;
+  background-color: #d8d9da;
+  }
+  .img.background{
+    height: 150px;
+    width: 185px;
+  }
+.box{
+  height: 10px;
+  width: 185px;
+  background-color: #7c89c0;
 }
-.image{
-  height: 300px;
-  width: 300px;
+.linkbox{
+  height: auto;
+  width: 185px;
   background-color: white;
-  position: absolute;
-  left: 550px;
-  bottom:150px;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+
+.image{
+  height: 150px;
+  width: 180px;
+  background-image: url(logo.png);
   background-size: cover;
+  background-position: center;
 
 }
 
-.menu-btn {
-   background-color: #0f9383;
-   color: white;
-   height: 40px;
-   width: 185px;
-   font-size: 20px;
-   font-weight: bolder;
-   font-family: 'optima', Tahoma, Geneva, Verdana, sans-serif;
-   border: none;
-}
 .dropdown-menu {
    position: relative;
    display: inline-block;
@@ -56,12 +38,12 @@ h1{
 .menu-content {
    display: none;
    position: absolute;
-   background-color: #d64c4e;
+   background-color: red;
    min-width: 30px;
    z-index: 1;
 }
 .links {
-   color: rgb(255, 255, 255);
+   color: black;
    width: 185px;
    height: 30px;
    text-decoration: none;
@@ -74,11 +56,8 @@ h1{
 
 }
 .links:hover {
-   background-color: #1e5b6a;
+   background-color: rgb(186,94,94,0.4);
 }
-.dropdown-menu:hover .menu-content {
+/*.dropdown-menu:hover .menu-content {
    display: block;
-}
-.dropdown-menu:hover .menu-btn {
-   background-color: #1e5b6a;
 }

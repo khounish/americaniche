@@ -6,8 +6,8 @@ require_once "veri_admin.php";
   <head>
     <meta charset="utf-8">
     <title>Americaniche Exam Portal</title>
-    </head>
-    <frameset cols = "13.2%,*" border="0">
+
+    <frameset cols = "195,*" border="0">
       <frame src = "page.php" name = "menu_page" />
       <frame src = "blank.php" name = "main_page" />
 
@@ -17,4 +17,8 @@ require_once "veri_admin.php";
 
       </frameset>
 
+  </head>
+  <body>
+
+  </body>
 </html>
