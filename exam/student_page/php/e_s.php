@@ -39,7 +39,7 @@ if(  date("Y-m-d") ===  $date )
 else 
                               {
                                 header("location: /exam/student_page/index.php");
-                                $_SESSION["s_error"] = "Exam not stared yet";
+                                $_SESSION["s_error"] = $date ;
                         
                               }
 $conn_1->close();
