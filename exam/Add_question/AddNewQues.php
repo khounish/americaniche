@@ -9,7 +9,7 @@ require_once "veri.php";
            }
 
      body{
-       background-color: rgb(242, 242, 242);
+       background-color: white;
        font-size: 30px;
 
          }
@@ -65,10 +65,10 @@ require_once "veri.php";
                    float: right;
                    height: 100%;
                    width: 45%;
-                   background-color: white;
+                   background-color: #d8d9da;
                    font-size: 30px;
                    text-align: center;
-
+                   margin-top:-10px;
                  }
 
 
@@ -83,7 +83,7 @@ require_once "veri.php";
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
-     <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
+     <div id="Quest"><h5>The Question Added to database</h5>
       <?php
        include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
@@ -93,7 +93,7 @@ require_once "veri.php";
          {
            while($row = mysqli_fetch_assoc($result))
 	   {
-             echo "<p> <a href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
+             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
 	     break;  
 	   }
          }
