@@ -105,7 +105,7 @@ require_once "veri_admin.php";
        <div>
       		<p>Category:<select name="category_id" required>
       <option value="1">Linux_LinuxCommands_WalletCommands</option>
-      <option value="2">Linux_vi_viCommands</option></p></select><br><br>
+      <option value="15">Linux_vi_viCommands</option></p></select><br><br>
 
         </div>
         <div>
@@ -114,9 +114,9 @@ require_once "veri_admin.php";
       	</div>
         <div>
       		<p>Level of the question:<select name="level" required>
-      <option value="easy">easy</option>
-      <option value="medium">medium</option>
-      <option value="complex">complex</option></p></select>
+      <option value="1">easy</option>
+      <option value="2">medium</option>
+      <option value="3">complex</option></p></select>
       	</div>
 
 
