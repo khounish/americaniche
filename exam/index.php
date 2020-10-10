@@ -16,8 +16,8 @@ session_start();
             <button type="button" class="toggle-button" onclick="login1()">Student</button>
           </div>
           <form id="Admin" class="input" action="/php/exam_admin_login.php" method="post">
-            <input type="text" class="input-field" name="username" placeholder="Admin ID" required>
-            <input type="password" class="input-field" name="password" placeholder="Enter Password" required>
+            <p style="color:white">Username<input type="text" class="input-field" name="username" placeholder="Admin ID" required></p>
+            <p style="color:white">Password</p><input type="password" class="input-field" name="password" placeholder="Enter Password" required>
             <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error_a"]); ?></p><br>
             <input type="checkbox" class="check-box"><span>Remember Me</span>
             <button type="submit" class="submit-btn">Login</button>
