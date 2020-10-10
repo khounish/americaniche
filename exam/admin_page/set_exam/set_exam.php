@@ -92,27 +92,31 @@ require_once "veri_admin.php";
 
        <div>
       		<label>Enter the date of examination:</label>
-      		<input type="text" size="25" name="date"/><br><br>
+      		<input type="date" size="25" name="date"/><br><br>
       	</div>
       	<div>
-      		<label>Enter the time of examination:</label>
-      		<input type="text" size="25" name="start_time"/><br><br>
+      		<label>Enter the number of question:</label>
+      		<input type="text" size="25" name="noques"/><br><br>
       	</div>
       	<div>
       		<label>Enter duration of examination:</label>
       		<input type="text" size="25" name="duration"/><br><br>
       	</div>
        <div>
-      		<label>Enter the topic of examination:</label>
-      		<input type="text" size="25" name="subject" /><br><br>
+      		<p>Category:<select name="category_id" required>
+      <option value="1">Linux_LinuxCommands_WalletCommands</option>
+      <option value="2">Linux_vi_viCommands</option></p></select><br><br>
+
         </div>
         <div>
-      		<label>Enter the User Id:</label>
-      		<input type="text" size="25" name="userid"/><br><br>
+      		<label>Enter the Usernames:</label>
+      		<input type="text" size="25" name="username_s"/><br><br>
       	</div>
         <div>
-      		<label>Enter the level:</label>
-      		<input type="text" size="25" name="level"/><br><br>
+      		<p>Level of the question:<select name="level" required>
+      <option value="easy">easy</option>
+      <option value="medium">medium</option>
+      <option value="complex">complex</option></p></select>
       	</div>
 
 
