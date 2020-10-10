@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-//Get the data exracted from input parameters
+/*//Get the data exracted from input parameters
 $username=$_POST["username"];
 $password=$_POST["password"];
 
@@ -19,7 +19,9 @@ $privileges = (($conn->query($sql2))->fetch_assoc())["privilege"];
 //Find the original password for the correspoding userid
 $sql3 = "SELECT password FROM user_pswd WHERE user_id = '$userid'";
 $password_ori = (($conn->query($sql3))->fetch_assoc())["password"];
-
+*/
+require_once "data_base_exam.php";
+$userid = [];
 //Exam information
 //Exam  id
 $sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$userid'";
@@ -43,13 +45,8 @@ $start_time = (($conn_1->query($sql9))->fetch_assoc())["Start_time"];
 $end_time = (int) $start_time + (int) $duration;
 
 //validate the results from db and respond back
-if ($userid != "")
-{
-    if ($privileges == "student")
-    {
-                  if ($password_ori == $password)
-                    {
-                          if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && date(dmY) === (int) $date)
+
+if( (int) date(Hi) > (int) $start_time && (int) date(Hi) < (int) $end_time && date(dmY) === (int) $date)
                               {
                                 header("location: http://www.americaniche.com/exam/");
                                 // Store data in session variables
@@ -66,29 +63,11 @@ if ($userid != "")
 
                               }
 
-                          else 
+else 
                               {
                                 header("location: /exam/index.php");
                                 $_SESSION["error"] = "Exam not stared yet";
                         
                               }
-                    }
-                  else
-                     {
-                      header("location: /exam/index.php");
-                      $_SESSION["error"] = "Invalid Password";
-                      }
-      }
-      else
-            {
-            header("location: /exam/index.php");
-            $_SESSION["error"] = "Permission denied";
-            }
-}
-else
-{
-  header("location: /exam/index.php");
- $_SESSION["error"] = "Invalid Username";
-}
-$conn->close();
+$conn_1->close();
 ?>
