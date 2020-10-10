@@ -11,7 +11,7 @@ require_once "veri.php";
      body{
        background-color: white;
        font-size: 30px;
-
+       left:20px;
          }
 
     h3{
@@ -63,12 +63,13 @@ require_once "veri.php";
                    }
         #Quest{
                    float: right;
-                   height: 100%;
+                   height: 55%;
                    width: 45%;
                    background-color: #d8d9da;
                    font-size: 30px;
                    text-align: center;
-                   margin-top:-10px;
+                   margin-top:-20px;
+		   right:15px;
                  }
 
 
