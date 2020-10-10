@@ -9,7 +9,7 @@ require_once "veri.php";
            }
 
      body{
-       background-color: rgb(242, 242, 242);
+       background-color: white;
        font-size: 30px;
 
          }
