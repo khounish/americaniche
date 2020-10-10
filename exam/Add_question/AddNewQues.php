@@ -64,7 +64,7 @@ require_once "veri.php";
                    float: right;
                    height: 55%;
                    width: 45%;
-              
+
                    font-size: 30px;
                    text-align: center;
                    margin-top:-20px;
@@ -72,6 +72,9 @@ require_once "veri.php";
 		   border-style: outset;
 		   border-color: #7c89c0;
 		   border-width: 10px;
+                 }
+                 a{
+                   color:orange;
                  }
 
 
@@ -81,7 +84,7 @@ require_once "veri.php";
  <body>
 
     <div id="heading">
-     
+
      <h3>Americaniche Academy</h3>
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
@@ -97,7 +100,7 @@ require_once "veri.php";
            while($row = mysqli_fetch_assoc($result))
 	   {
              echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
-	     break;  
+	     break;
 	   }
          }
          else
@@ -131,11 +134,26 @@ require_once "veri.php";
       <p>Level of the question:<select name="level" required>
       <option value="easy">easy</option>
       <option value="medium">medium</option>
-      <option value="complex">complex</option></p></select><br><br>
+      <option value="complex">complex</option></p></select>
+
+      <p> Select Topic:<select name="topic" required>
+      <option value="Linux">Linuv</option>
+      <option value="Networkin">Networking</option>
+      <option value="Database">Database</option></p></select>
+
+      <p>Select Subtopic:<select name="subtopic" required>
+      <option value="wallet commands">Linux Commands</option>
+      <option value="vi">vi</option>
+      <option value="shell script">Shell script</option></p></select>
+
+      <p>Keyword:<select name="level" required>
+      <option value="">wallet commands</option>
+      <option value="">filter</option></p></select><br><br>
+
 
 
       <button class="button" type="submit">Add Question</button>
-      <button class="button" onclick='Preview(); return false'>Preview</button>
+      
 
      </form>
 
