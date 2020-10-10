@@ -59,6 +59,7 @@ require_once "veri.php";
           margin-top: 0px;
           background-color: #d8d9da;
           height:52px;
+          color:white;
                    }
         #Quest{
                    float: right;
