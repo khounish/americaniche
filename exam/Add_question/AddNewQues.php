@@ -86,12 +86,12 @@ require_once "veri.php";
      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
       <?php
        include('data_base_exam.php');
-       $sql1 = "SELECT * FROM Questions where order by Question_id DESC LIMIT 1";
+       $sql1 = "SELECT * FROM Questions where order by Question_id DESC ";
        if($result = mysqli_query($conn_1,$sql1))
        {
          if(mysqli_num_rows($result)>0)
          {
-           while($row = mysqli_fetch_assoc($result))
+           $row = mysqli_fetch_assoc($result)
            {
              echo "<p>$row[Questiontext]<p>";
            }
