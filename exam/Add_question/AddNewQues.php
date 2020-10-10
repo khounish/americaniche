@@ -93,7 +93,7 @@ require_once "veri.php";
          {
            while($row = mysqli_fetch_assoc($result))
 	   {
-             echo "<p> Q .$row[Questiontext]<p>";
+             echo "<p> Q\) $row[Questiontext]<p>";
 	     break;  
 	   }
          }
