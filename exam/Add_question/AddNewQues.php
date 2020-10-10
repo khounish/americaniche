@@ -137,7 +137,7 @@ require_once "veri.php";
       <option value="complex">complex</option></p></select>
 
       <p> Select Topic:<select name="topic" required>
-      <option value="Linux">Linuv</option>
+      <option value="Linux">Linux</option>
       <option value="Networkin">Networking</option>
       <option value="Database">Database</option></p></select>
 
