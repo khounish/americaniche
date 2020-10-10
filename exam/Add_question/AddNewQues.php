@@ -91,8 +91,11 @@ require_once "veri.php";
        {
          if(mysqli_num_rows($result)>0)
          {
-           $row = mysqli_fetch_assoc($result)
+           while($row = mysqli_fetch_assoc($result))
+	   {
              echo "<p>$row[Questiontext]<p>";
+		   break;
+	   }
          }
          else
          {
