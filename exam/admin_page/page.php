@@ -6,7 +6,7 @@ include_once ("veri_admin.php");
   <head>
     <meta charset="utf-8">
     <title>Admin's Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
