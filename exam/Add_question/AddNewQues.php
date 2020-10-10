@@ -72,7 +72,7 @@ require_once "veri.php";
 		   right:15px;
 		   border-style: outset;
 		   border-color: #7c89c0;
-		   border-width: thick;
+		   border-width: 10px;
                  }
 
 
