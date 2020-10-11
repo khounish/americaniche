@@ -8,7 +8,7 @@ $level = $_POST['level'];
 $keyword = $_POST['keyword'];
 $topic = $_POST['topic'];
 $subtopic = $_POST['subtopic'];
-$id = $_POST['id']
+$id = $_POST['id'];
 if ($qtype == 1)
 {
   $op1 = $_POST['option1'];
@@ -43,7 +43,7 @@ if (mysqli_query($conn_1, $sql1))
 }
 else
 {
-  
+
   header("location: /exam/Add_question/AddNewQues.php");
   $_SESSION["error"] = "Question NOT Modified";
 }
