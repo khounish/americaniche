@@ -100,7 +100,7 @@ require_once "veri.php";
          {
            while($row = mysqli_fetch_assoc($result))
 	         {
-             echo "<p> <a style=\"text-decoration:none\" href=\".php\"?qid=$row[Question_id]>Q$row[Question_id]. $row[Questiontext]</a><p>";
+             echo "<p> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a><p>";
            }
 	       }
          else
