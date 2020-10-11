@@ -143,7 +143,9 @@ require_once "veri.php";
        {
      ?>
       <option value="<?php echo "$row2['Topic']" ?>"> <?php echo "$row2['Topic']" ?> </option>
-    <?php }?>
+    <?php
+       }
+    ?>
     </select>
 
       <input class="button" type="submit" name="submit" value="AddQuestion">
