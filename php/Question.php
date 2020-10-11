@@ -7,7 +7,7 @@ $format = $_POST['format'];
 $level = $_POST['level'];
 $category = $_POST['keyword'];
 $addques = $_POST['submit'];
-
+$modify = $_POST['modify'];
 if ($addques == 'AddQuestion')
 {
 if ($qtype == 1)
@@ -30,6 +30,40 @@ if (mysqli_query($conn_1, $sql1))
   {
 
     $sql2 = "INSERT INTO Options (Question_id,option1,option2,option3,option4) VALUES ('$last_id','$op1','$op2','$op3','$op4')";
+
+    mysqli_query($conn_1, $sql2);
+  }
+  header("location: /exam/Add_question/AddNewQues.php");
+  exit;
+}
+else
+{
+
+  header("location: /exam/Add_question/AddNewQues.php");
+}
+}
+if ($modify == 'Modify')
+{
+  $Qid = $_POST['id'];
+if ($qtype == 1)
+{
+  $op1 = $_POST['option1'];
+  $op2 = $_POST['option2'];
+  $op3 = $_POST['option3'];
+  $op4 = $_POST['option4'];
+  $ans = $_POST['answer'];
+}
+$ans = 1;
+$creationdate = date("jS \of F Y");
+$createdby = $_SESSION['username'];
+$sql1 = "UPDATE Questions SET Questiontext = '$ques', Right_option = '$ans', Questiontype = '$qtype' ,Format = '$format' ,CreatedBy = '$createdby' ,ExpertLevel = '$level' ,Category_id = '$category' ) WHERE Question_id = '$Qid'";
+
+if (mysqli_query($conn_1, $sql1))
+{
+  if($qtype)
+  {
+
+    $sql2 = "INSERT INTO Options (Question_id,option1,option2,option3,option4) VALUES ('$Qid','$op1','$op2','$op3','$op4')";
 
     mysqli_query($conn_1, $sql2);
   }
