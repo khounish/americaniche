@@ -87,6 +87,34 @@ require_once "veri_admin.php";
      <h3>Americaniche Academy</h3>
     </div>
 	  <h4 id="subheading"><i>ADD NEW CATEGORY<i></h4>
+    <div id="Quest">
+    <?php
+    $sql = "SELECT * FROM QuesCat";
+if($result = mysqli_query($conn, $sql))
+ {
+    if(mysqli_num_rows($result) > 0)
+       {
+        echo "<table>";
+            echo "<tr>";
+                echo "<th>ID</th>";
+                echo "<th>Topic</th>";
+                echo "<th>Subtopic</th>";
+                echo "<th>Keywords</th>";
+            echo "</tr>";
+        while($row = mysqli_fetch_array($result)){
+            echo "<tr>";
+                echo "<td>" . $row['Category_id'] . "</td>";
+                echo "<td>" . $row['Topic'] . "</td>";
+                echo "<td>" . $row['Subtopic'] . "</td>";
+                echo "<td>" . $row['Keywords'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+        // Free result set
+        mysqli_free_result($result);
+    } }
+?>
+     </div>
 
       <form name="CATEGORY" action="php/category.php" method="post" >
 
