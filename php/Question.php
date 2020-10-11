@@ -22,11 +22,14 @@ if ($qtype == 1)
 $ans = 0;
 //querying category table
 $sql = "SELECT * FROM QuesCat WHERE Topic = '$topic' and Subtopic = '$subtopic' and Keyword = '$keyword'";
-$result = mysqli_query($conn_1, $sql);
-$row = mysqli_fetch_assoc($result);
-$category = $row['Category_id'];
-$creationdate = date("jS \of F Y");
-$createdby = $_SESSION['username'];
+echo "$sql";
+if($result = mysqli_query($conn_1, $sql))
+{
+ $row = mysqli_fetch_assoc($result);
+ $category = $row['Category_id'];
+}
+ $creationdate = date("jS \of F Y");
+ $createdby = $_SESSION['username'];
 $sql1 = "INSERT INTO Questions (Questiontext,Right_option,Questiontype,Format,CreatedBy,ExpertLevel,Category_id) VALUES ('$ques','$ans','$qtype','$format','$createdby','$level','$category')";
 
 if (mysqli_query($conn_1, $sql1))
@@ -39,12 +42,12 @@ if (mysqli_query($conn_1, $sql1))
 
     mysqli_query($conn_1, $sql2);
   }
-  header("location: /exam/Add_question/AddNewQues.php");
+  //header("location: /exam/Add_question/AddNewQues.php");
   exit;
 }
 else
 {
 
-  header("location: /exam/Add_question/AddNewQues.php");
+  //header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
