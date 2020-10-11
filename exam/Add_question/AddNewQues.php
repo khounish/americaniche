@@ -114,6 +114,7 @@ require_once "veri.php";
        }
       ?>
     </div>
+
      <!-- FORM TO ACCEPT DATA FROM ADMIN -->
      <form name="addques" action="/php/Question.php" method="post" >
 
@@ -135,19 +136,15 @@ require_once "veri.php";
 
       <p>Topic of the question:<select name="topic" required>
      <?php
-     $sql2 = "SELECT * FROM QuestCat ";
+     $sql2 = "SELECT * FROM QuesCat";
 
-     if($result2 = mysqli_query($conn_1,$sql2))
-     {
-      if(mysqli_num_rows($result2)>0)
-      {
+     $result2 = mysqli_query($conn_1,$sql2)
        while($row2 = mysqli_fetch_assoc($result2))
        {
      ?>
-      <option value=" <?php echo($row2['topic']) ?> "><?php echo($row2['topic']) ?></option>
-       }
-      }
-    }</select>
+      <option value="<?php echo "$row2['Topic']" ?>"> <?php echo "$row2['Topic']" ?> </option>
+    <?php }?>
+    </select>
 
       <input class="button" type="submit" name="submit" value="AddQuestion">
 
