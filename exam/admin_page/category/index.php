@@ -28,7 +28,21 @@ require_once "veri_admin.php";
         text-decoration: underline;
         padding-top: 8px;
 	     }
+       table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
     .button{
             background-color: grey;
             border: none;
@@ -62,10 +76,10 @@ require_once "veri_admin.php";
                    }
         #Quest{
                    float: right;
-                   height: 55%;
-                   width: 45%;
+                   height: 100%;
+                   width: 55%;
 
-                   font-size: 30px;
+                   font-size: 20px;
                    text-align: center;
                    margin-top:-20px;
 		   right:15px;
@@ -89,9 +103,10 @@ require_once "veri_admin.php";
 	  <h4 id="subheading"><i>ADD NEW CATEGORY<i></h4>
     <div id="Quest">
     <?php
+    include("data_base_exam.php");
     $sql = "SELECT * FROM QuesCat";
-if($result = mysqli_query($conn, $sql))
- {
+   if($result = mysqli_query($conn_1, $sql))
+    {
     if(mysqli_num_rows($result) > 0)
        {
         echo "<table>";
