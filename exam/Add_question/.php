@@ -93,7 +93,8 @@ require_once "veri.php";
       <!-- modify database content-->
       <?php
       include('data_base_exam.php');
-      $sql1 = "SELECT * FROM Questions where Question_id = '$_GET['qid']'";
+      $id = $_GET['qid'];
+      $sql1 = "SELECT * FROM Questions where Question_id = '$id' ";
       if($result = mysqli_query($conn_1,$sql1))
       {
        if(mysqli_num_rows($result)>0)
