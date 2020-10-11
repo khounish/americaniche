@@ -77,7 +77,7 @@ tr:nth-child(even) {
         #Quest{
                    float: right;
                    height: 100%;
-                   width: 55%;
+                   width: 45%;
 
                    font-size: 20px;
                    text-align: center;
@@ -101,11 +101,12 @@ tr:nth-child(even) {
      <h3>Americaniche Academy</h3>
     </div>
 	  <h4 id="subheading"><i>ADD NEW CATEGORY<i></h4>
+
     <div id="Quest">
     <?php
-    include("data_base_exam.php");
+    include('data_base_exam.php');
     $sql = "SELECT * FROM QuesCat";
-   if($result = mysqli_query($conn_1, $sql))
+    if($result = mysqli_query($conn_1, $sql))
     {
     if(mysqli_num_rows($result) > 0)
        {
@@ -116,7 +117,8 @@ tr:nth-child(even) {
                 echo "<th>Subtopic</th>";
                 echo "<th>Keywords</th>";
             echo "</tr>";
-        while($row = mysqli_fetch_array($result)){
+        while($row = mysqli_fetch_array($result))
+        {
             echo "<tr>";
                 echo "<td>" . $row['Category_id'] . "</td>";
                 echo "<td>" . $row['Topic'] . "</td>";
@@ -127,7 +129,8 @@ tr:nth-child(even) {
         echo "</table>";
         // Free result set
         mysqli_free_result($result);
-    } }
+    }
+  }
 ?>
      </div>
 
