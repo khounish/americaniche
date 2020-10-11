@@ -82,13 +82,14 @@ require_once "veri.php";
   <title>ADD Question</title>
  </head>
  <body>
-
+    <!--HEADER-->
     <div id="heading">
-
      <h3>Americaniche Academy</h3>
     </div>
+
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
+     <!-- DIVISION TO DISPLAY ALL THE INSERTED QUESTION FROM DATABASE -->
      <div id="Quest"><h5>The Question Added to database</h5>
       <?php
        include('data_base_exam.php');
@@ -98,44 +99,22 @@ require_once "veri.php";
          if(mysqli_num_rows($result)>0)
          {
            while($row = mysqli_fetch_assoc($result))
-	   {
-             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id].</a> $row[Questiontext]<p>";
-              $sql2 = "SELECT * FROM Options where Question_id = '$row[Question_id]'";
-	      if($result1 = mysqli_query($conn_1,$sql2))
-                {
-                 if(mysqli_num_rows($result1)>0)
-                  {
-                     while($row1 = mysqli_fetch_assoc($result1))
-	                {
-	                  echo "<p>1. $row1[option1]</p>";
-			  echo "<p>2. $row1[option2]</p>";
-			  echo "<p>3. $row1[option3]</p>";
-			  echo "<p>4. $row1[option4]</p>";
-			 break;
-		        }
-		   }
-	         }
-		   break;
-	   }
-	   
-         }
+	         {
+             echo "<p> <a style=\"text-decoration:none\" href=\".php\">Q$row[Question_id]. $row[Questiontext]</a><p>";
+           }
+	       }
          else
          {
-           echo "Please insert a question to view it here";
+           echo "</p>Please insert a question to view it here</p>";
          }
-
        }
-       else {
-         echo "error";
+      else
+      {
+         echo "<p>Unable to make query to database</p>";
        }
-       
-       
       ?>
-     <div id="q"></div>
-     <p id="01"></p>
-     <p id="02"></p>
-     <p id="03"></p>
-     <p id="04"></p></div>
+
+     <!-- FORM TO ACCEPT DATA FROM ADMIN -->
      <form name="addques" action="/php/Question.php" method="post" >
 
       <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
@@ -153,7 +132,7 @@ require_once "veri.php";
       <option value="easy">easy</option>
       <option value="medium">medium</option>
       <option value="complex">complex</option></p></select>
-      
+
       <p>Category:<select name="keyword" required>
       <option value="1">Linux_LinuxCommands_WalletCommands</option>
       <option value="15">Linux_vi_viCommands</option></p></select><br><br>
@@ -164,18 +143,6 @@ require_once "veri.php";
      </form>
 
     <script>
-
-        function Preview() {
-          document.getElementById("q").innerHTML = document.addques.question.value;
-
-          document.getElementById("01").innerHTML = "1. " + document.addques.option0.value;
-
-          document.getElementById("02").innerHTML = "2. " + document.addques.option1.value;
-
-          document.getElementById("03").innerHTML = "3. " + document.addques.option2.value;
-
-          document.getElementById("04").innerHTML = "4. " + document.addques.option3.value;
-        }
 
         function addFields(element){
           var number = element.value;
