@@ -21,8 +21,7 @@ if ($qtype == 1)
 }
 $ans = 0;
 //querying category table
-$sql = "SELECT * FROM QuesCat WHERE Topic = '$topic' and Subtopic = '$subtopic' and Keyword = '$keyword'";
-echo "$sql";
+$sql = "SELECT * FROM QuesCat WHERE Topic = '$topic' and Subtopic = '$subtopic' and Keywords = '$keyword'";
 if($result = mysqli_query($conn_1, $sql))
 {
  $row = mysqli_fetch_assoc($result);
@@ -42,12 +41,12 @@ if (mysqli_query($conn_1, $sql1))
 
     mysqli_query($conn_1, $sql2);
   }
-  //header("location: /exam/Add_question/AddNewQues.php");
+  header("location: /exam/Add_question/AddNewQues.php");
   exit;
 }
 else
 {
 
-  //header("location: /exam/Add_question/AddNewQues.php");
+  header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
