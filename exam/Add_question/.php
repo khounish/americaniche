@@ -88,14 +88,14 @@ require_once "veri.php";
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
-      <div id="Quest">
+
 
       <!-- modify database content-->
       <?php
       include('data_base_exam.php');
       $id = $_GET['qid'];
       $sql1 = "SELECT * FROM Questions where Question_id = '$id' ";
-      echo "<p>$sql1</p>";
+
       if($result = mysqli_query($conn_1,$sql1))
       {
 
@@ -103,6 +103,7 @@ require_once "veri.php";
        {
         while($row = mysqli_fetch_assoc($result))
         {
+          
       ?>
           <form name="addques" action="/php/Question.php" method="post" >
 
