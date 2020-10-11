@@ -91,7 +91,7 @@ require_once "veri.php";
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
      <!-- DIVISION TO DISPLAY ALL THE INSERTED QUESTION FROM DATABASE -->
-     <div id="Quest"><h5><?php echo htmlspecialchars($_SESSION["error"]); ?>The Question Added to database</h5>
+     <div id="Quest"><h5>The Question Added to database</h5>
       <?php
        include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
