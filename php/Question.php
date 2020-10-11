@@ -47,6 +47,4 @@ else
 
   header("location: /exam/Add_question/AddNewQues.php");
 }
-}
-
 ?>
