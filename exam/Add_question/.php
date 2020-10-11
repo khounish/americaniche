@@ -95,8 +95,10 @@ require_once "veri.php";
       include('data_base_exam.php');
       $id = $_GET['qid'];
       $sql1 = "SELECT * FROM Questions where Question_id = '$id' ";
+      echo "<p>$sql1</p>";
       if($result = mysqli_query($conn_1,$sql1))
       {
+
        if(mysqli_num_rows($result)>0)
        {
         while($row = mysqli_fetch_assoc($result))
