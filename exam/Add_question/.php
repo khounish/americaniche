@@ -98,12 +98,10 @@ require_once "veri.php";
 
       if($result = mysqli_query($conn_1,$sql1))
       {
-
        if(mysqli_num_rows($result)>0)
        {
         while($row = mysqli_fetch_assoc($result))
         {
-          
       ?>
           <form name="addques" action="/php/Question.php" method="post" >
 
@@ -123,42 +121,52 @@ require_once "veri.php";
            <option value="medium">medium</option>
            <option value="complex">complex</option></p></select><br><br>
 
+           <input class="button" type="submit" name="modify" value="Modify">
 
-           <button class="button" type="submit">Add Question</button>
-           <button class="button" onclick='Preview(); return false'>Preview</button>
-
-          </form>
+           </form>
           <?php
-         break;
+          break;
         }
-       }
-       else
-       {
+      }
+      else
+      {
         echo "Please insert a question to view it here";
-       }
-
-         }
-         else {
+      }
+     }
+     else
+     {
            echo "error";
-         }
+     }
         ?>
-
+        <div id="Quest"><h5>The Question Added to database</h5>
+         <?php
+          include('data_base_exam.php');
+          $sql1 = "SELECT * FROM Questions order by Question_id DESC";
+          if($result = mysqli_query($conn_1,$sql1))
+          {
+            if(mysqli_num_rows($result)>0)
+            {
+              while($row = mysqli_fetch_assoc($result))
+   	         {
+                echo "<p> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a><p>";
+              }
+   	       }
+            else
+            {
+              echo "</p>Please insert a question to view it here</p>";
+            }
+          }
+         else
+         {
+            echo "<p>Unable to make query to database</p>";
+          }
+         ?>
+       </div>
 
 
 
       <script>
 
-          function Preview() {
-            document.getElementById("q").innerHTML = document.addques.question.value;
-
-            document.getElementById("01").innerHTML = "1. " + document.addques.option0.value;
-
-            document.getElementById("02").innerHTML = "2. " + document.addques.option1.value;
-
-            document.getElementById("03").innerHTML = "3. " + document.addques.option2.value;
-
-            document.getElementById("04").innerHTML = "4. " + document.addques.option3.value;
-          }
 
           function addFields(element){
             var number = element.value;
@@ -200,4 +208,5 @@ require_once "veri.php";
           }
 
   </script>
+</body>
 </html>
