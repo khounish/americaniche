@@ -19,7 +19,7 @@ if ($qtype == 1)
 }
 $ans = 0;
 //querying category table
-$sql = "SELECT * QuesCat WHERE Topic = '$topic' and Subtopic = '$subtopic' and Keywords = '$keyword'";
+$sql = "SELECT * FROM QuesCat WHERE Topic = '$topic' and Subtopic = '$subtopic' and Keywords = '$keyword'";
 if($result = mysqli_query($conn_1, $sql))
 {
  $row = mysqli_fetch_assoc($result);
@@ -28,7 +28,6 @@ if($result = mysqli_query($conn_1, $sql))
  $creationdate = date("jS \of F Y");
  $createdby = $_SESSION['username'];
 $sql1 = "UPDATE Questions SET Questiontext ='$ques', Right_option = '$ans', Questiontype = '$qtype', Format = '$format', CreatedBy = '$createdby', ExpertLevel = '$level', Category_id = '$category' WHERE Question_id = '$id'";
-echo "$sql1";
 if (mysqli_query($conn_1, $sql1))
 {
   if($qtype)
@@ -38,13 +37,13 @@ if (mysqli_query($conn_1, $sql1))
 
     mysqli_query($conn_1, $sql2);
   }
-  //header("location: /exam/Add_question/AddNewQues.php");
+  header("location: /exam/Add_question/AddNewQues.php");
   exit;
 }
 else
 {
-  echo "error";
-  //header("location: /exam/Add_question/AddNewQues.php");
+
+  header("location: /exam/Add_question/AddNewQues.php");
   $_SESSION["error"] = "Question NOT Modified";
 }
 ?>
