@@ -62,7 +62,7 @@ require_once "veri.php";
                    }
         #Quest{
                    float: right;
-                   height: 55%;
+                   height: 100%;
                    width: 45%;
                     background-color: #c1e1ec;
                    font-size: 30px;
@@ -85,10 +85,33 @@ require_once "veri.php";
     <div id="heading">
 
      <h3>Americaniche Academy</h3>
+
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
-
-
+      <div id="Quest"><h5>The Question Added to database</h5>
+       <?php
+        include('data_base_exam.php');
+        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
+        if($result = mysqli_query($conn_1,$sql1))
+        {
+          if(mysqli_num_rows($result)>0)
+          {
+            while($row = mysqli_fetch_assoc($result))
+           {
+              echo "<p> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a><p>";
+            }
+         }
+          else
+          {
+            echo "</p>Please insert a question to view it here</p>";
+          }
+        }
+       else
+       {
+          echo "<p>Unable to make query to database</p>";
+        }
+       ?>
+     </div>
 
       <!-- modify database content-->
       <?php
@@ -138,30 +161,6 @@ require_once "veri.php";
            echo "error";
      }
         ?>
-        <div id="Quest"><h5>The Question Added to database</h5>
-         <?php
-          include('data_base_exam.php');
-          $sql1 = "SELECT * FROM Questions order by Question_id DESC";
-          if($result = mysqli_query($conn_1,$sql1))
-          {
-            if(mysqli_num_rows($result)>0)
-            {
-              while($row = mysqli_fetch_assoc($result))
-   	         {
-                echo "<p> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a><p>";
-              }
-   	       }
-            else
-            {
-              echo "</p>Please insert a question to view it here</p>";
-            }
-          }
-         else
-         {
-            echo "<p>Unable to make query to database</p>";
-          }
-         ?>
-       </div>
 
 
 
