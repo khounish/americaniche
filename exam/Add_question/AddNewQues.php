@@ -138,7 +138,7 @@ require_once "veri.php";
      <?php
      $sql2 = "SELECT * FROM QuesCat";
 
-     $result2 = mysqli_query($conn_1,$sql2)
+     $result2 = mysqli_query($conn_1,$sql2);
        while($row2 = mysqli_fetch_assoc($result2))
        {
      ?>
