@@ -142,7 +142,49 @@ require_once "veri.php";
            <p>Level of the question:<select name="level" required>
            <option value="easy">easy</option>
            <option value="medium">medium</option>
-           <option value="complex">complex</option></p></select><br><br>
+           <option value="complex">complex</option></p></select>
+
+           <p>Topic of the question:<select name="topic" required>
+          <?php
+          $sql2 = "SELECT * FROM QuesCat";
+           $result2 = mysqli_query($conn_1,$sql2);
+         while($row2 = mysqli_fetch_assoc($result2))
+
+            {
+          ?>
+           <option value="<?php echo "{$row2['Topic']}" ?>"> <?php echo "{$row2['Topic']}" ?> </option>
+         <?php
+            }
+         ?>
+         </select>
+
+         <p>Subtopic of the question:<select name="subtopic" required>
+        <?php
+        $sql3 = "SELECT * FROM QuesCat";
+
+        $result3 = mysqli_query($conn_1,$sql3);
+       while($row3 = mysqli_fetch_assoc($result3))
+          {
+        ?>
+         <option value="<?php echo "{$row3['Subtopic']}" ?>"> <?php echo "{$row3['Subtopic']}" ?> </option>
+       <?php
+          }
+       ?>
+       </select>
+
+       <p>Keyword of the question:<select name="keyword" required>
+      <?php
+      $sql3 = "SELECT * FROM QuesCat";
+
+      $result3 = mysqli_query($conn_1,$sql3);
+     while($row3 = mysqli_fetch_assoc($result3))
+        {
+      ?>
+       <option value="<?php echo "{$row3['Keywords']}" ?>"> <?php echo "{$row3['Keywords']}" ?> </option>
+     <?php
+        }
+     ?>
+     </select><br><br>
 
            <input class="button" type="submit" name="modify" value="Modify">
 
