@@ -43,7 +43,7 @@ if (mysqli_query($conn_1, $sql1))
 }
 else
 {
-
+  $_SESSION["error"] = "Question NOT Modified";
   header("location: /exam/Add_question/AddNewQues.php");
 }
 ?>
