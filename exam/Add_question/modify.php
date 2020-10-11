@@ -38,13 +38,13 @@ if (mysqli_query($conn_1, $sql1))
 
     mysqli_query($conn_1, $sql2);
   }
-  header("location: /exam/Add_question/AddNewQues.php");
+  //header("location: /exam/Add_question/AddNewQues.php");
   exit;
 }
 else
 {
-
-  header("location: /exam/Add_question/AddNewQues.php");
+  echo "error";
+  //header("location: /exam/Add_question/AddNewQues.php");
   $_SESSION["error"] = "Question NOT Modified";
 }
 ?>
