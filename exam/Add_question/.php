@@ -124,7 +124,7 @@ require_once "veri.php";
         while($row = mysqli_fetch_assoc($result))
         {
       ?>
-          <form name="addques" action="/php/Question.php" method="post" >
+          <form name="addques" action="modify.php" method="post" >
 
             <p>The Question id is:<input type="text" name="id" value="<?php echo $row['Question_id'] ?>">
 
