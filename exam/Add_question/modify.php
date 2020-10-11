@@ -28,7 +28,7 @@ if($result = mysqli_query($conn_1, $sql))
  $creationdate = date("jS \of F Y");
  $createdby = $_SESSION['username'];
 $sql1 = "UPDATE Questions SET Questiontext ='$ques', Right_option = '$ans', Questiontype = '$qtype', Format = '$format', CreatedBy = '$createdby', ExpertLevel = '$level', Category_id = '$category' WHERE Question_id = '$id'";
-
+echo "$sql1";
 if (mysqli_query($conn_1, $sql1))
 {
   if($qtype)
