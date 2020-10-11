@@ -137,9 +137,28 @@ require_once "veri.php";
       <p>Topic of the question:<select name="topic" required>
      <?php
      $sql2 = "SELECT * FROM QuesCat";
+<<<<<<< HEAD
+||||||| merged common ancestors
 
+<<<<<<<<< Temporary merge branch 1
      $result2 = mysqli_query($conn_1,$sql2);
+       while($row2 = mysqli_fetch_assoc($result2))
+||||||||| c09c4a6
+     $result2 = mysqli_query($conn_1,$sql2)
+       while($row2 = mysqli_fetch_assoc($result2))
+=========
+=======
+
+>>>>>>> 416d5b6f163222b91d809ebac22c6c5d84a4c8b5
+     $result2 = mysqli_query($conn_1,$sql2);
+<<<<<<< HEAD
+     while($row2 = mysqli_fetch_assoc($result2))
+||||||| merged common ancestors
     while($row2 = mysqli_fetch_assoc($result2))
+>>>>>>>>> Temporary merge branch 2
+=======
+    while($row2 = mysqli_fetch_assoc($result2))
+>>>>>>> 416d5b6f163222b91d809ebac22c6c5d84a4c8b5
        {
      ?>
       <option value="<?php echo "{$row2['Topic']}" ?>"> <?php echo "{$row2['Topic']}" ?> </option>
