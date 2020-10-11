@@ -20,14 +20,14 @@ require_once "veri.php";
       font-size: 50px;
     }
 
-	   h4{
+	  h4{
 	      margin-top:-5px;
 	      text-align:center;
 		    height:4%
         font-size: 80px;
         text-decoration: underline;
         padding-top: 8px;
-	     }
+	    }
 
     .button{
             background-color: grey;
@@ -42,7 +42,7 @@ require_once "veri.php";
             cursor: pointer;
            }
 
-        #logo{
+      #logo{
              float:left;
              height: 85px;
              width: 110px;
@@ -88,18 +88,12 @@ require_once "veri.php";
     </div>
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
-      <div id="Quest"><h5>Click on preview to see the the question here before adding to database</h5>
-
-       <div id="q"></div>
-       <p id="01"></p>
-       <p id="02"></p>
-       <p id="03"></p>
-       <p id="04"></p></div>
+      <div id="Quest">
 
       <!-- modify database content-->
       <?php
       include('data_base_exam.php');
-      $sql1 = "SELECT * FROM Questions order by Question_id DESC";
+      $sql1 = "SELECT * FROM Questions where Question_id = '$_GET['qid']'";
       if($result = mysqli_query($conn_1,$sql1))
       {
        if(mysqli_num_rows($result)>0)
