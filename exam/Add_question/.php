@@ -65,7 +65,7 @@ require_once "veri.php";
                    height: 100%;
                    width: 45%;
                     background-color: #c1e1ec;
-                   font-size: 30px;
+                   font-size: 20px;
                    text-align: center;
                    margin-top:-20px;
 		   right:15px;
@@ -73,9 +73,7 @@ require_once "veri.php";
 		   border-color: #7c89c0;
 		   border-width: 10px;
                  }
-      a{
-        color:orange;
-      }
+
 
   </style>
   <title>ADD Question</title>
@@ -127,6 +125,8 @@ require_once "veri.php";
         {
       ?>
           <form name="addques" action="/php/Question.php" method="post" >
+
+            <p>The Question id is:<input type="text" name="id" value="<?php echo $row['Question_id'] ?>">
 
            <p>Select the Question Type: <select name="question_type" onchange="addFields(this)" >
            <option value="0" >subjective</option>
