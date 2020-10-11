@@ -6,7 +6,10 @@ $ques = $_POST['question'];
 $format = $_POST['format'];
 $level = $_POST['level'];
 $category = $_POST['keyword'];
+$addques = $_POST['submit'];
 
+if ($addques == 'AddQuestion')
+{
 if ($qtype == 1)
 {
   $op1 = $_POST['option1'];
@@ -37,5 +40,6 @@ else
 {
 
   header("location: /exam/Add_question/AddNewQues.php");
+}
 }
 ?>
