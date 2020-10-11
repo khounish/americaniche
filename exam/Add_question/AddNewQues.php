@@ -62,25 +62,25 @@ require_once "veri.php";
                    }
         #Quest{
                    float: right;
-                   height: 55%;
+                   height: 100%;
                    width: 45%;
                    background-color: #c1e1ec;
                    font-size: 27px;
                    text-align:center;
                    margin-top:-20px;
-		   right:15px;
-		   border-style: outset;
-		   border-color: #7c89c0;
-		   border-width: 10px;
+		               right:15px;
+		               border-style: outset;
+		               border-color: #7c89c0;
+		               border-width: 10px;
                  }
-                 a{
-                   color:orange;
-                 }
+                 
+
 
 
   </style>
   <title>ADD Question</title>
  </head>
+
  <body>
     <!--HEADER-->
     <div id="heading">
@@ -113,7 +113,7 @@ require_once "veri.php";
          echo "<p>Unable to make query to database</p>";
        }
       ?>
-
+    </div>
      <!-- FORM TO ACCEPT DATA FROM ADMIN -->
      <form name="addques" action="/php/Question.php" method="post" >
 
