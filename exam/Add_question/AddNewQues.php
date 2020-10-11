@@ -133,9 +133,21 @@ require_once "veri.php";
       <option value="medium">medium</option>
       <option value="complex">complex</option></p></select>
 
-      <p>Category:<select name="keyword" required>
-      <option value="1">Linux_LinuxCommands_WalletCommands</option>
-      <option value="15">Linux_vi_viCommands</option></p></select><br><br>
+      <p>Topic of the question:<select name="topic" required>
+     <?php
+     $sql2 = "SELECT * FROM QuestCat ";
+
+     if($result2 = mysqli_query($conn_1,$sql2))
+     {
+      if(mysqli_num_rows($result2)>0)
+      {
+       while($row2 = mysqli_fetch_assoc($result2))
+       {
+     ?>
+      <option value="<?php$row2['topic']?>"><?phpecho "$row2['topic']"?></option>
+       }
+      }
+    }</select>
 
       <input class="button" type="submit" name="submit" value="AddQuestion">
 
