@@ -137,7 +137,7 @@ require_once "veri.php";
       <option value="1">Linux_LinuxCommands_WalletCommands</option>
       <option value="15">Linux_vi_viCommands</option></p></select><br><br>
 
-      <button class="button" type="submit">Add Question</button>
+      <input class="button" type="submit" name="submit" value="AddQuestion">
 
 
      </form>
