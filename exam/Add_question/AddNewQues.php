@@ -142,7 +142,7 @@ require_once "veri.php";
        while($row2 = mysqli_fetch_assoc($result2))
        {
      ?>
-      <option value="<?php echo "$row2['Topic']" ?>"> <?php echo "$row2['Topic']" ?> </option>
+      <option value="<?php echo "{$row2['Topic']}" ?>"> <?php echo "{$row2['Topic']}" ?> </option>
     <?php
        }
     ?>
