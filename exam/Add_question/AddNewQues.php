@@ -11,7 +11,7 @@ require_once "veri.php";
 
      body{
        background-color: white;
-       font-size: 30px;
+       font-size: 20px;
          }
 
     h3{
@@ -35,7 +35,7 @@ require_once "veri.php";
   width: 100%;
 }
 tr:nth-child(even) {
-  background-color: #c1e1ec;
+  background-color: #dddddd;
 }
 
     .button{
