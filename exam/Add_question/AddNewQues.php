@@ -11,7 +11,7 @@ require_once "veri.php";
 
      body{
        background-color: white;
-       font-size: 20px;
+       font-size: 25px;
          }
 
     h3{
