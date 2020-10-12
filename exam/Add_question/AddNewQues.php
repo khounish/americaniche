@@ -29,6 +29,14 @@ require_once "veri.php";
         text-decoration: underline;
         padding-top: 8px;
 	     }
+       table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #c1e1ec;
+}
 
     .button{
             background-color: grey;
@@ -65,7 +73,7 @@ require_once "veri.php";
                    float: right;
                    height: 100%;
                    width: 45%;
-                   background-color: #c1e1ec;
+                   
                    font-size: 20px;
                    text-align:center;
                    margin-top:-20px;
