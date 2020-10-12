@@ -6,7 +6,7 @@ require_once "veri.php";
  <head>
    <style>
     select {
-            font-size: 20px;
+            font-size: 15px;
            }
 
      body{
@@ -72,7 +72,7 @@ tr:nth-child(even) {
         #Quest{
                    float: right;
                    height: 100%;
-                   width: 45%;
+                   width: 35%;
                    
                    font-size: 20px;
                    text-align:center;
