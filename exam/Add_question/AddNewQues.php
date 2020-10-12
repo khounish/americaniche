@@ -104,7 +104,7 @@ require_once "veri.php";
                echo "<td> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a></td>";
                echo "</tr>";
            }
-            echo "</table>"
+            echo "</table>";
 	       }
          else
          {
