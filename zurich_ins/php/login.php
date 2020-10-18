@@ -21,7 +21,7 @@ if ($userid != "")
 {
     if ($password_ori == $password)
     {
-      header("location: main_page/index.php");
+      header("location: ../main_page/index.php");
       // Store data in session variables
       $_SESSION["loggedin"] = true;
       $_SESSION["id"] = $userid;
