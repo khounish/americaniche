@@ -105,7 +105,7 @@ ul, #myUL {
 </ul>
 
 </ul>
-<p style="color:red;"><a href="../php/logout.php">logout<a><p>
+<p style="color:red;"><a href="../php/logout.php" target="__top">logout<a><p>
 
 
 <script>
