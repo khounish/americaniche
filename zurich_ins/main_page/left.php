@@ -78,33 +78,34 @@ ul, #myUL {
 <ul id="myUL">
   <li><span class="caret"><font color=white>Videos</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/day1.html" target = "main_page">Day1</a></li>
-      <li><a href = "http://videos.americaniche.com/day2.html" target = "main_page">Day2</a></li>
-      <li><a href = "http://videos.americaniche.com/day3.html" target = "main_page">Day3</a></li>
-      <li><a href = "http://videos.americaniche.com/day4.html" target = "main_page">Day4</a></li>
-      <li><a href = "http://videos.americaniche.com/day5a.html" target = "main_page">Day5</a></li>
+      <li><a href = "http://videos.americaniche.com/day1.html" target = "center">Day1</a></li>
+      <li><a href = "http://videos.americaniche.com/day2.html" target = "center">Day2</a></li>
+      <li><a href = "http://videos.americaniche.com/day3.html" target = "center">Day3</a></li>
+      <li><a href = "http://videos.americaniche.com/day4.html" target = "center">Day4</a></li>
+      <li><a href = "http://videos.americaniche.com/day5a.html" target = "center">Day5</a></li>
 
 </ul>
 </li>
  <li><span class="caret">Assignments</span>
     <ul class="nested">
-     <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "main_page">Assignment1</a><br></li>
-     <li> <a href = "http://videos.americaniche.com/asgn2.html" target = "main_page">Assignment2</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn3.html" target = "main_page">Assignment3</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn4.html" target = "main_page">Assignment4</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn5.html" target = "main_page">Assignment5</a><br></li>
+     <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "center">Assignment1</a><br></li>
+     <li> <a href = "http://videos.americaniche.com/asgn2.html" target = "center">Assignment2</a><br></li>
+      <li> <a href = "http://videos.americaniche.com/asgn3.html" target = "center">Assignment3</a><br></li>
+      <li> <a href = "http://videos.americaniche.com/asgn4.html" target = "center">Assignment4</a><br></li>
+      <li> <a href = "http://videos.americaniche.com/asgn5.html" target = "center">Assignment5</a><br></li>
 
 </ul>
 <li><span class="caret"><font color=white>Workshop</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/ws1.html" target = "main_page">WorkShop1</a></li>
+      <li><a href = "http://videos.americaniche.com/ws1.html" target = "center">WorkShop1</a></li>
 </ul>
 <li><span class="caret">Mysql</span>
  <ul class="nested">
-<li> <a href = "http://videos.americaniche.com/pf.html" target = "main_page">Port Forwarding</a><li>
+<li> <a href = "http://videos.americaniche.com/pf.html" target = "center">Port Forwarding</a><li>
 </ul>
 
 </ul>
+<p style="color:red;"><a href="../php/logout.php">logout<a><p>
 
 
 <script>

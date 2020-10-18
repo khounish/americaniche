@@ -7,8 +7,10 @@ require_once "veri.php";
   body{
     margin: 0;
     padding: 0;
-    background-size: auto;
     background-origin: content-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
     
 }
   </style>
