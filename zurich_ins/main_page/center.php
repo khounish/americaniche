@@ -4,11 +4,12 @@ require_once "veri.php";
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <style>
-  body{
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-size: cover;
-  }
+body {
+  background-image: url("/zurich_ins/images/lobby.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
   </style>
 
   <head>
@@ -16,6 +17,6 @@ require_once "veri.php";
     <title></title>
   </head>
   <body>
-    <img src="/zurich_ins/images/lobby.jpg">
+    <h1>ZURICH</h1>
   </body>
 </html>
