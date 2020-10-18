@@ -17,6 +17,5 @@ body {
     <title></title>
   </head>
   <body>
-    <h1>ZURICH</h1>
   </body>
 </html>
