@@ -1,4 +1,6 @@
-
+<?php
+require_once "veri.php";
+?>
 <html>
 <style>
 a:link {

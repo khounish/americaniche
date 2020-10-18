@@ -1,4 +1,6 @@
-
+<?php
+require_once "veri.php";
+?>
 <!DOCTYPE html>
 <html>
 <style>
@@ -72,7 +74,7 @@ ul, #myUL {
 
 </style>
    <body bgcolor = "rgba(15,18,59,0.5)" color=red><b>
-   <img src="C:\Users\abhi\Desktop\zurich_ins\login\zurich-1.png" align=center height="150px"><br><br>
+   <img src="/zurich_ins/images/zurich-1.png" align=center height="150px"><br><br>
 <ul id="myUL">
   <li><span class="caret"><font color=white>Videos</span>
     <ul class="nested">

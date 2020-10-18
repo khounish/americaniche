@@ -1,3 +1,6 @@
+<?php
+require_once "veri.php";
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <style>
@@ -15,6 +18,6 @@
     <title></title>
   </head>
   <body>
-    <img src="C:\Users\abhi\Desktop\zurich_ins\login\lobby.jpg">
+    <img src="/zurich_ins/images/lobby.jpg">
   </body>
 </html>
