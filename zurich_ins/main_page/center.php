@@ -5,14 +5,10 @@ require_once "veri.php";
 <html lang="en" dir="ltr">
   <style>
   body{
-    margin: 0;
-    padding: 0;
-    background-origin: content-box;
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
-    
-}
+  }
   </style>
 
   <head>
