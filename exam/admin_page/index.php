@@ -7,7 +7,7 @@ require_once "veri_admin.php";
     <meta charset="utf-8">
     <title>Americaniche Exam Portal</title>
 
-    <frameset cols = "195,*" border="0">
+    <frameset cols = "195,*" border="0" framespacing="0" frameborder="no">
       <frame src = "page.php" name = "menu_page" />
       <frame src = "blank.php" name = "main_page" />
 
