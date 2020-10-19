@@ -10,17 +10,17 @@ require_once "veri.php";
 </style>
 
    <head>
-    
+
       <title>Zurich</title>
- 
+
    </head>
- 
+
 <frameset cols = "184,*,184" border="0">
 
    <frame src = "left.php" name = "left" scrolling="no" />
    <frame src = "center.php" name = "center"/>
    <frame src = "right.php" name = "right" scrolling="no" />
- 
+
 </frameset>
   <script>
         var origCols = null;
@@ -35,13 +35,13 @@ require_once "veri.php";
         addEventListener("message", receiveMessage, false);
 
         function hideFrame() {
-            var frameset = document.getElementById("frameSet");
+            var frameset = window.frames['right']
             origCols = frameset.rows;
             frameset.rows = "0, *";
         }
 
         function showFrame() {
-            document.getElementById("frameSet").rows = origCols;
+            window.frames['right'].rows = origCols;
             origCols = null;
         }
         </script>
