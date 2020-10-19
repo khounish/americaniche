@@ -22,12 +22,27 @@ require_once "veri.php";
    <frame src = "right.php" name = "right" scrolling="no" />
  
 </frameset>
-   <script>
-      $(document).ready(function(){
-      $("button").click(function(){
-         $('frame[name="right"]').fadeToggle("slow");
-        $("#top").toggle();
-      });
-    });
-    </script>
+  <script>
+        var origCols = null;
+        function receiveMessage(event)
+        {
+          if(origCols!=null)
+           showFrame()
+          else
+           hideFrame();
+        }
+
+        addEventListener("message", receiveMessage, false);
+
+        function hideFrame() {
+            var frameset = document.getElementById("frameSet");
+            origCols = frameset.rows;
+            frameset.rows = "0, *";
+        }
+
+        function showFrame() {
+            document.getElementById("frameSet").rows = origCols;
+            origCols = null;
+        }
+        </script>
 </html>
