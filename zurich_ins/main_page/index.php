@@ -22,4 +22,12 @@ require_once "veri.php";
    <frame src = "right.php" name = "right" scrolling="no" />
  
 </frameset>
+   <script>
+      $(document).ready(function(){
+      $("button").click(function(){
+         $('frame[name="right"]').fadeToggle("slow");
+        $("#top").toggle();
+      });
+    });
+    </script>
 </html>
