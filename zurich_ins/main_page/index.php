@@ -12,11 +12,9 @@ require_once "veri.php";
    <head>
     
       <title>Zurich</title>
-      <script>
-      document.getElementById("webterminal").style.display="none";
-      </script>
+ 
    </head>
- <body>
+ 
 <frameset cols = "184,*,184" border="0">
 
    <frame src = "left.php" name = "left" scrolling="no" />
@@ -31,6 +29,6 @@ require_once "veri.php";
    </frameset>
   </div>
    <frame src = "right.php" name = "right" scrolling="no" />
- </body>
+ 
 </frameset>
 </html>
