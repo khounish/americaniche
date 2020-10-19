@@ -5,7 +5,7 @@ require_once "veri.php";
 <html lang="en" dir="ltr">
   <style>
 body {
-  background-image: url("/zurich_ins/images/background.jpeg");
+  background-image: url("/zurich_ins/images/lobby.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed; 
   background-size: 100% 100%;
