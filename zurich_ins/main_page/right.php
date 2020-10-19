@@ -170,7 +170,7 @@ h1 {
     </ul>
     <div class="center"><br><br>
   <h3> Practice Now </h3>
-  <input type="checkbox" name="">
+  /*<input type="checkbox" name="">*/
       <!--<button id="button1" onclick="parent.postMessage('button1 clicked', '*');">click me</button>-->
 
 </div>
