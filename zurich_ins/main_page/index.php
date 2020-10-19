@@ -3,6 +3,11 @@ require_once "veri.php";
 ?>
 <!DOCTYPE html>
 <html>
+<style>
+ #webterminal{
+   display:none;
+ }
+</style>
 
    <head>
       <title>Zurich</title>
