@@ -1,3 +1,6 @@
+<?php
+require_once "veri.php";
+?>
 <html>
   <head>
     <title>Assignment</title>
@@ -91,7 +94,7 @@
 
   <body>
 
-    <img src="p.gif" height="70px">
+    <img src="images/p.gif" height="70px">
 
 
     <div id="heading">
