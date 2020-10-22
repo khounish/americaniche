@@ -73,7 +73,7 @@ tr:nth-child(even) {
                    float: right;
                    height: 100%;
                    width: 35%;
-                   
+
                    font-size: 20px;
                    text-align:center;
                    margin-top:-20px;
@@ -100,6 +100,18 @@ tr:nth-child(even) {
 
      <!-- DIVISION TO DISPLAY ALL THE INSERTED QUESTION FROM DATABASE -->
      <div id="Quest"><h5>The Question Added to database</h5>
+       <h1>Question Bank<h1>
+         <p>Select the topic to view question related to the topic<p>
+           <?php
+           include('data_base_exam.php')
+           $sql2 = "SELECT distinct Topic FROM QuesCat";
+            $result2 = mysqli_query($conn_1,$sql2);
+          while($row2 = mysqli_fetch_assoc($result2))
+
+             {
+              echo "<h3>$row2['Topic']</h3>";
+            }
+          ?>
       <?php
        include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
