@@ -20,11 +20,13 @@ if($result = mysqli_query($conn_1, $sql))
 {
  $row = mysqli_fetch_assoc($result);
  $category = $row['Category_id'];
+ echo "$category";
 }
  $sql1 = "SELECT user_id FROM userdetails WHERE username = '$username'";
  $userid = (($conn->query($sql1))->fetch_assoc())["user_id"];
 //save informition to database:
 $sql1 = "INSERT INTO Exam_scheduler (id,user_id,Duration,Category_id,Level,Examinator) VALUES (NULL,'$userid','$duration','$category','$level','$examinator')";
+echo "$sql1";
 if(mysqli_query($conn_1,$sql1))
 {
   $_SESSION["m"] = "updated";
