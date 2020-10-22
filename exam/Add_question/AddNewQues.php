@@ -83,7 +83,20 @@ tr:nth-child(even) {
 		               border-width: 10px;
                  }
 
-
+        button{
+          background-color: white;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: 2px solid #4CAF50; /* Green */
+        }
 
 
   </style>
@@ -110,7 +123,7 @@ tr:nth-child(even) {
 
              {
               $t=$row['Topic'];
-              echo "<button onclick=\"showQuestion($t)\">{$row2['Topic']}</button>";
+              echo "<button onclick=\"showQuestion($t)\">{$row2['Topic']}</button><br>";
             }
           ?>
       <?php
