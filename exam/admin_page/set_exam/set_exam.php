@@ -83,74 +83,69 @@ require_once "veri_admin.php";
  <body>
 
     <div id="heading">
-
      <h3>Americaniche Academy</h3>
     </div>
+
 	  <h4 id="subheading"><i>SET NEW EXAM<i></h4>
 
-      <form  action="/php/exam_set.php" method="post">
+    <form  action="/php/exam_set.php" method="post">
 
-       <!--<div>
+ <!--<div>
       		<label>Enter the date of examination:</label>
       		<input type="date" size="25" name="date"/><br><br>
-      	</div>-->
-      <!--	<div>
-      		<label>Enter the number of question:</label>
-      		<input type="text" size="25" name="noques"/><br><br>
-      	</div>-->
-      	<div>
-      		<label>Enter duration of examination:</label>
-      		<input type="text" size="25" name="duration"/><br><br>
-      	</div>
-       <div>
-      		<p>Category:<select name="category_id" required>
-      <option value="1">Linux_LinuxCommands_WalletCommands</option>
-      <option value="15">Linux_vi_viCommands</option></p></select><br><br>
+    </div>-->
 
-        </div>
-        <div>
-      		<label>Enter the Username:</label>
-      		<input type="text" size="25" name="username_s"/><br><br>
-      	</div>
-        <div>
-      		<p>Level of the question:<select name="level" required>
+<!--<div>
+  		<label>Enter the number of question:</label>
+    	<input type="text" size="25" name="noques"/><br><br>
+    </div>-->
+
+  	<div>
+    	<label>Enter duration of examination:</label>
+      <input type="text" size="25" name="duration"/><br><br>
+    </div>
+
+    <div>
+    	<label>Enter the Username:</label>
+  		<input type="text" size="25" name="username_s"/><br><br>
+  	</div>
+
+    <div>
+      <p>Level of the question:<select name="level" required>
       <option value="1">easy</option>
       <option value="2">medium</option>
       <option value="3">complex</option></p></select>
-      	</div>
+  	</div>
 
-        <p>Topic of the question:<select name="topic" required>
-       <?php
+    <p>Topic of the question:<select name="topic" required>
+    <?php
+       include('data_base_exam.php');
        $sql2 = "SELECT * FROM QuesCat";
-        $result2 = mysqli_query($conn_1,$sql2);
-      while($row2 = mysqli_fetch_assoc($result2))
-
-         {
-       ?>
+       $result2 = mysqli_query($conn_1,$sql2);
+       while($row2 = mysqli_fetch_assoc($result2)){
+    ?>
         <option value="<?php echo "{$row2['Topic']}" ?>"> <?php echo "{$row2['Topic']}" ?> </option>
-      <?php
-         }
-      ?>
+   <?php
+       }
+   ?>
       </select>
 
-      <p>Subtopic of the question:<select name="subtopic" required>
-     <?php
+  <p>Subtopic of the question:<select name="subtopic" required>
+  <?php
      $sql3 = "SELECT * FROM QuesCat";
-
      $result3 = mysqli_query($conn_1,$sql3);
-    while($row3 = mysqli_fetch_assoc($result3))
+     while($row3 = mysqli_fetch_assoc($result3))
        {
-     ?>
+  ?>
       <option value="<?php echo "{$row3['Subtopic']}" ?>"> <?php echo "{$row3['Subtopic']}" ?> </option>
-    <?php
+  <?php
        }
-    ?>
+  ?>
     </select>
 
-    <p>Keyword of the question:<select name="keyword" required>
-   <?php
+  <p>Keyword of the question:<select name="keyword" required>
+  <?php
    $sql3 = "SELECT * FROM QuesCat";
-
    $result3 = mysqli_query($conn_1,$sql3);
   while($row3 = mysqli_fetch_assoc($result3))
      {
