@@ -11,6 +11,7 @@ $result = mysqli_query($conn_1,$sql);
 while($row = mysqli_fetch_assoc($result))
 { $p = $row['Category_id'];
   $sql1 = "SELECT * FROM Questions WHERE Category_id = '$p'";
+   echo "$sql1";
   if($result = mysqli_query($conn_1,$sql1))
   {
     if(mysqli_num_rows($result)>0)
