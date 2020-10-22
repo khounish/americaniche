@@ -253,7 +253,7 @@ while($row3 = mysqli_fetch_assoc($result3))
          document.getElementById("Quest").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "quest_bank.asp?q="+t, true);
+  xhttp.open("GET", "quest_bank.php?q="+t, true);
   xhttp.send();
 }
 
