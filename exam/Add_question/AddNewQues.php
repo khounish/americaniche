@@ -74,6 +74,7 @@ tr:nth-child(even) {
                    height: 100%;
                    width: 35%;
                    
+
                    font-size: 20px;
                    text-align:center;
                    margin-top:-20px;
