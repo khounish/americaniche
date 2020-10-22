@@ -1,6 +1,11 @@
 <?php
-include(data_base_exam.php);
-$q = $_REQUEST["q"];
+$conn_1 = mysqli_connect("192.168.56.101","somnath","somnath1","Core_Question_Bank");
+//connection checking
+if($conn === false)
+{
+  die("ERROR:connection not successful" . mysqli_connect_error());
+}
+$q = $_REQUEST['q'];
 $sql = "SELECT Category_id FROM QuesCat WHERE Topic = '$q'";
 $result = mysqli_query($conn_1,$sql);
 while($row = mysqli_fetch_assoc($result))
