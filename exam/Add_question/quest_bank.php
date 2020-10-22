@@ -26,4 +26,5 @@ while($row = mysqli_fetch_assoc($result))
  {
     echo "<p>Unable to make query to database</p>";
   }
+}
  ?>
