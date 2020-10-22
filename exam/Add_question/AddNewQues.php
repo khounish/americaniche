@@ -99,8 +99,8 @@ tr:nth-child(even) {
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
      <!-- DIVISION TO DISPLAY ALL THE INSERTED QUESTION FROM DATABASE -->
-     <div id="Quest"><h5>The Question Added to database</h5>
-       <h1>Question Bank<h1>
+     <div id="Quest">
+       <h2>Question Bank<h2>
          <p>Select the topic to view question related to the topic<p>
            <?php
            include('data_base_exam.php');
@@ -109,11 +109,12 @@ tr:nth-child(even) {
           while($row2 = mysqli_fetch_assoc($result2))
 
              {
-              echo "<h3>{$row2['Topic']}</h3>";
+              $t=$row['Topic'];
+              echo "<button onclick=\"showQuestion($t)\">{$row2['Topic']}</button>";
             }
           ?>
       <?php
-       include('data_base_exam.php');
+       /*include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
        if($result = mysqli_query($conn_1,$sql1))
        {
@@ -134,7 +135,7 @@ tr:nth-child(even) {
       else
       {
          echo "<p>Unable to make query to database</p>";
-       }
+       }*/
       ?>
     </div>
 
@@ -244,6 +245,17 @@ while($row3 = mysqli_fetch_assoc($result3))
 
           }
         }
+
+        function showQuestion(t) {
+         var xhttp = new XMLHttpRequest();
+         xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+         document.getElementById("Quest").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "quest_bank.asp?q="+t, true);
+  xhttp.send();
+}
 
 </script>
 </html>
