@@ -90,14 +90,14 @@ require_once "veri_admin.php";
 
       <form  action="/php/exam_set.php" method="post">
 
-       <div>
+       <!--<div>
       		<label>Enter the date of examination:</label>
       		<input type="date" size="25" name="date"/><br><br>
-      	</div>
-      	<div>
+      	</div>-->
+      <!--	<div>
       		<label>Enter the number of question:</label>
       		<input type="text" size="25" name="noques"/><br><br>
-      	</div>
+      	</div>-->
       	<div>
       		<label>Enter duration of examination:</label>
       		<input type="text" size="25" name="duration"/><br><br>
@@ -122,7 +122,7 @@ require_once "veri_admin.php";
 
 
       	<div>
-          <input type="submit" class="submit" name="submit" value="submit" />
+          <input type="submit" class="button" name="submit" value="submit" />
           <br><?php echo htmlspecialchars($_SESSION["m"]); ?>
       	</div>
      </form>
