@@ -103,7 +103,7 @@ tr:nth-child(even) {
        <h1>Question Bank<h1>
          <p>Select the topic to view question related to the topic<p>
            <?php
-           include('data_base_exam.php')
+           include('data_base_exam.php');
            $sql2 = "SELECT distinct Topic FROM QuesCat";
             $result2 = mysqli_query($conn_1,$sql2);
           while($row2 = mysqli_fetch_assoc($result2))
