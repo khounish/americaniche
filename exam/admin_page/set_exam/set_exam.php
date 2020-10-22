@@ -10,7 +10,7 @@ require_once "veri_admin.php";
 
      body{
        background-color: white;
-       font-size: 30px;
+       font-size: 25px;
          }
 
     h3{
@@ -102,12 +102,12 @@ require_once "veri_admin.php";
 
   	<div>
     	<label>Enter duration of examination:</label>
-      <input type="text" size="25" name="duration"/><br><br>
+      <input type="text" size="25" name="duration"/><br>
     </div>
 
     <div>
     	<label>Enter the Username:</label>
-  		<input type="text" size="25" name="username_s"/><br><br>
+  		<input type="text" size="25" name="username_s"/><br>
   	</div>
 
     <div>
