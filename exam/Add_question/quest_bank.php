@@ -4,8 +4,8 @@ $q = $_REQUEST["q"];
 $sql = "SELECT Category_id FROM QuesCat WHERE Topic = '$q'";
 $result = mysqli_query($conn_1,$sql);
 while($row = mysqli_fetch_assoc($result))
-{
-  $sql1 = "SELECT * FROM Questions WHERE Category_id = '$row['Category_id']'";
+{ $p = $row['Category_id'];
+  $sql1 = "SELECT * FROM Questions WHERE Category_id = '$p'";
   if($result = mysqli_query($conn_1,$sql1))
   {
     if(mysqli_num_rows($result)>0)
