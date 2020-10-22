@@ -15,13 +15,11 @@ while($row = mysqli_fetch_assoc($result))
   if($result = mysqli_query($conn_1,$sql1))
   {
     if(mysqli_num_rows($result)>0)
-    {  echo "<table>";
+    {
       while($row = mysqli_fetch_assoc($result))
-      {   echo "<tr>";
-          echo "<td> <a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a></td>";
-          echo "</tr>";
+      {
+          echo "<a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a>";
       }
-       echo "</table>";
     }
     else
     {
