@@ -109,7 +109,7 @@ tr:nth-child(even) {
           while($row2 = mysqli_fetch_assoc($result2))
 
              {
-              echo "<h3>$row2[\'Topic\']</h3>";
+              echo "<h3>{$row2['Topic']}</h3>";
             }
           ?>
       <?php
