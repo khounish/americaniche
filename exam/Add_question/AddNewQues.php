@@ -122,7 +122,7 @@ tr:nth-child(even) {
           {
             $t = $row2['Topic'];
             echo "<button onclick="showQuestion($t)">$t</button><br>";
-          }
+          }?>
       <?php
        /*include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
