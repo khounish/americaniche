@@ -73,7 +73,6 @@ tr:nth-child(even) {
                    float: right;
                    height: 100%;
                    width: 35%;
-                   
 
                    font-size: 20px;
                    text-align:center;
@@ -84,7 +83,19 @@ tr:nth-child(even) {
 		               border-width: 10px;
                  }
 
-
+        button{
+          background-color: white;
+          border: none;
+          padding: 10px 100px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 20px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: 2px solid #4CAF50; /* Green */
+        }
 
 
   </style>
@@ -100,9 +111,22 @@ tr:nth-child(even) {
 	  <h4 id="subheading"><i>ADD NEW QUESTION<i></h4>
 
      <!-- DIVISION TO DISPLAY ALL THE INSERTED QUESTION FROM DATABASE -->
-     <div id="Quest"><h5>The Question Added to database</h5>
+     <div id="Quest">
+       <h2>Question Bank<h2>
+         <p>Select the topic to view question related to the topic<p>
+           <?php
+           include('data_base_exam.php');
+           $sql2 = "SELECT distinct Topic FROM QuesCat";
+            $result2 = mysqli_query($conn_1,$sql2);
+          while($row2 = mysqli_fetch_assoc($result2))
+          {
+             $t=$row2['Topic'];
+
+             echo "<button onclick=\"showQuestion('$t')\">{$row2['Topic']}</button><br>";
+
+           }?>
       <?php
-       include('data_base_exam.php');
+       /*include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
        if($result = mysqli_query($conn_1,$sql1))
        {
@@ -123,7 +147,7 @@ tr:nth-child(even) {
       else
       {
          echo "<p>Unable to make query to database</p>";
-       }
+       }*/
       ?>
     </div>
 
@@ -233,6 +257,17 @@ while($row3 = mysqli_fetch_assoc($result3))
 
           }
         }
+
+        function showQuestion(t) {
+         var xhttp = new XMLHttpRequest();
+         xhttp.onreadystatechange = function() {
+         if (this.readyState == 4 && this.status == 200) {
+         document.getElementById("Quest").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "quest_bank.php?q="+t, true);
+  xhttp.send();
+}
 
 </script>
 </html>
