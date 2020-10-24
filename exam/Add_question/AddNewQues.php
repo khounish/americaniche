@@ -121,7 +121,9 @@ tr:nth-child(even) {
           while($row2 = mysqli_fetch_assoc($result2))
           {
              $t=$row2['Topic'];
-             echo "<button onclick=\"showQuestion('Linux')\">{$row2['Topic']}</button><br>";
+
+             echo "<button onclick=\"showQuestion(\'$t'\)\">{$row2['Topic']}</button><br>";
+
            }?>
       <?php
        /*include('data_base_exam.php');
