@@ -122,7 +122,7 @@ tr:nth-child(even) {
 
              {
               $t=$row['Topic'];
-              echo "<button onclick=\"showQuestion({$row['Topic'])}\">{$row['Topic']}</button>";
+              echo "<button onclick=\"showQuestion({$row['Topic']}\">{$row['Topic']}</button>";
             }
           ?>
       <?php
