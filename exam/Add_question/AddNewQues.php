@@ -122,11 +122,11 @@ tr:nth-child(even) {
 
              {
               $t=$row['Topic'];
-              echo "<input type="button" value="$t" onclick="showQuestion(this.value)>";
+              echo "<form><input type="button" value="$t" onclick="showQuestion(this.value)></form>";
             }
           ?>
       <?php
-       /*include('data_base_exam.php');
+       include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
        if($result = mysqli_query($conn_1,$sql1))
        {
