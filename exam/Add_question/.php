@@ -5,12 +5,12 @@ require_once "veri.php";
  <head>
    <style>
     select {
-            font-size: 20px;
+            font-size: 15px;
            }
 
      body{
        background-color: white;
-       font-size: 30px;
+       font-size: 25px;
          }
 
     h3{
@@ -61,17 +61,16 @@ require_once "veri.php";
           color:white;
                    }
         #Quest{
-                   float: right;
-                   height: 100%;
-                   width: 45%;
-                    background-color: #c1e1ec;
-                   font-size: 20px;
-                   text-align: center;
-                   margin-top:-20px;
-		   right:15px;
-		   border-style: outset;
-		   border-color: #7c89c0;
-		   border-width: 10px;
+          float: right;
+          height: 100%;
+          width: 35%;
+          font-size: 20px;
+          text-align:center;
+          margin-top:-20px;
+          right:15px;
+          border-style: outset;
+          border-color: #7c89c0;
+          border-width: 10px;
                  }
 
 
