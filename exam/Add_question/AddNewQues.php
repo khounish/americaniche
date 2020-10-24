@@ -121,7 +121,9 @@ tr:nth-child(even) {
           while($row2 = mysqli_fetch_assoc($result2))
           {
              $t=$row2['Topic'];
+
              echo "<button onclick=\"showQuestion(\'$t'\)\">{$row2['Topic']}</button><br>";
+
            }?>
       <?php
        /*include('data_base_exam.php');
@@ -263,7 +265,7 @@ while($row3 = mysqli_fetch_assoc($result3))
          document.getElementById("Quest").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "quest_bank.asp?q="+t, true);
+  xhttp.open("GET", "quest_bank.php?q="+t, true);
   xhttp.send();
 }
 

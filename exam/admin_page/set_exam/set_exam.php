@@ -5,7 +5,7 @@ require_once "veri_admin.php";
  <head>
    <style>
     select {
-            font-size: 20px;
+            font-size: 15px;
            }
 
      body{
@@ -102,7 +102,7 @@ require_once "veri_admin.php";
 
   	<div>
     	<label>Enter duration of examination:</label>
-      <input type="text" size="25" name="duration"/><br>
+      <input type="text" size="25" name="duration"/><br><br>
     </div>
 
     <div>
