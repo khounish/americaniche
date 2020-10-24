@@ -120,9 +120,9 @@ tr:nth-child(even) {
             $result2 = mysqli_query($conn_1,$sql2);
           while($row2 = mysqli_fetch_assoc($result2))
           {
-            $t = $row2['Topic'];
-            echo "<button onclick=\"showQuestion($t)\">$t</button><br>";
-          }?>
+             $t=$row2['Topic'];
+             echo "<button onclick=\"showQuestion($t)\">{$row2['Topic']}</button><br>";
+           }?>
       <?php
        /*include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
