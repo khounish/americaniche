@@ -123,7 +123,7 @@ tr:nth-child(even) {
              {
               $t=$row['Topic'];?>
              <button onclick="showQuestion(<?php $t ?>)"><?php $t ?></button>";
-            }
+            <?php}
           ?>
       <?php
        /*include('data_base_exam.php');
