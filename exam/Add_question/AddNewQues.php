@@ -147,7 +147,7 @@ tr:nth-child(even) {
       else
       {
          echo "<p>Unable to make query to database</p>";
-       }*/
+       }
       ?>
     </div>
 
