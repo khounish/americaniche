@@ -122,11 +122,11 @@ tr:nth-child(even) {
 
              {
               $t=$row['Topic'];
-              echo "<button onclick=\"showQuestion(this.value)\">$t</button>";
+              echo "<button onclick=\"showQuestion($row['Topic'])\">{$row['Topic']}</button>";
             }
           ?>
       <?php
-       include('data_base_exam.php');
+       /*include('data_base_exam.php');
        $sql1 = "SELECT * FROM Questions order by Question_id DESC";
        if($result = mysqli_query($conn_1,$sql1))
        {
@@ -147,7 +147,7 @@ tr:nth-child(even) {
       else
       {
          echo "<p>Unable to make query to database</p>";
-       }
+       }*/
       ?>
     </div>
 
