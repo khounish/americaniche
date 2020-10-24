@@ -6,9 +6,7 @@ if($conn_1 === false)
   die("ERROR:connection not successful" . mysqli_connect_error());
 }
 $q = $_GET['q'];
-echo "$q";
 $sql = "SELECT Category_id FROM QuesCat WHERE Topic = '$q'";
-echo "$sql";
 $result = mysqli_query($conn_1,$sql);
 while($row = mysqli_fetch_assoc($result))
 {
@@ -20,7 +18,7 @@ while($row = mysqli_fetch_assoc($result))
     {
       while($row = mysqli_fetch_assoc($result))
       {
-          echo "<a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a>";
+          echo "<a style=\"text-decoration:none\" href=\".php?qid=$row[Question_id]\">Q$row[Question_id]. $row[Questiontext]</a><br>";
       }
     }
     else
