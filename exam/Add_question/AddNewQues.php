@@ -73,6 +73,7 @@ tr:nth-child(even) {
                    float: right;
                    height: 100%;
                    width: 35%;
+                   overflow: hidden;
 
                    font-size: 20px;
                    text-align:center;
