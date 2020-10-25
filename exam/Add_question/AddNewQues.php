@@ -85,17 +85,21 @@ tr:nth-child(even) {
                  }
 
         button{
-          background-color: white;
+          display: block;
+          width: 100%;
           border: none;
-          padding: 10px 100px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          margin: 4px 2px;
-          cursor: pointer;
-          border-radius: 4px;
-          border: 2px solid #4CAF50; /* Green */
-        }
+          background-color: #7c89c0;
+          color: white;
+          padding: 14px 28px;
+          font-size: 16px;
+         cursor: pointer;
+         text-align: center;
+         }
+         .block:hover {
+  background-color: #d8d9da;
+  color: black;
+}
+
 
 
   </style>
