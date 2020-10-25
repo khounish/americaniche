@@ -86,16 +86,16 @@ tr:nth-child(even) {
 
         button{
           display: block;
-          width: 100%;
+          width: 80%;
           border: none;
           background-color: #7c89c0;
           color: white;
-          padding: 14px 28px;
+
           font-size: 16px;
          cursor: pointer;
          text-align: center;
          }
-         .block:hover {
+         button:hover {
   background-color: #d8d9da;
   color: black;
 }
