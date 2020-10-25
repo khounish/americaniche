@@ -8,8 +8,8 @@ require_once "veri_admin.php";
     <title>Americaniche Exam Portal</title>
 
     <frameset cols = "195,*" border="0" framespacing="0" frameborder="no" >
-      <frame src = "page.php" name = "menu_page" scrolling="no" />
-      <frame src = "blank.php" name = "main_page" scrolling="no" />
+      <frame src = "page.php" name = "menu_page" scrolling="auto" />
+      <frame src = "blank.php" name = "main_page" scrolling="auto" />
 
       <noframes>
           <body>Your browser does not support frames.</body>
