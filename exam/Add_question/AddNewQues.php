@@ -86,11 +86,11 @@ tr:nth-child(even) {
 
         button{
           display: block;
-          width: 80%;
+          width: 100%;
           border: none;
           background-color: #7c89c0;
           color: white;
-
+          margin-up: -10px;
           font-size: 16px;
          cursor: pointer;
          text-align: center;
