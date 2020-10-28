@@ -150,7 +150,7 @@ var tabs = $("#tabs").tabs();
     $(this).append("<div id='tabs-" + name + "'>");
 
     $("#tabs-"+name).append("<div id='webterminal" + name + "'>");
-    $("#tabs-"+name).append("<hr><br><object type='text/htm' data='http://192.168.56.101:6214' width='65%' height='45%' style='border-style:solid; padding-left:30px; margin-left:130px'></object></div>");
+    $("#tabs-"+name).append("<hr><br><object type='text/htm' data='http://webterminal.americaniche.com' width='65%' height='45%' style='border-style:solid; padding-left:30px; margin-left:130px'></object></div>");
     $(this).append("</div>");
     $(this).tabs("refresh");
 };
