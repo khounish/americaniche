@@ -88,8 +88,8 @@ ul, #myUL {
 </li>
  <li><span class="caret">Assignments</span>
     <ul class="nested">
-     <li> <a href = "assignment.php" target = "center">Assignment1</a><br></li>
-     <li> <a href = "assignment2.php" target = "center">Assignment2</a><br></li>
+     <li> <a href = "assignment2.php" target = "center">Assignment1</a><br></li>
+     <li> <a href = "assignment.php" target = "center">Assignment2</a><br></li>
       <li> <a href = "http://videos.americaniche.com/asgn3.html" target = "center">Assignment3</a><br></li>
       <li> <a href = "http://videos.americaniche.com/asgn4.html" target = "center">Assignment4</a><br></li>
       <li> <a href = "http://videos.americaniche.com/asgn5.html" target = "center">Assignment5</a><br></li>
