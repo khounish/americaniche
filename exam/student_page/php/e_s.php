@@ -25,15 +25,16 @@ $noques = (($conn_1->query($sql10))->fetch_assoc())["NoQues"];
 //validate the results from db and respond back
 if(  date("Y-m-d") ===  $date )
   {
-    require_once "s_q.php";
-    header("location: http://www.americaniche.com/exam/student_page/exam_page/index.php");
-    // Store data in session variables
-      $_SESSION["date"] = $date;
-      $_SESSION["duration"] = $duration;
-      $_SESSION["level"] = $level;
-      $_SESSION["category_id"] = $category_id;
-      $_SESSION["exam_id"] = $exam_id;
-      $_SESSION["no_ques"] = $noques;
+        // Store data in session variables
+       // $_SESSION["date"] = $date;
+        $_SESSION["duration"] = $duration;
+        $_SESSION["level"] = $level;
+        $_SESSION["category_id"] = $category_id;
+        $_SESSION["exam_id"] = $exam_id;
+       // $_SESSION["no_ques"] = $noques;
+        require_once "s_q.php";
+        header("location: http://www.americaniche.com/exam/student_page/exam_page/index.php");
+
       
 
     }
