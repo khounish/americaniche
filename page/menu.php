@@ -1,5 +1,5 @@
 <?php
-required_once("v_s.php")
+required_once("v_s.php");
 ?>
 <html>
 <head>
