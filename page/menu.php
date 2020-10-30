@@ -13,7 +13,7 @@ require_once "v_s.php";
     margin-left: 20px;
   }
   a:link {
-  color: white;
+  color: #24cfaa;
   background-color: transparent;
   text-decoration: none;
 
