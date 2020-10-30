@@ -38,6 +38,7 @@ a:active {
 
 ul, #myUL {
   list-style-type: none;
+  color: #24cfaa;
 }
 
 /* Remove margins and padding from the parent ul */
@@ -51,12 +52,13 @@ ul, #myUL {
 .caret {
   cursor: pointer;
   user-select: none; /* Prevent text selection */
+  color: #24cfaa;
 }
 
 /* Create the caret/arrow with a unicode, and style it */
 .caret::before {
   content: "\25B6";
-  color: white;
+  color: #24cfaa;
   display: inline-block;
   margin-right: 6px;
 }
@@ -64,11 +66,13 @@ ul, #myUL {
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
 .caret-down::before {
   transform: rotate(90deg);
+  color: #24cfaa;
 }
 
 /* Hide the nested list */
 .nested {
   display: none;
+  color: #24cfaa;
 }
 
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
@@ -81,7 +85,7 @@ ul, #myUL {
    <img src="/photos/user.png" class="logo" alt="logo">
 
    <ul id="myUL" style="margin-top:50">
-  <li><span class="caret"><font color=white>Assignments</span>
+  <li><span class="caret"><font color=#24cfaa>Assignments</span>
     <ul class="nested">
      <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "main_page">Assignment1</a><br></li>
      <li> <a href = "http://videos.americaniche.com/asgn2.html" target = "main_page">Assignment2</a><br></li>
@@ -94,7 +98,7 @@ ul, #myUL {
 </li>
 
 <ul id="myUL">
-  <li><span class="caret"><font color=white>Videos</span>
+  <li><span class="caret"><font color=#24cfaa>Videos</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/day1.html" target = "main_page">Day1</a></li>
       <li><a href = "http://videos.americaniche.com/day2.html" target = "main_page">Day2</a></li>
@@ -115,7 +119,7 @@ ul, #myUL {
 </ul>
 </li>
 
-<li><span class="caret"><font color=white>Workshop</span>
+<li><span class="caret"><font color=#24cfaa>Workshop</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/ws1.html" target = "main_page">WorkShop1</a></li>
       <li><a href = "http://videos.americaniche.com/ws2.html" target = "main_page">WorkShop2</a></li>
@@ -125,7 +129,7 @@ ul, #myUL {
 </ul>
 
 <ul id="myUL">
-  <li><span class="caret"><font color=white>Server OS</span>
+  <li><span class="caret"><font color=#24cfaa>Server OS</span>
     <ul class="nested">
       <li><a href = "http://software.americaniche.com" target = "main_page">Fedora31</a></li>
       <li><a href = "http://software.americaniche.com" target = "main_page">Ubuntu18.04.4</a></li>
@@ -134,8 +138,8 @@ ul, #myUL {
 </ul>
 </li>
 <ul id="myUL">
-  <li><span class="caret"><font color=white>Imprt. source</span>
-    <ul class="nested">
+  <li><span class="caret">Imprt. source</span>
+    <ul class="nested"><font color=#24cfaa>
       <li><a href = "/pdf/ascii.pdf" target = "main_page">ASCII Code</a></li>
       <li><a href = "/pdf/blc.pdf" target = "main_page">Bacis linux command</a></li>
     </ul>
@@ -143,7 +147,7 @@ ul, #myUL {
 
 <ul id="myUL">
 <li><span class="caret">Mysql</span>
- <ul class="nested">
+ <ul class="nested"><font color=#24cfaa>
 <li> <a href = "http://videos.americaniche.com/pf.html" target = "main_page">Port Forwarding</a><li>
 <li> <a href = "http://videos.americaniche.com/pfcss1.html" target = "main_page">Port Forwarding1</a><li>
 <li> <a href = "http://videos.americaniche.com/msql_testing.html" target = "main_page">Mysql Connection</a><li>
