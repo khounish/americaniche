@@ -44,6 +44,7 @@ ul, #myUL {
 #myUL {
   margin: 0;
   padding: 0;
+  color: #24cfaa;
 }
 
 /* Style the caret/arrow */
