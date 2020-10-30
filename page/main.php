@@ -1,5 +1,5 @@
 <?php
-required_once("v_s.php");
+require_once "v_s.php";
 ?>
 <!DOCTYPE html>
 <html>
