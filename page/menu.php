@@ -82,7 +82,7 @@ ul, #myUL {
 
 </style>
    <body bgcolor = "#ecf0f3" color=red><b>
-   <img src="/photos/user.png" class="logo" alt="logo">
+   <img src="/photos/logo.png" class="logo" alt="logo">
 
    <ul id="myUL" style="margin-top:50">
   <li><span class="caret"><font color=#24cfaa>Assignments</span>
