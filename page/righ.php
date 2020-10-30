@@ -1,16 +1,28 @@
 <?php
-// Initialize the session
-session_start();
-
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: index.php");
-    exit;
-}
+required_once("v_s.php")
 ?>
 <html>
-<style>
-a:link {
+<head>
+  <style>
+  body {
+  	color: white;
+  	text-shadow: 0px 0px 5px #123456;
+  	height: 250vh;
+  	background:
+  		linear-gradient(-135deg, rgb(51, 51, 135) 10%, transparent),
+  		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
+  		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
+  	background-color: rgba(34, 76, 152, 0.25);
+  }
+  .logo {
+  	width:100px;
+  	height:100px;
+  	border-radius:50%;
+  	overflow: hidden;
+    align:center;
+    margin-left: 20px;
+  }
+  a:link {
   color: white;
   background-color: transparent;
   text-decoration: none;
@@ -92,16 +104,23 @@ body {
 }
 </style>
    <body bgcolor = "#392085" color=red><b>
-     <img src="/photos/user.png" class="logo" alt="logo">
+   <img src="/photos/user.png" class="logo" alt="logo">
      <p style="text-align:center;margin-right:px;color:white;"><?php echo htmlspecialchars($_SESSION["username"]); ?><br><a href="/php/logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a></p>
 <ul id="myUL" style="margin-top:50">
-  <li><span class="caret"><font color=white>Imprt. source</span>
+  <li><span class="caret"><font color=white>My Assignments</span>
     <ul class="nested">
-      <li><a href = "/pdf/ascii.pdf" target = "main_page">ASCII Code</a></li>
-      <li><a href = "/pdf/blc.pdf" target = "main_page">Bacis linux command</a></li>
-    </ul>
+      <li><a href = "/assignments/assigment_1.html" target = "main_page">Asgn_1</a></li>
+      <li><a href = "/assignments/assignment_2.html" target = "main_page">Asgn_2</a></li>
+      <li><a href = "/assignments/assignment_3.html" target = "main_page">Asgn_3</a></li>
+     <li><a href = "/assignments/assignmnent_4.html" target = "main_page">Asgn_4</a></li>
+      <li><a href = "/assignments/assignment_5.html" target = "main_page">Asgn_5</a></li>
+      <li><a href = "/assignments/assignment_6.html" target = "main_page">Asgn_6</a></li>
+      <li><a href = "/assignments/assignment_7.html" target = "main_page">Asgn_7</a></li>
+      <li><a href = "/assignments/assignment_8.html" target = "main_page">Asgn_8</a></li>
+      <li><a href = "/assignments/assignment_9.html" target = "main_page">Asgn_9</a></li>
+</ul>
 </li>
-
+   
 <script>
 var toggler = document.getElementsByClassName("caret");
 var i;
@@ -113,6 +132,7 @@ for (i = 0; i < toggler.length; i++) {
   });
 }
 </script>
-   </body>
-
+  <img src="/photos/user.png" class="logo" alt="logo">
+  <p style="text-align:center;margin-right:px;color:white;"><?php echo htmlspecialchars($_SESSION["username"]); ?><br><a href="/php/logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a></p>
+</body>
 </html>

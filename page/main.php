@@ -1,3 +1,6 @@
+<?php
+required_once("v_s.php")
+?>
 <!DOCTYPE html>
 <html>
 <style>
