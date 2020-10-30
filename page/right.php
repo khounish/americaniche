@@ -105,7 +105,5 @@ for (i = 0; i < toggler.length; i++) {
   });
 }
 </script>
-  <img src="/photos/user.png" class="logo" alt="logo">
-  <p style="text-align:center;margin-right:px;color:white;"><?php echo htmlspecialchars($_SESSION["username"]); ?><br><a href="/php/logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a></p>
 </body>
 </html>

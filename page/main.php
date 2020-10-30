@@ -11,7 +11,7 @@ div.a {
    <body >
 <div class=a>
  <img src="/photos/logo.png" align=center alt="logo" width="300px" height="300px">
-      <h1> Hello! Somnath Welcome to AmericaNiche Academy</h1> </div>
+      <h1> Hello! <?php echo htmlspecialchars($_SESSION["username"]); ?> Welcome to AmericaNiche Academy</h1> </div>
    </body>
 
 </html>
