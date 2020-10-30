@@ -84,29 +84,12 @@ ul, #myUL {
 .active {
   display: block;
 }
-body {
-	color: white;
-	text-shadow: 0px 0px 5px #123456;
-	height: 250vh;
-	background:
-		linear-gradient(-135deg, rgb(51, 51, 135) 10%, transparent),
-		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
-		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-	background-color: rgba(34, 76, 152, 0.25);
-}
-.logo {
-	width:100px;
-	height:100px;
-	border-radius:50%;
-	overflow: hidden;
-  align:center;
-  margin-left: 20px;
-}
+
 </style>
    <body bgcolor = "#392085" color=red><b>
    <img src="/photos/user.png" class="logo" alt="logo">
-   <p style="text-align:center;margin-right:px;color:white;"><?php echo htmlspecialchars($_SESSION["username"]); ?><br><a href="/php/logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a></p>
-<ul id="myUL" style="margin-top:50">
+
+   <ul id="myUL" style="margin-top:50">
   <li><span class="caret"><font color=white>Assignments</span>
     <ul class="nested">
      <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "main_page">Assignment1</a><br></li>
@@ -118,6 +101,7 @@ body {
       <li> <a href = "http://videos.americaniche.com/asgn7.html" target = "main_page">Assignment7</a><br></li>
 </ul>
 </li>
+
 <ul id="myUL">
   <li><span class="caret"><font color=white>Videos</span>
     <ul class="nested">
@@ -139,6 +123,7 @@ body {
       <li><a href = "http://videos.americaniche.com/day13.html" target = "main_page">Day13</a></li>
 </ul>
 </li>
+
 <li><span class="caret"><font color=white>Workshop</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/ws1.html" target = "main_page">WorkShop1</a></li>
@@ -147,7 +132,8 @@ body {
       <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">WorkShop4 Part1</a></li>
       <li><a href = "http://videos.americaniche.com/ws4b.html" target = "main_page">WorkShop4 Part2</a></li>
 </ul>
-<ul id="myUL" style="margin-top:50">
+
+<ul id="myUL">
   <li><span class="caret"><font color=white>Server OS</span>
     <ul class="nested">
       <li><a href = "http://software.americaniche.com" target = "main_page">Fedora31</a></li>
@@ -156,7 +142,7 @@ body {
 
 </ul>
 </li>
-<ul id="myUL" style="margin-top:50">
+<ul id="myUL">
   <li><span class="caret"><font color=white>Imprt. source</span>
     <ul class="nested">
       <li><a href = "/pdf/ascii.pdf" target = "main_page">ASCII Code</a></li>
@@ -164,7 +150,7 @@ body {
     </ul>
 </li>
 
-<ul id="myUL" style="margin-top:50">
+<ul id="myUL">
 <li><span class="caret">Mysql</span>
  <ul class="nested">
 <li> <a href = "http://videos.americaniche.com/pf.html" target = "main_page">Port Forwarding</a><li>

@@ -4,16 +4,6 @@ require_once "v_s.php";
 <html>
 <head>
   <style>
-  body {
-  	color: white;
-  	text-shadow: 0px 0px 5px #123456;
-  	height: 250vh;
-  	background:
-  		linear-gradient(-135deg, rgb(51, 51, 135) 10%, transparent),
-  		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
-  		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-  	background-color: rgba(34, 76, 152, 0.25);
-  }
   .logo {
   	width:100px;
   	height:100px;
@@ -84,29 +74,12 @@ ul, #myUL {
 .active {
   display: block;
 }
-body {
-	color: white;
-	text-shadow: 0px 0px 5px #123456;
-	height: 250vh;
-	background:
-		linear-gradient(-135deg, rgb(51, 51, 135) 10%, transparent),
-		repeating-linear-gradient(45deg, rgba(34, 76, 152, 1) 0%, rgba(31, 48, 94, 0.6) 5%, transparent 5%, transparent 10%),
-		repeating-linear-gradient(-45deg, rgba(34, 76, 152, 0.4) 0%, rgba(31, 48, 94, 0.5) 5%, transparent 5%, transparent 10%);
-	background-color: rgba(34, 76, 152, 0.25);
-}
-.logo {
-	width:100px;
-	height:100px;
-	border-radius:50%;
-	overflow: hidden;
-  align:center;
-  margin-left: 20px;
-}
 </style>
-   <body bgcolor = "#392085" color=red><b>
+   <body bgcolor = "#24cfaa" color=red><b>
    <img src="/photos/user.png" class="logo" alt="logo">
      <p style="text-align:center;margin-right:px;color:white;"><?php echo htmlspecialchars($_SESSION["username"]); ?><br><a href="/php/logout.php" style="color:red;text-decoration:underline" target = "_top">Logout</a></p>
-<ul id="myUL" style="margin-top:50">
+
+     <ul id="myUL" style="margin-top:50">
   <li><span class="caret"><font color=white>My Assignments</span>
     <ul class="nested">
       <li><a href = "/assignments/assigment_1.html" target = "main_page">Asgn_1</a></li>
