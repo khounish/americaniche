@@ -31,7 +31,7 @@ session_start();
 									-13px -13px 20px white;
 		}
 		.logo {
-			background:url("usr.png");
+			background:url("logo_big.png");
 			background-size: cover;
 			width:110px;
 			height: 110px;
