@@ -7,8 +7,8 @@ require_once "v_s.php";
 .logo {
     background:url("/photos/logo_big.png");
     background-size: cover;
-    width:110px;
-    height: 110px;
+    width:500px;
+    height: 500px;
     border-radius: 50%;
     margin:0 auto;
     box-shadow:

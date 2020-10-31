@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecf0f3;
+    color:#24cfaa;
+}
+.login-div {
+    width:350px;
+    height: 500px;
+    padding: 30px 35px 35px 35px;
+    border-radius: 40px;
+    background: #ecf0f3;
+    box-shadow: 13px 13px 20px #d1cbbf,
+                            -13px -13px 20px white;
+}
+.logo {
+    background:url("/photos/logo_big.png");
+    background-size: cover;
+    width:110px;
+    height: 110px;
+    border-radius: 50%;
+    margin:0 auto;
+    box-shadow:
+    /* logo shadow */
+    0px 0px 2px blue,
+    /* offset */
+    0px 0px 0px 5px #24cfaa,
+    /*bottom right */
+    8px 8px 15px #a7aaaf,
+    /* top left */
+    -8px -8px 15px #ffffff
+    ;
+}
+.title {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 0px;
+    letter-spacing: 0.5px;
+}
+.sub-title {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+}
+.fields {
+    width: 100%;
+    padding: 30px 5px 8px 5px;
+}
+.forget{
+    text-align: left;
+    text-decoration: none;
+    color: #24cfaa;
+    display: none;
+}
+
+
+.fields input {
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 15px;
+    color: #555;
+    padding:15px 5px 10px 0px;
+}
+.Username, .password {
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+                            inset -8px -8px 8px #ffffff;
+}
+.fields svg {
+    height: 22px;
+    margin:0 10px -3px 25px;
+}
+.signin-button {
+    outline: none;
+    cursor: pointer;
+    border:none;
+    width:100%;
+    height: 45px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color:#fff;
+    text-align: center;
+    background: #3c3b6e;
+    box-shadow: 3px 3px 8px #b1b1b1,
+                            -3px -3px 8px #ffffff;
+    transition: 0.5s;
+}
+.signin-button:hover {
+    background:#b22234;
+}
+.signin-button:active {
+    background:#1da88a;
+}
+.link {
+    padding-top: 20px;
+    text-align: center;
+}
+.link a {
+    text-decoration: none;
+    color:#aaa;
+    font-size: 15px;
+}
