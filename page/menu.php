@@ -57,7 +57,7 @@ require_once "v_s.php";
     </ul>
 </li>
 
-<br><a href="practice.php" target="main_page">Practice now</a>
+<br><a href="practice.php" target="main_page">Terminal</a>
 <br>
 <br>
 <br>
