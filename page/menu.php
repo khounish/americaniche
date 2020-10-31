@@ -6,7 +6,8 @@ require_once "v_s.php";
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
    <body bgcolor = "#ecf0f3" color=red><b>
-   <img src="/photos/logo.png" class="logo" alt="logo">
+   <div class="login-div">
+      <div class="logo"></div><br><br>
 
    <ul id="myUL" style="margin-top:50">
   <ul id="myUL">
