@@ -24,9 +24,8 @@ require_once "v_s.php";
 }
 </style>
    <body >
-<div class=a>
-<div> <div class="logo"></div><br><br></div>
-      <h1> Hello! <?php echo htmlspecialchars($_SESSION["username"]); ?> Welcome to AmericaNiche Academy</h1> </div>
+<div> <div class="logo"></div><br><br></div><br>
+      <h1> Hello! <?php echo htmlspecialchars($_SESSION["username"]); ?> Welcome to AmericaNiche Academy</h1>
    </body>
 
 </html>

@@ -11,7 +11,7 @@ require_once "v_s.php";
    <ul id="myUL" style="margin-top:50">
    
    <ul id="myUL">
-  <li><span class="caret"><font color=#24cfaa>Prepare yourself</span>
+  <li><span class="caret"><font color=#24cfaa>Prepare your system</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall VM</a></li>
 </ul>
@@ -45,9 +45,7 @@ require_once "v_s.php";
 <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Server OS</span>
     <ul class="nested">
-      <li><a href = "http://software.americaniche.com" target = "main_page">Fedora31</a></li>
-      <li><a href = "http://software.americaniche.com" target = "main_page">Ubuntu18.04.4</a></li>
-      <li><a href = "http://software.americaniche.com" target = "main_page">CentOS</a></li>
+      <li><a href = "http://software.americaniche.com" target = "main_page">Download</a></li>
 
 </ul>
 </li>
