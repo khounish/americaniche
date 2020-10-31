@@ -52,6 +52,10 @@ require_once "v_s.php";
 </li>
 
 <br><a href="practice.php" target="main_page">Practice now</a>
+<br>
+<br>
+<br>
+<p style="color:red;"><a href="../php/logout.php" target="_top">Logout<a><p>
 
 <script>
 var toggler = document.getElementsByClassName("caret");
