@@ -10,14 +10,12 @@ require_once "v_s.php";
    <br><a href="practice.php" target="main_page">Terminal</a>
 <br>
 <p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p>
-<br>
-<br>
    <ul id="myUL" style="margin-top:50">
    
    <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Prepare your system</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall VM</a></li>
+      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall Fedora31 VM</a></li>
 </ul>
 </li>
   
