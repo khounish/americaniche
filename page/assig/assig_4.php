@@ -59,7 +59,7 @@ require_once "v_s.php";
 <?php
 include "switch.php";
 ?>
-<br><br><br><br>
+<br><br><br><br><br><br>
 <?php
 include "webterminal.php";
 ?>
