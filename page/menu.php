@@ -5,11 +5,19 @@ require_once "v_s.php";
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
-   <body bgcolor = "#ecf0f3" color=red><b>
+   <body bgcolor = "#ecf0f3" color=red>
    <div> <div class="logo"></div><br><br></div>
 
    <ul id="myUL" style="margin-top:50">
-  <ul id="myUL">
+   
+   <ul id="myUL">
+  <li><span class="caret"><font color=#24cfaa>Prepare yourself</span>
+    <ul class="nested">
+      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall VM</a></li>
+</ul>
+</li>
+  
+   <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Videos</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/day1.html" target = "main_page">Day1</a></li>

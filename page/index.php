@@ -7,7 +7,7 @@ require_once "v_s.php";
    <head>
       <title>Americaniche  Library</title>
    </head>
-<frameset cols = "180,*" border="0">
+<frameset cols = "190,*" border="0">
 
         <frame src = "menu.php" name = "menu_page" scrolling="no" />
         <frame src = "main.php" name = "main_page" />
