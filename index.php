@@ -68,6 +68,7 @@ session_start();
 			text-align: left;
 			text-decoration: none;
 			color: #24cfaa;
+			display: none;
 		}
 
 
@@ -138,8 +139,8 @@ session_start();
       </div>
       <button class="signin-button">Login</button><br>
       <br><p style="color : red"><?php echo htmlspecialchars($_SESSION["error"]); ?></p>
-      <div class="forget">
-//     <a href="forgetPass/email.php" class="forget">Forget Password ?</a>
+     <div class="forget">
+	  <a href="forgetPass/email.php" class="forget">Forget Password ?</a>
       </div>
   </form>
     </div>
