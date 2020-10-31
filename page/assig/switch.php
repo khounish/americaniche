@@ -1,6 +1,6 @@
-<div id="a"><h3>webterminal</h3></div>
+<div><h3>webterminal</h3></div>
 
 <label class="switch" onchange="toggleCheck()">
-          <input type="checkbox">
+          <input type="checkbox" onchange="toggleCheck()">
 <span class="slider round"></span>
 </label>

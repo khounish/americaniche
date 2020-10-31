@@ -61,7 +61,7 @@ require_once "v_s.php";
 <br>
 <br>
 <br>
-<p style="color:red;"><a href="../php/logout.php" target="_top">Logout<a><p>
+<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p>
 
 <script>
 var toggler = document.getElementsByClassName("caret");
