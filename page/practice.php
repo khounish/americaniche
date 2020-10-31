@@ -15,6 +15,6 @@ require_once "v_s.php";
 <?php
 include "webterminal.php";
 ?>
-<script src="script/webterminal.js"></script>
+<script src="script/webterminal_1.js"></script>
 </body>
 </html>
