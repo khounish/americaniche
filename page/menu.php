@@ -9,9 +9,7 @@ require_once "v_s.php";
    <img src="/photos/logo.png" class="logo" alt="logo">
 
    <ul id="myUL" style="margin-top:50">
-  <li><span class="caret"><font color=#24cfaa>Assignments</span>
-
-<ul id="myUL">
+  <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Videos</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/day1.html" target = "main_page">Day1</a></li>
@@ -24,6 +22,7 @@ require_once "v_s.php";
 </ul>
 </li>
 
+<li><span class="caret"><font color=#24cfaa>Assignments</span>
 <ul class="nested">
      <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "main_page">Assignment1</a><br></li>
      <li> <a href = "http://videos.americaniche.com/asgn2.html" target = "main_page">Assignment2</a><br></li>
