@@ -9,10 +9,9 @@ require_once "v_s.php";
    <div> <div class="logo"></div><br><br></div>
    <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
-<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a></p><br>
+<p><a href="../php/logout.php" target="_top" style="color:red;">Logout</a></p><br>
 
    <ul id="myUL" style="margin-top:50">
-   
    <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Prepare your system</span>
     <ul class="nested">
