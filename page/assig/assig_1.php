@@ -8,7 +8,9 @@ require_once "v_s.php";
 <link rel="stylesheet" type="text/css" href="../css/webterminal.css" />
    <body > 
 
-      <h3>Assignment 1</h3> <br>
+   <div id="heading">
+      <h1 style="text-align:center; color:white">Assignment 1</h1>
+    </div>
 <OL>
                    <li> Find out binary code of Z,D,),!)@
                   <li>  Define Kernel 

@@ -7,7 +7,9 @@ require_once "v_s.php";
 </head>
 <link rel="stylesheet" type="text/css" href="../css/webterminal.css" />
    <body > 
-<b>      <h3>Assignment 2</h3> <br> </b>
+   <div id="heading">
+      <h1 style="text-align:center; color:white">Assignment 2</h1>
+    </div>
 <OL>
 <li> Print " Welcome to day 2 session "  on default stdout device
 <li> Print " Today is Tuesday" on a file and print back the same on stdout
