@@ -24,6 +24,9 @@ require_once "v_s.php";
 		   <li>show an example of reading form a file and appenind same content  into a file  in same command</p></div>
 <?php
 include "switch.php";
+?>
+<br><br>
+<?php
 include "webterminal.php";
 ?>
 <script src="../script/webterminal.js"></script>
