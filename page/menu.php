@@ -7,6 +7,9 @@ require_once "v_s.php";
  </head>
    <body bgcolor = "#ecf0f3" color=red>
    <div> <div class="logo"></div><br><br></div>
+   <br><a href="practice.php" target="main_page">Practice now</a>
+<br>
+<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p><br>
 
    <ul id="myUL" style="margin-top:50">
    
@@ -57,11 +60,6 @@ require_once "v_s.php";
     </ul>
 </li>
 
-<br><a href="practice.php" target="main_page">Practice now</a>
-<br>
-<br>
-<br>
-<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p>
 
 <script>
 var toggler = document.getElementsByClassName("caret");
