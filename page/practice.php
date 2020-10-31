@@ -11,6 +11,6 @@ require_once "v_s.php";
 include "switch.php";
 include "webterminal.php";
 ?>
-<script src="script/webtermminal.js"></script>
+<script src="script/webterminal.js"></script>
 </body>
 </html>

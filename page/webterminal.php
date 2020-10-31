@@ -1,3 +1,4 @@
+<html>
 <div id="tabs">
   <ul>
     <li ><a href="#tabs-1">Terminal1</a>
@@ -13,3 +14,4 @@
     </div>
   </div>
 </div>
+</html>
