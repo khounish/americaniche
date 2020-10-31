@@ -33,6 +33,9 @@ require_once "v_s.php";
 <li>  Create a basic password  command sets  which will ask for a password , at the time  of input  the password will not be visible. after password is take as input print the input on default stdout and alos store it on a file. show the proof that password is saved in a file.   </li>
 <?php
 include "switch.php";
+?>
+<br><br><br><br>
+<?php
 include "webterminal.php";
 ?>
 <script src="../script/webterminal.js"></script>

@@ -24,13 +24,13 @@ require_once "v_s.php";
 
 <li><span class="caret"><font color=#24cfaa>Assignments</span>
 <ul class="nested">
-     <li> <a href = "http://videos.americaniche.com/asgn1.html" target = "main_page">Assignment1</a><br></li>
-     <li> <a href = "http://videos.americaniche.com/asgn2.html" target = "main_page">Assignment2</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn3.html" target = "main_page">Assignment3</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn4.html" target = "main_page">Assignment4</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn5.html" target = "main_page">Assignment5</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn6.html" target = "main_page">Assignment6</a><br></li>
-      <li> <a href = "http://videos.americaniche.com/asgn7.html" target = "main_page">Assignment7</a><br></li>
+     <li> <a href = "assig/assig_1.php" target = "main_page">Assignment1</a><br></li>
+     <li> <a href = "assig/assig_2.php" target = "main_page">Assignment2</a><br></li>
+      <li> <a href = "assig/assig_3.php" target = "main_page">Assignment3</a><br></li>
+      <li> <a href = "assig/assig_4.php" target = "main_page">Assignment4</a><br></li>
+      <li> <a href = "assig/assig_5.php" target = "main_page">Assignment5</a><br></li>
+      <li> <a href = "assig/assig_6.php" target = "main_page">Assignment6</a><br></li>
+      <li> <a href = "assig/assig_7.php" target = "main_page">Assignment7</a><br></li>
 </ul>
 </li>
 
