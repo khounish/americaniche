@@ -5,10 +5,14 @@ require_once "v_s.php";
 <head>
 <title>Webterminla</title>
 <link rel="stylesheet" type="text/css" href="css/webterminal.css" />
+<style>
+  #webterminal{
+    display:block;
+  }
+  </style>
 </head>
 <body>
 <?php
-include "switch.php";
 include "webterminal.php";
 ?>
 <script src="script/webterminal.js"></script>
