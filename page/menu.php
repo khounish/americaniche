@@ -7,7 +7,11 @@ require_once "v_s.php";
  </head>
    <body bgcolor = "#ecf0f3" color=red>
    <div> <div class="logo"></div><br><br></div>
-
+   <br><a href="practice.php" target="main_page">Terminal</a>
+<br>
+<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p>
+<br>
+<br>
    <ul id="myUL" style="margin-top:50">
    
    <ul id="myUL">
@@ -56,13 +60,6 @@ require_once "v_s.php";
       <li><a href = "/pdf/blc.pdf" target = "main_page">Bacis linux command</a></li>
     </ul>
 </li>
-
-<br><a href="practice.php" target="main_page">Terminal</a>
-<br>
-<br>
-<br>
-<p><a href="../php/logout.php" target="_top" style="color:red;">Logout<a><p>
-
 <script>
 var toggler = document.getElementsByClassName("caret");
 var i;
