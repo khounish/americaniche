@@ -1,0 +1,124 @@
+input[type="checkbox"] {
+    margin:10px;
+    position:relative;
+    width:100px;
+    height:28px;
+    -webkit-appearance: none;
+    background: linear-gradient(0deg, #333, red);
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+
+  input:checked[type="checkbox"]:nth-of-type(1) {
+    background: linear-gradient(0deg, #e67e22, #f39c12);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+
+  input:checked[type="checkbox"]:nth-of-type(2) {
+    background: linear-gradient(0deg, #70a1ff, #1e90ff);
+    box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0,0,0,1);
+  }
+
+  input[type="checkbox"]:before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:60px;
+    height:28px;
+    background: linear-gradient(0deg, #000, white);
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px #232323;
+    transform: scale(.98,.96);
+    transition:.5s;
+  }
+
+  input:checked[type="checkbox"]:before {
+    left:40px;
+  }
+
+  input[type="checkbox"]:after{
+    content:'';
+    position:absolute;
+    top:calc(50% - 2px);
+    left:70px;
+    width:4px;
+    height:4px;
+    background: linear-gradient(0deg, #6b6b6b, #000);
+    border-radius: 50%;
+    transition:.5s;
+  }
+
+  input:checked[type="checkbox"]:after {
+    left:100px;
+  }
+
+  #heading{
+    background-color:rgba(36, 83, 179);
+    height:70px;
+    font-size: 30px;
+  }
+
+  #toggle{
+    float:right;
+  }
+  #a{
+    float:right;
+  }
+
+  #webterminal{
+    display:none;
+  }
+  img{
+    float:left;
+  }
+  /* adding code for tab */
+
+  body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+overflow: hidden;
+border: 1px solid #ccc;
+background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+background-color: inherit;
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid #ccc;
+border-top: none;
+}
+
+/* Style the close button */
+.topright {
+float: right;
+cursor: pointer;
+font-size: 28px;
+}
+
+.topright:hover {color: red;}

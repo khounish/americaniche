@@ -3,84 +3,8 @@ require_once "v_s.php";
 ?>
 <html>
 <head>
-  <style>
-  .logo {
-  	width:100px;
-  	height:100px;
-  	border-radius:50%;
-  	overflow: hidden;
-    align:center;
-    margin-left: 20px;
-  }
-  a:link {
-  color: #24cfaa;
-  background-color: transparent;
-  text-decoration: none;
-
-}
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
-}/* Remove default bullets */
-
-ul, #myUL {
-  list-style-type: none;
-  color: #24cfaa;
-}
-
-/* Remove margins and padding from the parent ul */
-#myUL {
-  margin: 0;
-  padding: 0;
-  color: #24cfaa;
-}
-
-/* Style the caret/arrow */
-.caret {
-  cursor: pointer;
-  user-select: none; /* Prevent text selection */
-  color: #24cfaa;
-}
-
-/* Create the caret/arrow with a unicode, and style it */
-.caret::before {
-  content: "\25B6";
-  color: #24cfaa;
-  display: inline-block;
-  margin-right: 6px;
-}
-
-/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
-.caret-down::before {
-  transform: rotate(90deg);
-  color: #24cfaa;
-}
-
-/* Hide the nested list */
-.nested {
-  display: none;
-  color: #24cfaa;
-}
-
-/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
-.active {
-  display: block;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+ </head>
    <body bgcolor = "#ecf0f3" color=red><b>
    <img src="/photos/logo.png" class="logo" alt="logo">
 
@@ -156,6 +80,8 @@ ul, #myUL {
 <li> <a href = "http://videos.americaniche.com/airflow.html" target = "main_page">Airflow</a><br></li>
 <li> <a href = "http://videos.americaniche.com/samba.html" target = "main_page">Samba</a><br></li>
 </ul>
+
+<a href="practice.php" target="main_page">Practice now</a>
 
 <script>
 var toggler = document.getElementsByClassName("caret");

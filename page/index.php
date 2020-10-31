@@ -7,11 +7,11 @@ require_once "v_s.php";
    <head>
       <title>Americaniche  Library</title>
    </head>
-<frameset cols = "180,*,180" border="0">
+<frameset cols = "180,*" border="0">
 
         <frame src = "menu.php" name = "menu_page" scrolling="no" />
         <frame src = "main.php" name = "main_page" />
-        <frame src = "right.php" name = "right_page"/>
+//        <frame src = "right.php" name = "right_page"/>
       <noframes>
          <body>Your brower does not support frames.</body>
       </noframes>
