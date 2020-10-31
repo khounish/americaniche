@@ -22,10 +22,13 @@ require_once "v_s.php";
     -8px -8px 15px #ffffff
     ;
 }
+.m {
+   text-align : center;
+}
 </style>
    <body >
 <div> <div class="logo"></div><br><br></div><br>
-      <h1> Hello! <?php echo htmlspecialchars($_SESSION["username"]); ?> Welcome to AmericaNiche Academy</h1>
+<div class="m"> <h1> Hello! <b style="text-transform: uppercase;"><?php echo htmlspecialchars($_SESSION["username"]); ?> </b>Welcome to AmericaNiche Academy</h1></div>
    </body>
 
 </html>
