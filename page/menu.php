@@ -5,7 +5,7 @@ require_once "v_s.php";
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
-   <body bgcolor = "#df2d68" color=red>
+   <body bgcolor = "#93930a" color=red>
    <div> <div class="logo"></div><br><br></div>
    <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
