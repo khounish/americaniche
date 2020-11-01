@@ -10,7 +10,7 @@ require_once "v_s.php";
    <div id="position2">
    <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
-<p><a href="../php/logout.php" target="_top" style="color:red;">Logout</a></p><br>
+<p><a href="../php/logout.php" target="_top" style="color:white;">Logout</a></p><br>
 </div>
 
 

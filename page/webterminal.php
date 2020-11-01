@@ -16,7 +16,7 @@
  <div id="tabs-1">
   <div id="webterminal">
       <hr><br>
-      <object type="text/html" data="http://webterminal.americaniche.com" width="65%" height="90%" style="border-style:solid; padding-left:30px; margin-left:130px">
+      <object type="text/html" data="http://webterminal.americaniche.com" width="1000px" height="700px" style="border-style:solid; padding-left:30px; margin-left:130px">
       </object>
     </div>
   </div>
