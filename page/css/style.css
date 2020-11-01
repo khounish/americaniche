@@ -77,7 +77,7 @@ color: white;
 /* Hide the nested list */
 .nested {
 display: none;
-color: #851506;
+color: white;
 }
 
 /* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
