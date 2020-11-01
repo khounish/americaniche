@@ -31,7 +31,6 @@ require_once "v_s.php";
     <ul class="nested">
       <li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
       <li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
-      <li><a href = "/videos/day3.php" target = "main_page">Day3</a></li>
 </ul>
 </li>
 
