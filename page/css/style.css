@@ -42,7 +42,7 @@ text-decoration: underline;
 
 ul, #myUL {
 list-style-type: none;
-color: #851506;
+color: white;
 
 }
 
@@ -50,14 +50,14 @@ color: #851506;
 #myUL {
 margin: 0;
 padding: 0;
-color: #851506;
+color: white;
 }
 
 /* Style the caret/arrow */
 .caret {
 cursor: pointer;
 user-select: none; /* Prevent text selection */
-color:  #851506;
+color:  white
 }
 
 /* Create the caret/arrow with a unicode, and style it */
@@ -71,7 +71,7 @@ margin-right: 6px;
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
 .caret-down::before {
 transform: rotate(90deg);
-color: #851506;
+color: white;
 }
 
 /* Hide the nested list */
