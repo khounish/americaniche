@@ -90,22 +90,22 @@ display: block;
 
     position: absolute;
 	top: 20px;
-	left: 30px;
+	left: 50px;
     
 }
 
 #position2{
 
     position: absolute;
-	top: 50px;
-	left: 30px;
+	top: 150px;
+	left: 90px;
     
 }
 
 #position3{
 
     position: absolute;
-	top: 100px;
-	left: 30px;
+	top: 200px;
+	left: 20px;
     
 }
