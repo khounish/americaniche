@@ -22,13 +22,13 @@ require_once "v_s.php";
    <ul id="myUL">
   <li><span class="caret"><font color=#851506>Videos</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/day1.html" target = "main_page">Day1</a></li>
-      <li><a href = "http://videos.americaniche.com/day2.html" target = "main_page">Day2</a></li>
-      <li><a href = "http://videos.americaniche.com/day3.html" target = "main_page">Day3</a></li>
-      <li><a href = "http://videos.americaniche.com/day4.html" target = "main_page">Day4</a></li>
-      <li><a href = "http://videos.americaniche.com/day5a.html" target = "main_page">day5 part 1</a></li>
-      <li><a href = "http://videos.americaniche.com/day5b.html" target = "main_page">Day5 part 2</a></li>
-      <li><a href = "http://videos.americaniche.com/day5c.html" target = "main_page">Day5 part 3</a></li>
+      <li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
+      <li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
+      <li><a href = "/videos/day3.php" target = "main_page">Day3</a></li>
+      <li><a href = "/videos/day4.php" target = "main_page">Day4</a></li>
+      <li><a href = "/videos/day5a.php" target = "main_page">day5 part 1</a></li>
+      <li><a href = "/videos/day5b.php" target = "main_page">Day5 part 2</a></li>
+      <li><a href = "/videos/day5c.php" target = "main_page">Day5 part 3</a></li>
 </ul>
 </li>
 
