@@ -5,7 +5,7 @@ require_once "v_s.php";
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
-   <body bgcolor = "#025241" color=red>
+   <body bgcolor = "#eb782c" color=red>
    <div id="position1"> <div class="logo"></div><br><br></div>
 
 <div id="position2">
