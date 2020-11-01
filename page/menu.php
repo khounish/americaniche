@@ -6,11 +6,15 @@ require_once "v_s.php";
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
    <body bgcolor = "#025241" color=red>
-   <div id="position"> <div class="logo"></div><br><br></div>
+   <div id="position1"> <div class="logo"></div><br><br></div>
+   <div id="position2">
    <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
 <p><a href="../php/logout.php" target="_top" style="color:red;">Logout</a></p><br>
+</div>
 
+
+<div id="position3">
    <ul id="myUL" style="margin-top:50">
    <ul id="myUL">
   <li><span class="caret"><font color=white>Prepare your system</span>
@@ -58,6 +62,7 @@ require_once "v_s.php";
       <li><a href = "/pdf/blc.pdf" target = "main_page">Bacis linux command</a></li>
     </ul>
 </li>
+</div>
 
 
 <script>
