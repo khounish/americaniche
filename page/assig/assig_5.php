@@ -7,7 +7,6 @@ require_once "v_s.php";
 </head>
 <link rel="stylesheet" type="text/css" href="../css/webterminal.css" />
    <body > 
-
    <div id="heading">
       <h1 style="text-align:center; color:white">Assignment 5</h1>
     </div>

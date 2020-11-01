@@ -55,9 +55,12 @@ input[type="checkbox"] {
   }
 
   #heading{
-    background-color:#025241;
+    background-color:#eb782c;
     height:70px;
     font-size: 30px;
+    position: absolute;
+	top: 0px;
+	left: 0px;
   }
 
   #toggle{
