@@ -44,7 +44,7 @@ and append a on a new Column "Validation Pass or Validatio  Fails " at third col
 <?php
 include "switch.php";
 ?>
-<br><br><br><br><br><br>
+<br><br>
 <?php
 include "webterminal.php";
 ?>
