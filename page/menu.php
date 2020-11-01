@@ -6,7 +6,7 @@ require_once "v_s.php";
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
    <body bgcolor = "#025241" color=red>
-   <div> <div class="logo"></div><br><br></div>
+   <div id="position"> <div class="logo"></div><br><br></div>
    <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
 <p><a href="../php/logout.php" target="_top" style="color:red;">Logout</a></p><br>
