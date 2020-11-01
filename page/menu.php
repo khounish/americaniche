@@ -11,7 +11,7 @@ require_once "v_s.php";
 <div id="position2">
 <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
-<a href="../php/logout.php" target="_top" style="color:white;">Logout</a>
+<a href="/php/logout.php" target="_top">Logout</a>
 </div>
 
 
@@ -38,14 +38,15 @@ require_once "v_s.php";
      <li> <a href = "assig/assig_1.php" target = "main_page">Assignment1</a><br></li>
      <li> <a href = "assig/assig_2.php" target = "main_page">Assignment2</a><br></li>
 </li>
+</ul>
 
 <ul id="myUL">
   <li><span class="caret"><font color=white>Server OS</span>
     <ul class="nested">
       <li><a href = "http://software.americaniche.com" target = "main_page">Download</a></li>
-
 </ul>
 </li>
+
 <ul id="myUL">
   <li><span class="caret">Imprt. source</span>
     <ul class="nested"><font color=white>
