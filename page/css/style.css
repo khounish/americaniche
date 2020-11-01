@@ -109,3 +109,11 @@ display: block;
 	left: 20px;
     
 }
+
+#position{
+
+    position: absolute;
+	top: 160px;
+	left: 30px;
+    
+}

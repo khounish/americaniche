@@ -11,6 +11,8 @@ require_once "v_s.php";
 <div id="position2">
 <br><a href="practice.php" target="main_page">Practice now</a>
 <br>
+</div>
+<div id="position">
 <a href="/php/logout.php" target="_top">Logout</a>
 </div>
 
