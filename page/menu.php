@@ -15,7 +15,7 @@ require_once "v_s.php";
    <ul id="myUL">
   <li><span class="caret"><font color=#24cfaa>Prepare your system</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall VM</a></li>
+      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall Linux</a></li>
 </ul>
 </li>
   

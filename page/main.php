@@ -7,10 +7,10 @@ require_once "v_s.php";
 .logo {
     background:url("/photos/logo_big.png");
     background-size: cover;
-    width:500px;
-    height: 500px;
+    width:250px;
+    height: 250px;
     border-radius: 50%;
-    margin:0 auto;
+    margin:10 px;
     box-shadow:
     /* logo shadow */
     0px 0px 2px blue,
