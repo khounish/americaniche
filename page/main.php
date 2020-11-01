@@ -10,7 +10,7 @@ require_once "v_s.php";
     width:250px;
     height: 250px;
     border-radius: 50%;
-    margin:10 px;
+    margin: auto;
     box-shadow:
     /* logo shadow */
     0px 0px 2px blue,
