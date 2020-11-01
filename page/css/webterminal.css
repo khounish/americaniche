@@ -58,9 +58,7 @@ input[type="checkbox"] {
     background-color:#eb782c;
     height:70px;
     font-size: 30px;
-    position: absolute;
-	top: 0px;
-	left: 0px;
+    margin :auto;
   }
 
   #toggle{
