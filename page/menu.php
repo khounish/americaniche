@@ -13,7 +13,7 @@ require_once "v_s.php";
 <br>
 </div>
 <div id="position">
-<br><a href="index.php">Logout</a>
+<br><a href="/php/logout.php">Logout</a>
     </div>
 
 
