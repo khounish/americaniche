@@ -13,7 +13,7 @@ require_once "v_s.php";
 <br>
 </div>
 <div id="position">
-<br><a href="practice.php" target="main_page">Logout</a>
+<br><a href="index.php" target="main_page">Logout</a>
     </div>
 
 
@@ -43,7 +43,7 @@ require_once "v_s.php";
 </ul>
 
 <ul id="myUL">
-  <li><span class="caret"><font color=white>Server OS</span>
+  <li><span class="caret"><font color=white>Download Softwares</span>
     <ul class="nested">
       <li><a href = "http://software.americaniche.com" target = "main_page">Download</a></li>
 </ul>
