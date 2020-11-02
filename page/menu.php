@@ -20,19 +20,19 @@ require_once "v_s.php";
 <div id="position3">
    <ul id="myUL" style="margin-top:50">
    <ul id="myUL">
-  <li><span class="caret"><font color=white>Prepare your system</span>
+  <li><span class="caret"><font color=white>Prepare Environment</span>
     <ul class="nested">
       <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall Linux</a></li>
 </ul>
 </li>
   
-   <ul id="myUL">
-  <li><span class="caret"><font color=white>Videos</span>
-    <ul class="nested">
-      <li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
-      <li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
-</ul>
-</li>
+  // <ul id="myUL">
+  //<li><span class="caret"><font color=white>Videos</span>
+    //<ul class="nested">
+      //<li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
+      //<li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
+//</ul>
+//</li>
 
 <li><span class="caret"><font color=white>Assignments</span>
 <ul class="nested">
