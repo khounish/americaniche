@@ -3,6 +3,26 @@ require_once "v_s.php";
 ?>
 <html>
 <head>
+	<style>/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+	</style>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
  </head>
    <body bgcolor = "#eb782c" color=red>
