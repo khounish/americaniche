@@ -22,25 +22,11 @@ require_once "v_s.php";
    <ul id="myUL">
   <li><span class="caret"><font color=white>Prepare Environment</span>
     <ul class="nested">
-      <li><a href = "/videos/vm_install.php" target = "main_page">How to install VM</a></li>
-      <li><a href = "/videos/fedora_install.php" target = "main_page">How to install Fedora31</a></li>
+      <li><a href = "/videos/vm_install.php" target = "main_page">VM Installation</a></li>
+      <li><a href = "/videos/fedora_install.php" target = "main_page">OS Installation</a></li>
 </ul>
 </li>
   
-  <ul id="myUL">
-  <li><span class="caret"><font color=white>Videos</span>
-   <ul class="nested">
-      <li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
-      <li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
-</ul>
-</li>
-
-<li><span class="caret"><font color=white>Assignments</span>
-<ul class="nested">
-     <li> <a href = "assig/assig_1.php" target = "main_page">Assignment1</a><br></li>
-     <li> <a href = "assig/assig_2.php" target = "main_page">Assignment2</a><br></li>
-</li>
-</ul>
 
 <ul id="myUL">
   <li><span class="caret"><font color=white>Download Softwares</span>
@@ -49,13 +35,6 @@ require_once "v_s.php";
 </ul>
 </li>
 
-<ul id="myUL">
-  <li><span class="caret">Imprt. source</span>
-    <ul class="nested"><font color=white>
-      <li><a href = "/pdf/ascii.pdf" target = "main_page">ASCII Code</a></li>
-      <li><a href = "/pdf/blc.pdf" target = "main_page">Bacis linux command</a></li>
-    </ul>
-</li>
 </div>
 
 
