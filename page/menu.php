@@ -22,7 +22,8 @@ require_once "v_s.php";
    <ul id="myUL">
   <li><span class="caret"><font color=white>Prepare Environment</span>
     <ul class="nested">
-      <li><a href = "http://videos.americaniche.com/ws4a.html" target = "main_page">How to insatall Linux</a></li>
+      <li><a href = "/videos/vm_install.php" target = "main_page">How to install VM</a></li>
+      <li><a href = "/videos/fedora_install.php" target = "main_page">How to install Fedora31</a></li>
 </ul>
 </li>
   
