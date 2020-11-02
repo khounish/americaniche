@@ -13,7 +13,8 @@ require_once "v_s.php";
 <br>
 </div>
 <div id="position">
-/div>
+<br><a href="practice.php" target="main_page">Logout</a>
+    </div>
 
 
 <div id="position3">
@@ -26,13 +27,13 @@ require_once "v_s.php";
 </ul>
 </li>
   
-  // <ul id="myUL">
-  //<li><span class="caret"><font color=white>Videos</span>
-    //<ul class="nested">
-      //<li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
-      //<li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
-//</ul>
-//</li>
+  <ul id="myUL">
+  <li><span class="caret"><font color=white>Videos</span>
+   <ul class="nested">
+      <li><a href = "/videos/day1.php" target = "main_page">Day1</a></li>
+      <li><a href = "/videos/day2.php" target = "main_page">Day2</a></li>
+</ul>
+</li>
 
 <li><span class="caret"><font color=white>Assignments</span>
 <ul class="nested">
