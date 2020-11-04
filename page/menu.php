@@ -20,13 +20,20 @@ require_once "v_s.php";
 <div id="position3">
    <ul id="myUL" style="margin-top:50">
    <ul id="myUL">
-  <li><span class="caret"><font color=white>Prepare Environment</span>
+  <li><font color=white>Prepare Environment</span>
     <ul class="nested">
       <li><a href = "/videos/vm_install.php" target = "main_page">VM Installation</a></li>
       <li><a href = "/videos/fedora_install.php" target = "main_page">OS Installation</a></li>
 </ul>
 </li>
   
+<ul id="myUL">
+  <li><span class="caret"><font color=white>Assignments</span>
+    <ul class="nested">
+      <li><a href = "#" target = "main_page">Assignment 1</a></li>
+      <li><a href = "#" target = "main_page">Assignment 1</a></li>
+</ul>
+</li>
 
 <ul id="myUL">
   <li><span class="caret"><font color=white>Download Softwares</span>
