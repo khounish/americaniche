@@ -21,6 +21,8 @@ require_once "v_s.php";
     <ul class="nested">
       <li><a href = "/videos/vm_install.php" target = "main_page">VM Installation</a></li>
       <li><a href = "/videos/fedora_install.php" target = "main_page">OS Installation</a></li>
+      <li><a href = "/videos/wsl_install.php" target = "main_page">WSL Installation</a></li>
+      <li><a href = "/videos/ubuntu_install.php" target = "main_page">Ubuntu Installion</a></li>
 </ul>
 </li>
   
@@ -28,8 +30,8 @@ require_once "v_s.php";
   <li><span class="caret"><font color=white>Training Videos</span>
     <ul class="nested">
       <li><a href = "/videos/orientation.php" target = "main_page">Orientation Day</a></li>
-      <li><a href = "/videos/Day1.php" target = "main_page">OS Introduction</a></li>
-      <li><a href = "/videos/Day2.php" target = "main_page">Linux Voyage</a></li>
+      <li><a href = "/videos/day1.php" target = "main_page">OS Introduction</a></li>
+      <li><a href = "/videos/day2.php" target = "main_page">Linux Voyage</a></li>
      
    </ul>
 </li>  
