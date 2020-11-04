@@ -8,11 +8,8 @@ require_once "v_s.php";
    <body bgcolor = "#eb782c" color=red>
    <div id="position1"> <div class="logo"></div><br><br></div>
 
+
 <div id="position2">
-<br><a href="practice.php" target="main_page">Practice now</a>
-<br>
-</div>
-<div id="position">
 <br><a href="/php/logout.php" target="_top">Logout</a>
     </div>
 
@@ -41,8 +38,8 @@ require_once "v_s.php";
 <ul id="myUL">
   <li><span class="caret"><font color=white>Assignments</span>
     <ul class="nested">
-      <li><a href = "#" target = "main_page">Assignment 1</a></li>
-      <li><a href = "#" target = "main_page">Assignment 1</a></li>
+      <li><a href = "assig/assig_1.php" target = "main_page">Assignment 1</a></li>
+      <li><a href = "assig/assig_2.php" target = "main_page">Assignment 2</a></li>
 </ul>
 </li>
 
