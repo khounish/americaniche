@@ -27,6 +27,17 @@ require_once "v_s.php";
 </ul>
 </li>
   
+ <ul id="myUL">
+  <li><span class="caret"><font color=white>Training Videos</span>
+    <ul class="nested">
+      <li><a href = "/videos/orientation.php" target = "main_page">Orientation Day</a></li>
+      <li><a href = "/videos/Day1.php" target = "main_page">OS Introduction</a></li>
+      <li><a href = "/videos/Day2.php" target = "main_page">Linux Voyage</a></li>
+     
+   </ul>
+</li>  
+   
+   
 <ul id="myUL">
   <li><span class="caret"><font color=white>Assignments</span>
     <ul class="nested">
