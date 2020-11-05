@@ -32,6 +32,8 @@ require_once "v_s.php";
       <li><a href = "/videos/orientation.php" target = "main_page">Orientation Day</a></li>
       <li><a href = "/videos/day1.php" target = "main_page">OS Introduction</a></li>
       <li><a href = "/videos/day2.php" target = "main_page">Linux Voyage</a></li>
+      <li><a href = "/videos/day3.php" target = "main_page"></a>Path & Editor</li>
+      <li><a href = "/videos/day4.php" target = "main_page">Fork & Join</a></li>
      
    </ul>
 </li>  
