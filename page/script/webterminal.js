@@ -10,7 +10,7 @@ $(document).ready(function () {
         $(this).append("<div id='tabs-" + name + "'>");
     
         $("#tabs-"+name).append("<div id='webterminal" + name + "'>");
-        $("#tabs-"+name).append("<hr><br><object type='text/htm' data='http://webterminal.americaniche.com' width='1000px' height='700px' style='border-style:solid; padding-left:30px; margin-left:130px'></object></div>");
+        $("#tabs-"+name).append("<hr><br><object type='text/htm' data='http://webterminal.americaniche.com' width='1200px' height='700px' style='border-style:solid; padding-left:10px; margin-left:10px'></object></div>");
         $(this).append("</div>");
         $(this).tabs("refresh");
     };
