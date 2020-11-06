@@ -41,9 +41,8 @@ require_once "v_s.php";
   <li><span class="caret"><font color=white>AWS Training</span>
     <ul class="nested">
       <li><a href = "/videos/aws_basics.php" target = "main_page">AWS Basics</a></li>
-     <li><a href = "/videos/IAM.php" target = "main_page">IAM</a>IAM<a/></li>
+      <li><a href = "/videos/IAM.php" target = "main_page">IAM</a></li>
       <li><a href = "/videos/s3.php" target = "main_page">S3</a></li>
-      
    </ul>
 </li>   
    
