@@ -96,9 +96,9 @@ display: block;
 
 #position2{
 
-    position: absolute;
+    position: relative;
 	top: 140px;
-	left: 50px;
+	left: 40px;
     
 }
 
