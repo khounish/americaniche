@@ -45,6 +45,7 @@ require_once "v_s.php";
       <li><a href = "/videos/aws_basics.php" target = "main_page">AWS Basics</a></li>
       <li><a href = "/videos/IAM.php" target = "main_page">IAM</a></li>
       <li><a href = "/videos/s3.php" target = "main_page">S3</a></li>
+      <li><a href = "/videos/redshift-s3.php" target = "main_page">Redshift-S3</a></li>
    </ul>
 </li>   
    
