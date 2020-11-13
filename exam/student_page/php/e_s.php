@@ -1,5 +1,5 @@
 <?php
-session_start();
+/*session_start();
 require_once "data_base_exam.php";
 $userid = $_SESSION["s_id"];
 //Exam information
@@ -7,19 +7,19 @@ $userid = $_SESSION["s_id"];
 $sql4 = "SELECT exam_id FROM Exam_scheduler WHERE user_id = '$userid'";
 $exam_id = (($conn_1->query($sql4))->fetch_assoc())["exam_id"];
 //Date
-$sql5 = "SELECT Date FROM Exam_scheduler WHERE id = '$exam_id'";
+$sql5 = "SELECT Date FROM Exam_scheduler WHERE exam_id = '$exam_id'";
 $date = (($conn_1->query($sql5))->fetch_assoc())["Date"];
 //Duration
-$sql6= "SELECT Duration FROM Exam_scheduler WHERE id = '$exam_id'";
+$sql6= "SELECT Duration FROM Exam_scheduler WHERE exam_id = '$exam_id'";
 $duration = (($conn_1->query($sql6))->fetch_assoc())["Duration"];
 //Universal level
-$sql8 = "SELECT Level FROM Exam_scheduler WHERE id = '$exam_id'";
+$sql8 = "SELECT Level FROM Exam_scheduler WHERE exam_id = '$exam_id'";
 $level = (($conn_1->query($sql8))->fetch_assoc())["Level"];
 //Category Id
-$sql9 = "SELECT Category_id FROM Exam_scheduler WHERE id = '$exam_id'";
+$sql9 = "SELECT Category_id FROM Exam_scheduler WHERE exam_id = '$exam_id'";
 $cetegory_id = (($conn_1->query($sql9))->fetch_assoc())["Category_id"];
 //No. of question
-$sql10 = "SELECT NoQues FROM Exam_scheduler WHERE id = '$exam_id'";
+$sql10 = "SELECT NoQues FROM Exam_scheduler WHERE exam_id = '$exam_id'";
 $noques = (($conn_1->query($sql10))->fetch_assoc())["NoQues"];
 
 //validate the results from db and respond back
