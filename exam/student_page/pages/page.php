@@ -5,7 +5,7 @@ include_once ("v_s.php");
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Admin's Page</title>
+    <title>Student's Page</title>
     <link rel="stylesheet" href="../css/style.css">
   </head>
 
@@ -19,7 +19,7 @@ include_once ("v_s.php");
 
       </div>
         <div class="linkbox">
-          <a class="links" href="exam_list.php" target="_blank">Join Exam</a>
+          <a class="links" href="../php/e_s.php" target="_blank">Join Exam</a>
            <a class="links" href="#">Results</a>
            <a class="links" href="/php/exam_logout.php" target="_top">Logout</a>
            <div class="box">  </div>
