@@ -1,3 +1,5 @@
+<?php
+session_start();?>
 <html>
  <head><title>Exam Menu</title>
   <style>
@@ -19,7 +21,7 @@
   </style></head>
 
  <body>
-  <?php>
+   <?php
    require_once "data_base_exam.php";
    $userid = $_SESSION["s_id"];
    $sql = "SELECT Category_id,Duration FROM Exam_scheduler WHERE user_id = '$userid'";
@@ -53,7 +55,7 @@
          echo "</table>";
        }
      }
-  <?>
+  ?>
 
 
 
