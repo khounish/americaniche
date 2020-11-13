@@ -31,6 +31,7 @@ if(  date("Y-m-d") ===  $date )
         $_SESSION["level"] = $level;
         $_SESSION["category_id"] = $category_id;
         $_SESSION["exam_id"] = $exam_id;
+        $_SESSION["s_id"] = $userid;
        // $_SESSION["no_ques"] = $noques;
         //require_once "s_q.php";
         header("location: ../pages/exam_list.php");
