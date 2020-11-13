@@ -1,5 +1,5 @@
 <?php
-/*session_start();
+session_start();
 require_once "data_base_exam.php";
 $userid = $_SESSION["s_id"];
 //Exam information
@@ -33,7 +33,7 @@ if(  date("Y-m-d") ===  $date )
         $_SESSION["exam_id"] = $exam_id;
        // $_SESSION["no_ques"] = $noques;
         require_once "s_q.php";
-        header("location: http://www.americaniche.com/exam/student_page/exam_page/index.php");
+        header("location: ../pages/exam_list.php");
 
 
 
