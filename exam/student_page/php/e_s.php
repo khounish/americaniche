@@ -4,7 +4,7 @@ require_once "data_base_exam.php";
 $userid = $_SESSION["s_id"];
 //Exam information
 //Exam  id
-$sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$userid'";
+$sql4 = "SELECT exam_id FROM Exam_scheduler WHERE user_id = '$userid'";
 $exam_id = (($conn_1->query($sql4))->fetch_assoc())["exam_id"];
 //Date
 $sql5 = "SELECT Date FROM Exam_scheduler WHERE id = '$exam_id'";
