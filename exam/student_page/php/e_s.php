@@ -5,7 +5,7 @@ $userid = $_SESSION["s_id"];
 //Exam information
 //Exam  id
 $sql4 = "SELECT id FROM Exam_scheduler WHERE user_id = '$userid'";
-$exam_id = (($conn_1->query($sql4))->fetch_assoc())["id"];
+$exam_id = (($conn_1->query($sql4))->fetch_assoc())["exam_id"];
 //Date
 $sql5 = "SELECT Date FROM Exam_scheduler WHERE id = '$exam_id'";
 $date = (($conn_1->query($sql5))->fetch_assoc())["Date"];
@@ -32,7 +32,7 @@ if(  date("Y-m-d") ===  $date )
         $_SESSION["category_id"] = $category_id;
         $_SESSION["exam_id"] = $exam_id;
        // $_SESSION["no_ques"] = $noques;
-        require_once "s_q.php";
+        //require_once "s_q.php";
         header("location: ../pages/exam_list.php");
 
 
